@@ -12,7 +12,7 @@ const props = defineProps({});
     </div>
     <div class="flex">
       <div class="mr-10 w-3"></div>
-      <div class="text-justify"></div>
+      <div class="text-justify">
         <div class="mb-1 font-semibold text-lg"><slot name="time" /></div>
         <div><slot name="content" /></div>
       </div>
