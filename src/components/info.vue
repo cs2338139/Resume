@@ -8,30 +8,35 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="flex justify-between w-full dev-black h-72 text-justify">
-    <div class="w-5/12 px-10 mr-5">
+  <div class="flex justify-between w-full h-60 text-justify dev-pinks">
+    <div class="w-1/3 h-full px-10 mr-5 dev-pinks">
       <div class="bg-gray-400 w-full h-full"></div>
     </div>
-    <div class="grow flex flex-col justify-between">
+    <div class="grow flex flex-col justify-around dev-pinks">
       <div>
-        <span class="font-bold text-2xl mr-2"><slot name="name" /></span>
-        <span class="text-xl"><slot name="enName" /></span>
-      </div>
-      <div>
+        <div class="font-bold text-4xl"><slot name="name" /></div>
+        <div class="text-2xl"><slot name="enName" /></div>
         <div><slot name="birthday" /></div>
-        <div class="font-bold"><slot name="skill" /></div>
-        <div><slot name="sortInfo" /></div>
       </div>
-      <hr class="border-black" />
-      <div><slot name="info" /></div>
+
+      <div>
+        <div class="text-lg font-bold mb-0.5"><slot name="skill" /></div>
+        <div><slot name="education" /></div>
+      </div>
+
       <div>
         <div><slot name="place" /></div>
         <div>
-          <a :href="'mailto:' + email" class="text-blue-500" > <slot name="mail" /> </a> | <slot name="phone" />
+          <a :href="'mailto:' + email" class="link"> <slot name="mail" /> </a>｜<slot name="phone" />
         </div>
+        <div><span>作品集：</span><a href="https://www.behance.net/JinChengLiang" class="link">Behance 作品集</a></div>
       </div>
     </div>
   </div>
 </template>
 
-<style></style>
+<style>
+.link {
+  @apply text-blue-600 hover:underline hover:text-blue-900;
+}
+</style>
