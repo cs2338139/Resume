@@ -7,24 +7,21 @@ import skillTableItem from "../components/skill-Table-Item.vue";
 import introduction from "../components/introduction.vue";
 import timeline from "../components/timeline.vue";
 import timelineItem from "../components/timeline-Item.vue";
+import me from "/public/pic.jpeg";
 </script>
 
 <template>
   <div class="wrap flex flex-col items-center">
-    <info class="mb-10" email="cs2338139@gmail.com">
+    <info class="mb-10" email="cs2338139@gmail.com" portfolio="https://www.behance.net/JinChengLiang" :img="me">
       <template #name>梁晋誠</template>
       <template #enName>LIANG JIN CHENG</template>
       <template #birthday>1995／12／08</template>
       <template #skill>前端網頁／Unity／VR／互動工程／遊戲開發</template>
       <template #education>南臺科技大學 多媒體與電腦娛樂科學系</template>
-      <!-- <template #info>
-        南臺科技大學多媒體與電腦娛樂科學系，畢業製作STEAMNANO於2018年青春設計節取得了互動科技與遊戲設計類「金獎」。<br />
-        曾任職於互動設計公司，執行了多項Unity程式開發，並且有實務開發經驗。範圍不局限於Window平台，其中也有行動裝置與VR。<br />
-        除了Unity外，也使用過不同類型的開發技術: Processing、Arduino...等。
-      </template> -->
       <template #place>臺北，Taiwan</template>
       <template #mail>cs2338139@gmail.com</template>
       <template #phone>0975-601935</template>
+      <template #portfolio>Behance 作品集</template>
     </info>
 
     <introduction class="mb-10">
@@ -111,24 +108,38 @@ import timelineItem from "../components/timeline-Item.vue";
       <template #title>工作經歷</template>
       <template #content>
         <timelineItem>
-          <template #position>互動工程師</template>
-          <template #company>Pixelight.／愛迪斯科技 專案部</template>
+          <template #position>前端工程師／互動工程師</template>
+          <template #company>Pixelight.（愛迪斯科技 專案部）</template>
           <template #time>2020 / 10～2023 / 2</template>
-          <template #content> 參與了多項互動開發: 玩花VR體驗、AI鞋匠、尋常茶VR體驗。</template>
+          <template #content>
+            開發領域開始不限於展場互動設計，同時也開始跨足了網站前端的領域，並且成為了公司的網站開發項目負責人。<br />
+            開發了數個網站前端與參與互動設計：<br />
+            <ul class="list-disc list-inside text-sm">
+              <li>2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）</li>
+              <li>2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站</li>
+              <li>2022 國立臺灣文學館 文學館古蹟導覽下載 網站</li>
+              <li>2022 國立臺灣文學館 光影裁縫店：冷不防 兒童繪本互動劇場</li>
+              <li>2021 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （初版）</li>
+              <li>2021 桃園安麗空間 賦能區 互動體感裝置</li>
+              <li>2021 桃園安麗空間 紐崔萊全程追朔 顯微鏡機構互動裝置</li>
+              <li>2021 桃園安麗空間 E-Spring 互動投影展示裝置</li>
+            </ul>
+            <div class="font-bold mt-1 text-lg"><a href="https://www.behance.net/JinChengLiang" class="link">更多作品連結 →</a></div>
+          </template>
         </timelineItem>
         <timelineItem>
           <template #position>互動工程師</template>
           <template #company>玩味創研 Play Design Lab</template>
           <template #time>2020 / 6～202 / 9</template>
-          <template #content> 以Unity為主要開發工具，同時也按需求使用了Arduino與Raspberry Pi等不同的開發工具。<br />
-            參與了多項互動開發：<br/>
-            <ul class="list-disc list-inside">
+          <template #content
+            >以Unity為主要開發工具，同時也按需求使用了Arduino與Raspberry Pi等不同的開發工具。<br />
+            參與了多項互動開發：<br />
+            <ul class="list-disc list-inside text-sm">
               <li>2020 國立科學工藝博物館－邁向 AIoT 意象牆</li>
               <li>2020 國立科學工藝博物館－AI鞋匠</li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>2020 昇平戲院 座‧無虛席：昇平戲院 ╳ 臺灣老戲院特展</li>
+              <li>2020 玩花數位VR體驗</li>
+              <li>2020 尋常茶VR體驗</li>
             </ul>
           </template>
         </timelineItem>
@@ -153,4 +164,8 @@ import timelineItem from "../components/timeline-Item.vue";
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.link {
+  @apply text-blue-600 hover:underline hover:text-blue-900;
+}
+</style>

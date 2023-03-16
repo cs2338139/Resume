@@ -4,15 +4,23 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  portfolio: {
+    type: String,
+    default: "",
+  },
+  img: {
+    type: String,
+    default: "",
+  },
 });
 </script>
 
 <template>
-  <div class="flex justify-between w-full h-60 text-justify dev-pinks">
-    <div class="w-1/3 h-full px-10 mr-5 dev-pinks">
-      <div class="bg-gray-400 w-full h-full"></div>
+  <div class="flex justify-between w-full h-60 text-justify">
+    <div class="overflow-hidden flex items-center shadow-xl justify-center rounded-md border w-1/3 h-full mr-14">
+      <img class="object-cover w-full h-full" :src="img" />
     </div>
-    <div class="grow flex flex-col justify-around dev-pinks">
+    <div class="grow flex flex-col justify-around">
       <div>
         <div class="font-bold text-4xl"><slot name="name" /></div>
         <div class="text-2xl"><slot name="enName" /></div>
@@ -29,13 +37,15 @@ const props = defineProps({
         <div>
           <a :href="'mailto:' + email" class="link"> <slot name="mail" /> </a>｜<slot name="phone" />
         </div>
-        <div><span>作品集：</span><a href="https://www.behance.net/JinChengLiang" class="link">Behance 作品集</a></div>
+        <div>
+          <span>作品集：</span><a :href="portfolio" class="link"><slot name="portfolio" /></a>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<style>
+<style scoped>
 .link {
   @apply text-blue-600 hover:underline hover:text-blue-900;
 }
