@@ -23,5 +23,5 @@
 }
 
 .wrap {
-  @apply max-w-[1080px]  relative mx-auto py-10;
+  @apply max-w-[1080px]  relative mx-auto py-10 px-6;
 }
