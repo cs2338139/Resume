@@ -12,7 +12,7 @@ import me from "/public/pic.jpeg";
 
 <template>
   <div class="wrap flex flex-col items-center">
-    <div class="border border-gray-100 shadow-xl px-20 py-14">
+    <div class="border border-gray-100 shadow-xl wrapInner">
       <info class="mb-10" email="cs2338139@gmail.com" portfolio="https://www.behance.net/JinChengLiang" :img="me">
         <template #name>梁晋誠</template>
         <template #enName>LIANG JIN CHENG</template>
@@ -167,7 +167,5 @@ import me from "/public/pic.jpeg";
 </template>
 
 <style scoped>
-.link {
-  @apply text-blue-600 hover:underline hover:text-blue-900;
-}
+
 </style>

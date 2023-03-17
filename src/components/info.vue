@@ -46,7 +46,4 @@ const props = defineProps({
 </template>
 
 <style scoped>
-.link {
-  @apply text-blue-600 hover:underline hover:text-blue-900;
-}
 </style>
