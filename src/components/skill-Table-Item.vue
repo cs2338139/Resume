@@ -3,7 +3,7 @@ const props = defineProps({});
 </script>
 
 <template>
-  <li class="ml-8 xl:ml-2 whitespace-nowrap">
+  <li class="ml-2">
     <slot />
   </li>
 </template>

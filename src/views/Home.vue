@@ -7,6 +7,7 @@ import skillTableItem from "../components/skill-Table-Item.vue";
 import introduction from "../components/introduction.vue";
 import timeline from "../components/timeline.vue";
 import timelineItem from "../components/timeline-Item.vue";
+import portfolio from "../components/portfolio.vue";
 import me from "/public/pic.jpeg";
 </script>
 
@@ -22,7 +23,7 @@ import me from "/public/pic.jpeg";
         <template #place>臺北，Taiwan</template>
         <template #mail>cs2338139@gmail.com</template>
         <template #phone>0975-601935</template>
-        <template #portfolio>Behance 作品集</template>
+        <template #portfolio>Behance 作品集 ↗</template>
       </info>
 
       <introduction class="mb-10">
@@ -115,7 +116,7 @@ import me from "/public/pic.jpeg";
             <template #content>
               開發領域開始不限於展場互動設計，同時也開始跨足了網站前端的領域，並且成為了公司的網站開發項目負責人。<br />
               開發了數個網站前端與參與互動設計：<br />
-              <ul class="list-disc list-inside text-sm">
+              <ul class="list-disc text-sm pl-5">
                 <li>2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）</li>
                 <li>2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站</li>
                 <li>2022 國立臺灣文學館 文學館古蹟導覽下載 網站</li>
@@ -125,7 +126,7 @@ import me from "/public/pic.jpeg";
                 <li>2021 桃園安麗空間 紐崔萊全程追朔 顯微鏡機構互動裝置</li>
                 <li>2021 桃園安麗空間 E-Spring 互動投影展示裝置</li>
               </ul>
-              <div class="font-bold mt-1 text-lg"><a href="https://www.behance.net/JinChengLiang" class="link">更多作品連結 →</a></div>
+              <div class="font-bold mt-1 text-lg"><a href="https://www.behance.net/JinChengLiang" target="_blank" class="link">更多作品連結 ↗</a></div>
             </template>
           </timelineItem>
           <timelineItem>
@@ -135,7 +136,7 @@ import me from "/public/pic.jpeg";
             <template #content
               >以Unity為主要開發工具，同時也按需求使用了Arduino與Raspberry Pi等不同的開發工具。<br />
               參與了多項互動開發：<br />
-              <ul class="list-disc list-inside text-sm">
+              <ul class="list-disc text-sm pl-5">
                 <li>2020 國立科學工藝博物館－邁向 AIoT 意象牆</li>
                 <li>2020 國立科學工藝博物館－AI鞋匠</li>
                 <li>2020 昇平戲院 座‧無虛席：昇平戲院 ╳ 臺灣老戲院特展</li>
@@ -162,10 +163,10 @@ import me from "/public/pic.jpeg";
           </timelineItem>
         </template>
       </timeline>
+      <div class="bg-gray-300 my-14 h-[1.5px] w-3/4 mx-auto" />
+      <portfolio link="https://www.behance.net/JinChengLiang"> 作品集 連結</portfolio>
     </div>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

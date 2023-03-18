@@ -49,7 +49,7 @@ html {
 
   .wrapInner {
     @apply px-20 py-14;
-    @apply xl:px-10 xl:py-5
+    @apply xl:px-10 xl:py-5 sm:px-3
   }
 
   .link {
