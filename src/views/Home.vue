@@ -164,7 +164,7 @@ import me from "/public/pic.jpeg";
         </template>
       </timeline>
       <div class="bg-gray-300 my-14 h-[1.5px] w-3/4 mx-auto" />
-      <portfolio link="https://www.behance.net/JinChengLiang"> 作品集 連結</portfolio>
+      <portfolio class="mb-5 sm:mb-10" link="https://www.behance.net/JinChengLiang"> 作品集 連結</portfolio>
     </div>
   </div>
 </template>
