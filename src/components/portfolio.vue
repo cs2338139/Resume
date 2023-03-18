@@ -8,8 +8,8 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="font-bold text-3xl text-center">
-    <a :href="link" target="_blank" class="link before:content-['👉']  before:mr-2"><slot /></a>
+  <div class="font-bold text-3xl text-center before:content-['👉'] before:mr-2 after:ml-3">
+    <a :href="link" target="_blank" class="link"><slot /></a>
   </div>
 </template>
 
