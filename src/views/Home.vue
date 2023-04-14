@@ -118,6 +118,7 @@ import me from "/public/pic.jpeg";
               開發領域開始不限於展場互動設計，同時也開始跨足了網站前端的領域，並且成為了公司的網站開發項目負責人。<br />
               開發了數個網站前端與參與互動設計：<br />
               <ul class="list-disc text-sm pl-5">
+                <li>2022 VIBE 400 網站<a href="project.vibe400.jinchengstudio.com" target="_blank" class="link font-bold ">網站連結↗</a></li>
                 <li>2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）<a href="https://project.ws.jinchengstudio.com/" target="_blank" class="link font-bold ">網站連結↗</a></li>
                 <li>2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站）<a href="https://picturebookart.com.tw/" target="_blank" class="link font-bold ">網站連結↗</a></li>
                 <li>2022 國立臺灣文學館 文學館古蹟導覽下載 網站</li>
