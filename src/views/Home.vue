@@ -29,10 +29,6 @@ import me from "/public/pic.jpeg";
       <introduction class="mb-10">
         <template #title>個人簡述</template>
         <template #content>
-          <!-- 曾作為工程師任職於互動設計公司，執行了多項互動設計相關的開發專案。<br />
-          我能夠善用各種不同的開發工具來達到專案的目的，而隨著自己的職涯規劃，也慢慢地從互動設計轉往網頁前端。在一次專案的需求下，我以自學的方式踏入了前端網頁的領域，同時也成為公司的網站開發案的負責人，獨立完成了數個網頁開發的專案。<br />
-          相比過去開發的互動App或是現場的互動機構裝置，我更喜歡網站的形式，它不用讓使用者特地去安裝App或是到現場才能觀看，只需要瀏覽器和網路就能夠將資訊與畫面傳遞給使用者，大大的推廣了作品的傳遞幅度，這樣的便捷讓我深深的著迷。<br />
-          在一頭栽入前端領域後，我養成了定期上Awwwards、The FWA等前端作品網站的習慣，在欣賞國內外厲害的作品的同時，也嘗試去解析他們可能使用的工具和達成效果的方式，講它們化為自己的記憶庫。<br/> -->
           有多年的軟體開發經歷，曾作為工程師任職於互動設計公司，執行了多項網頁與互動設計相關的開發專案，隨著職涯規劃，開始以網頁開發為主要項目。<br />
           我能夠善用各種不同的開發工具來達到專案的目的，喜歡嘗試不同的新東西，會研究沒有使用過的開發工具，或是不同的程式撰寫方法，來達到更有效的開發。<br />
           在閒暇之餘也會翻開曾經執行過的專案，重新檢視程式碼，思考著要如何以更好更有效的方式來撰寫，重新審視是當時的邏輯是否有不通順的地方，確保自己能夠不斷的進步。<br />
@@ -111,6 +107,26 @@ import me from "/public/pic.jpeg";
         <template #title>工作經歷</template>
         <template #content>
           <timelineItem>
+            <template #position>前端工程師</template>
+            <template #company>版塊設計 Block Studio</template>
+            <template #time>2023 / 5～</template>
+            <template #content>
+              版塊設計是台灣業界知名的網站設計公司，我在其擔任前端工程師，並參與了許多專案。<br />
+              使用的工具並不局限於常見的前端框架，同時也有Socket Sever、Shopify Liquid等不同開發類型。<br />
+              <ul class="list-disc text-sm pl-5">
+                <li>2023 KKBOX風雲榜 線上互動遊戲 - <b>網站開發</b></li>
+                <li>2023 板塊設計 官方網站 - <b>Socket Client & Sever、動態開發</b></li>
+                <li>2023 假期農場 - <b>後期開發與後台建制、資料串接</b></li>
+                <li>2023 Shopify 商店 Desidere 7.1 - <b>前端主題開發</b></li>
+                <li>2023 Shopify 商店 NCI Studio - <b>前端主題開發</b></li>
+                <li>2023 Organon-hhf - <b>網站開發</b></li>
+                <li>2023 維肯媒體 - <b>網站開發</b></li>
+                <li>2023 臺中州廳 城中串遊展覽 - <b>Socket Client & Sever</b></li>
+                <li>2023 臺中州廳 城中串遊展覽 意識樣貌 - <b>網站開發</b></li>
+              </ul>
+            </template>
+          </timelineItem>
+          <timelineItem>
             <template #position>前端工程師／互動工程師</template>
             <template #company>Pixelight.（愛迪斯科技 專案部）</template>
             <template #time>2020 / 10～2023 / 2</template>
@@ -118,9 +134,9 @@ import me from "/public/pic.jpeg";
               任職於公司專案部門，開發項目以網頁與互動設計為主，並且成為公司網站相關專案負責人。<br />
               開發了數個網站前端與參與互動設計：<br />
               <ul class="list-disc text-sm pl-5">
-                <!-- <li>2022 VIBE 400 網站<a href="project.vibe400.jinchengstudio.com" target="_blank" class="link font-bold ">網站連結↗</a></li> -->
-                <li>2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）<a href="https://project.ws.jinchengstudio.com/" target="_blank" class="link font-bold ">網站連結↗</a></li>
-                <li>2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站）<a href="https://picturebookart.com.tw/" target="_blank" class="link font-bold ">網站連結↗</a></li>
+                <li>2022 國立臺灣文學館 文學館古蹟AR導覽</li>
+                <li>2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）<a href="https://project.ws.jinchengstudio.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <li>2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站）<a href="https://picturebookart.com.tw/" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <li>2022 國立臺灣文學館 文學館古蹟導覽下載 網站</li>
                 <li>2022 國立臺灣文學館 光影裁縫店：冷不防 兒童繪本互動劇場</li>
                 <li>2021 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （初版）</li>

@@ -13,6 +13,10 @@ html {
   @apply sm:body-sm;
 }
 
+b {
+  font-weight: 700;
+}
+
 @layer utilities {
   .body-base {
     font-size: 16px;
@@ -44,12 +48,12 @@ html {
   }
   .wrap {
     @apply max-w-[1080px] relative mx-auto py-10 px-6;
-    @apply xl:px-2 xl:py-5
+    @apply xl:px-2 xl:py-5;
   }
 
   .wrapInner {
     @apply px-20 py-14;
-    @apply xl:px-10 xl:py-5 sm:px-3
+    @apply xl:px-10 xl:py-5 sm:px-3;
   }
 
   .link {
