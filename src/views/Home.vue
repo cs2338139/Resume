@@ -115,10 +115,10 @@ import me from "/public/pic.jpeg";
               使用的工具並不局限於常見的前端框架，同時也有Socket Sever、Shopify Liquid等不同開發類型。<br />
               <ul class="list-disc text-sm pl-5">
                 <li>2023 KKBOX風雲榜 線上互動遊戲 - <b>網站開發</b></li>
-                <li>2023 板塊設計 官方網站 - <b>Socket Client & Sever、動態開發</b></li>
-                <li>2023 假期農場 - <b>後期開發與後台建制、資料串接</b></li>
+                <li>2023 板塊設計 官方網站 - <b>Socket Client & Sever、動態開發</b> <a href="https://blockstudio.tw/" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <li>2023 假期農場 - <b>後期開發與後台建制、資料串接</b> <a href="https://holidayfarm.info/" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <li>2023 Shopify 商店 Desidere 7.1 - <b>前端主題開發</b></li>
-                <li>2023 Shopify 商店 NCI Studio - <b>前端主題開發</b></li>
+                <li>2023 Shopify 商店 NCI Studio - <b>前端主題開發</b> <a href="https://nci-studios.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <li>2023 Organon-hhf - <b>網站開發</b></li>
                 <li>2023 維肯媒體 - <b>網站開發</b></li>
                 <li>2023 臺中州廳 城中串遊展覽 - <b>Socket Client & Sever</b></li>
@@ -136,7 +136,7 @@ import me from "/public/pic.jpeg";
               <ul class="list-disc text-sm pl-5">
                 <li>2022 國立臺灣文學館 文學館古蹟AR導覽</li>
                 <li>2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）<a href="https://project.ws.jinchengstudio.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li>2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站）<a href="https://picturebookart.com.tw/" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <li>2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站 <a href="https://picturebookart.com.tw/" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <li>2022 國立臺灣文學館 文學館古蹟導覽下載 網站</li>
                 <li>2022 國立臺灣文學館 光影裁縫店：冷不防 兒童繪本互動劇場</li>
                 <li>2021 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （初版）</li>
@@ -144,7 +144,6 @@ import me from "/public/pic.jpeg";
                 <li>2021 桃園安麗空間 紐崔萊全程追朔 顯微鏡機構互動裝置</li>
                 <li>2021 桃園安麗空間 E-Spring 互動投影展示裝置</li>
               </ul>
-              <div class="font-bold mt-1 text-lg"><a href="https://www.behance.net/JinChengLiang" target="_blank" class="link">更多作品連結 ↗</a></div>
             </template>
           </timelineItem>
           <timelineItem>
