@@ -1,4 +1,7 @@
 <script setup>
+import { ref, reactive, onMounted } from "vue";
+import me from "/public/assets/images/resume/pic.jpeg";
+import data from "/public/assets/data.json";
 import info from "../components/info.vue";
 import skill from "../components/skill.vue";
 import skillCategory from "../components/skill-category.vue";
@@ -8,7 +11,40 @@ import introduction from "../components/introduction.vue";
 import timeline from "../components/timeline.vue";
 import timelineItem from "../components/timeline-Item.vue";
 import portfolio from "../components/portfolio.vue";
-import me from "/public/pic.jpeg";
+import popup from "../components/popup.vue";
+
+const projects = reactive({});
+const popupState = ref(false);
+const popupData = reactive({ data });
+
+function popupSwitch(value, key = null) {
+  popupState.value = value;
+  switch (value) {
+    case true: {
+      document.body.style.overflow = "hidden";
+      console.log(projects);
+      console.log(projects[key]);
+      console.log(key);
+      popupData.data = projects[key];
+      break;
+    }
+    case false: {
+      document.body.style.overflow = "auto";
+      break;
+    }
+  }
+  // console.log(value);
+}
+
+onMounted(() => {
+  // console.log(data);
+  data.forEach((x) => {
+    const key = x.key;
+    projects[key] = x;
+  });
+
+  // console.log(projects.ws_new);
+});
 </script>
 
 <template>
@@ -83,8 +119,7 @@ import me from "/public/pic.jpeg";
               <skillTable>
                 <template #title>互動</template>
                 <template #content>
-                  <skillTableItem>C＃</skillTableItem>
-                  <skillTableItem>Unity</skillTableItem>
+                  <skillTableItem>Unity／C＃</skillTableItem>
                   <skillTableItem>VR (HTC Vive／Oculus／Google CardBoard)</skillTableItem>
                   <skillTableItem>AR (AR Foundation／AR Kit／AR Core)</skillTableItem>
                   <skillTableItem>Arduino</skillTableItem>
@@ -130,7 +165,7 @@ import me from "/public/pic.jpeg";
           </timelineItem>
           <timelineItem>
             <template #position>前端工程師／互動工程師</template>
-            <template #company>愛迪斯科技 專案部／Pixelight</template>
+            <template #company>愛迪斯科技 專案部 ／Pixelight</template>
             <template #time>2020 / 10～2023 / 2</template>
             <template #content>
               任職於公司專案部門，開發項目以網頁與互動設計為主，並且成為公司網站相關專案負責人。<br />
@@ -183,8 +218,9 @@ import me from "/public/pic.jpeg";
         </template>
       </timeline>
       <div class="bg-gray-300 my-14 h-[1.5px] w-3/4 mx-auto" />
-      <portfolio class="mb-5 sm:mb-10" link="https://www.behance.net/JinChengLiang"> 作品集 連結</portfolio>
+      <portfolio @open="popupSwitch(true, 'ws_new')" class="mb-5 sm:mb-10" link="https://www.behance.net/JinChengLiang"> 作品集</portfolio>
     </div>
+    <popup :data="popupData.data" v-if="popupState" @close="popupSwitch(false)"> </popup>
   </div>
 </template>
 

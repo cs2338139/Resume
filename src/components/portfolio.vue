@@ -1,17 +1,17 @@
 <script setup>
-const props = defineProps({
-  link: {
-    type: String,
-    default: "",
-  },
-});
+// const props = defineProps({
+//   link: {
+//     type: String,
+//     default: "",
+//   },
+// });
+
+const emits = defineEmits(["open"]);
 </script>
 
 <template>
-  <div class="font-bold text-4xl sm:text-3xl text-center">
-    <div class="inline-block w-10">👉</div>
-    <a :href="link" target="_blank" class="link"><slot /></a>
-    <div class="inline-block w-10"></div>
+  <div class="flex justify-center items-center w-full">
+    <button @click="emits('open')" class="font-bold text-4xl sm:text-3xl origin-center hover:scale-110 hover:text-blue-500 transition-all duration-300">👉 <slot /> 👈</button>
   </div>
 </template>
 
