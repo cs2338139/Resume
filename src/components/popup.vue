@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive, toRefs, onMounted } from "vue";
+import { ref, reactive, toRefs, computed, onMounted } from "vue";
 import popupTable from "../components/popup-Table.vue";
 import popupTableItem from "../components/popup-Table-Item.vue";
 import popupInfo from "../components/popup-Info.vue";
@@ -12,6 +12,12 @@ const props = defineProps({
 
 const emits = defineEmits(["close"]);
 const { data } = toRefs(props);
+
+const baseUrl = computed(() => {
+  console.log(process.env.NODE_ENV);
+  if (process.env.NODE_ENV === "development") return "/public";
+  return "";
+});
 
 onMounted(() => {
   console.log(data.value);
@@ -29,7 +35,7 @@ onMounted(() => {
       </button>
     </div>
     <div class="relative max-w-[1200px] p-12 w-full gap-10 h-[90vh] overflow-auto bg-white flex flex-col items-center">
-      <img v-if="data?.cover" :src="`/public/assets/images/portfolio/${data.key}/${data.cover}`" alt="" />
+      <img v-if="data?.cover" :src="`${baseUrl}/assets/images/portfolio/${data.key}/${data.cover}`" alt="" />
       <div class="px-20 flex flex-col items-start gap-8">
         <div v-if="data?.name" class="text-3xl font-bold">{{ data?.name }}</div>
         <div class="text-lg font-light text-gray-800 flex flex-col gap-1" v-if="data?.desc && data?.desc.length != 0">
@@ -71,7 +77,7 @@ onMounted(() => {
       <div class="flex flex-col gap-8 justify-center items-center" v-if="data?.images && data?.images.length != 0">
         <div v-for="(imgs, index) in data?.images" class="justify-between items-start flex gap-2" :key="index">
           <div v-for="(img, _index) in imgs" :key="_index">
-            <img :src="`/public/assets/images/portfolio/${data.key}/${img}`" alt="" />
+            <img :src="`${baseUrl}/assets/images/portfolio/${data.key}/${img}`" alt="" />
           </div>
         </div>
       </div>
