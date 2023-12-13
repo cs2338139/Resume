@@ -19,7 +19,7 @@ import me from "/public/pic.jpeg";
         <template #enName>LIANG JIN CHENG</template>
         <template #birthday>1995／12／08</template>
         <template #skill>前端網頁／Unity／VR／互動工程／遊戲開發</template>
-        <template #education>南臺科技大學 多媒體與電腦娛樂科學系</template>
+        <template #education>南臺科技大學 多媒體與電腦娛樂科學系 / 遊戲工程</template>
         <template #place>臺北，Taiwan</template>
         <template #mail>cs2338139@gmail.com</template>
         <template #phone>0975-601935</template>
@@ -45,31 +45,33 @@ import me from "/public/pic.jpeg";
               <skillTable>
                 <template #title>基礎技能</template>
                 <template #content>
-                  <skillTableItem>HTML5</skillTableItem>
-                  <skillTableItem>CSS</skillTableItem>
-                  <skillTableItem>javascript／Tailwind</skillTableItem>
+                  <skillTableItem>HTML5 / CSS / javascript</skillTableItem>
                   <skillTableItem>RWD 響應式網頁規劃</skillTableItem>
+                  <skillTableItem>Vue 3</skillTableItem>
+                  <skillTableItem>Nuxt 3</skillTableItem>
+                  <skillTableItem>GraphQL API</skillTableItem>
+                  <skillTableItem>RESTful API</skillTableItem>
                 </template>
               </skillTable>
               <skillTable>
-                <template #title>框架與工具</template>
+                <template #title>工具</template>
                 <template #content>
-                  <skillTableItem>Vue 3</skillTableItem>
-                  <skillTableItem>Nuxt 3</skillTableItem>
-                  <skillTableItem>Vue Router</skillTableItem>
+                  <skillTableItem>Socket.io</skillTableItem>
                   <skillTableItem>Tailwind</skillTableItem>
-                  <skillTableItem>GraphQL</skillTableItem>
-                  <skillTableItem>GSAP</skillTableItem>
+                  <skillTableItem>GSAP / ScrollTrigger</skillTableItem>
                   <skillTableItem>i18n</skillTableItem>
                   <skillTableItem>three.js</skillTableItem>
                   <skillTableItem>Axios</skillTableItem>
+                  <skillTableItem>Liquid</skillTableItem>
+                  <skillTableItem>P5.js</skillTableItem>
+                  <skillTableItem>Matter.js</skillTableItem>
+                  <skillTableItem>Swiper.js</skillTableItem>
                 </template>
               </skillTable>
               <skillTable>
                 <template #title>其他</template>
                 <template #content>
-                  <skillTableItem>Vite</skillTableItem>
-                  <skillTableItem>WordPress（作爲CMS，使用GraphQL與前端串接）</skillTableItem>
+                  <skillTableItem>WordPress（作爲CMS）</skillTableItem>
                 </template>
               </skillTable>
             </template>
@@ -79,12 +81,12 @@ import me from "/public/pic.jpeg";
             <template #title>其他</template>
             <template #content>
               <skillTable>
-                <template #title>互動設計</template>
+                <template #title>互動</template>
                 <template #content>
-                  <skillTableItem>Unity／C＃</skillTableItem>
+                  <skillTableItem>C＃</skillTableItem>
+                  <skillTableItem>Unity</skillTableItem>
                   <skillTableItem>VR (HTC Vive／Oculus／Google CardBoard)</skillTableItem>
                   <skillTableItem>AR (AR Foundation／AR Kit／AR Core)</skillTableItem>
-                  <!-- <skillTableItem>Processing</skillTableItem> -->
                   <skillTableItem>Arduino</skillTableItem>
                   <skillTableItem>Kinect／Azure Kinect</skillTableItem>
                   <skillTableItem>Radar sensor</skillTableItem>
@@ -94,7 +96,7 @@ import me from "/public/pic.jpeg";
               <skillTable>
                 <template #title>其他</template>
                 <template #content>
-                  <skillTableItem>Git／GitHub</skillTableItem>
+                  <skillTableItem>Git</skillTableItem>
                   <skillTableItem>Json</skillTableItem>
                 </template>
               </skillTable>
@@ -128,7 +130,7 @@ import me from "/public/pic.jpeg";
           </timelineItem>
           <timelineItem>
             <template #position>前端工程師／互動工程師</template>
-            <template #company>Pixelight.（愛迪斯科技 專案部）</template>
+            <template #company>愛迪斯科技 專案部／Pixelight</template>
             <template #time>2020 / 10～2023 / 2</template>
             <template #content>
               任職於公司專案部門，開發項目以網頁與互動設計為主，並且成為公司網站相關專案負責人。<br />
