@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite NODE_ENV=development",
-    "build": "vite build NODE_ENV=production",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
