@@ -1,7 +1,7 @@
 <script setup>
 import { ref, reactive, toRefs, computed, onMounted, watchEffect } from "vue";
-import popupSingle from "../components/popup-single.vue";
-import popupPortfolio from "../components/popup-Portfolio.vue";
+import popupSingle from "./popup-Single.vue";
+import popupPortfolio from "./popup-Portfolio.vue";
 const props = defineProps({
   _data: {
     type: Object,
