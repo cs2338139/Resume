@@ -75,6 +75,10 @@ const baseUrl = computed(() => {
   return "";
 });
 
+const hasLinkItemStyle = computed(() => {
+  return "hover:scale-105 transition duration-300 hover:text-blue-500 origin-left cursor-pointer";
+});
+
 provide("baseUrl", baseUrl);
 </script>
 
@@ -203,8 +207,8 @@ provide("baseUrl", baseUrl);
               開發了數個網站前端與參與互動設計：<br />
               <ul class="list-disc text-sm pl-5">
                 <li>2022 國立臺灣文學館 文學館古蹟AR導覽</li>
-                <li @click="changeUrlQuery('ws_new')">2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）<a href="https://project.ws.jinchengstudio.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li>2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站 <a href="https://picturebookart.com.tw/" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <li @click="changeUrlQuery('ws_new')" :class="hasLinkItemStyle">2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）</li>
+                <li>2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站</li>
                 <li>2022 國立臺灣文學館 文學館古蹟導覽下載 網站</li>
                 <li>2022 國立臺灣文學館 光影裁縫店：冷不防 兒童繪本互動劇場</li>
                 <li>2021 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （初版）</li>

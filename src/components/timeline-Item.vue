@@ -17,7 +17,7 @@ const props = defineProps({});
       <div class="text-justify">
         <div class="hidden text-xl font-bold sm:block"><slot name="company" /></div>
         <div class="mb-1 text-lg font-semibold"><slot name="time" /></div>
-        <div class=""><slot name="content" /></div>
+        <div><slot name="content" /></div>
       </div>
     </div>
   </div>
