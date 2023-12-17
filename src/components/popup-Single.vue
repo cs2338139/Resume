@@ -1,8 +1,8 @@
 <script setup>
 import { inject, toRefs } from "vue";
-import popupSingleTable from "./popup-Single-Table.vue";
-import popupSingleTableItem from "./popup-Single-Table-Item.vue";
-import popupSingleInfo from "./popup-Single-Info.vue";
+import popupSingleTable from "../components/popup-Single-Table.vue";
+import popupSingleTableItem from "../components/popup-Single-Table-Item.vue";
+import popupSingleInfo from "../components/popup-Single-Info.vue";
 
 const props = defineProps({
   data: {
