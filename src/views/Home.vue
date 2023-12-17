@@ -1,5 +1,6 @@
 <script setup>
-import { ref, reactive, onMounted } from "vue";
+import { ref, reactive, computed, onMounted, watchEffect, provide } from "vue";
+import { useRouter, useRoute } from "vue-router";
 import me from "/public/assets/images/resume/pic.jpeg";
 import data from "/public/assets/data.json";
 import info from "../components/info.vue";
@@ -10,12 +11,28 @@ import skillTableItem from "../components/skill-Table-Item.vue";
 import introduction from "../components/introduction.vue";
 import timeline from "../components/timeline.vue";
 import timelineItem from "../components/timeline-Item.vue";
-import portfolio from "../components/portfolio.vue";
+import buttonPortfolio from "../components/buttonPortfolio.vue";
 import popup from "../components/popup.vue";
 
 const projects = reactive({});
+const currentKey = ref("");
 const popupState = ref(false);
-const popupData = reactive({ data });
+// const popupData = reactive({ data });
+const router = useRouter();
+const route = useRoute();
+
+function changeUrlQuery(value) {
+  if (!value) {
+    router.push({
+      path: "/",
+    });
+    return;
+  }
+  router.push({
+    path: "/",
+    query: { portfolio: value },
+  });
+}
 
 function popupSwitch(value, key = null) {
   popupState.value = value;
@@ -23,9 +40,10 @@ function popupSwitch(value, key = null) {
     case true: {
       document.body.style.overflow = "hidden";
       console.log(projects);
-      console.log(projects[key]);
       console.log(key);
-      popupData.data = projects[key];
+      currentKey.value = key;
+      console.log(currentKey.value);
+      // popupData.data = projects[key];
       break;
     }
     case false: {
@@ -37,14 +55,27 @@ function popupSwitch(value, key = null) {
 }
 
 onMounted(() => {
-  // console.log(data);
   data.forEach((x) => {
     const key = x.key;
     projects[key] = x;
   });
 
-  // console.log(projects.ws_new);
+  watchEffect(() => {
+    console.log(route.query.portfolio);
+    if (route.query.portfolio) {
+      popupSwitch(true, route.query.portfolio);
+    } else {
+      popupSwitch(false);
+    }
+  });
 });
+
+const baseUrl = computed(() => {
+  if (process.env.NODE_ENV === "development") return "/public";
+  return "";
+});
+
+provide("baseUrl", baseUrl);
 </script>
 
 <template>
@@ -172,7 +203,7 @@ onMounted(() => {
               開發了數個網站前端與參與互動設計：<br />
               <ul class="list-disc text-sm pl-5">
                 <li>2022 國立臺灣文學館 文學館古蹟AR導覽</li>
-                <li>2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）<a href="https://project.ws.jinchengstudio.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <li @click="changeUrlQuery('ws_new')">2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）<a href="https://project.ws.jinchengstudio.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <li>2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站 <a href="https://picturebookart.com.tw/" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <li>2022 國立臺灣文學館 文學館古蹟導覽下載 網站</li>
                 <li>2022 國立臺灣文學館 光影裁縫店：冷不防 兒童繪本互動劇場</li>
@@ -218,9 +249,9 @@ onMounted(() => {
         </template>
       </timeline>
       <div class="bg-gray-300 my-14 h-[1.5px] w-3/4 mx-auto" />
-      <portfolio @open="popupSwitch(true, 'ws_new')" class="mb-5 sm:mb-10" link="https://www.behance.net/JinChengLiang"> 作品集</portfolio>
+      <buttonPortfolio @open="changeUrlQuery('portfolio')" class="mb-5 sm:mb-10" link="https://www.behance.net/JinChengLiang"> 作品集</buttonPortfolio>
     </div>
-    <popup :data="popupData.data" v-if="popupState" @close="popupSwitch(false)"> </popup>
+    <popup :_data="projects" :_key="currentKey" v-if="popupState" @close="changeUrlQuery()" />
   </div>
 </template>
 
