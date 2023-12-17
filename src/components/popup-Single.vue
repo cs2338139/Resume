@@ -17,14 +17,14 @@ const baseUrl = inject("baseUrl");
 </script>
 
 <template>
-  <div>
+  <div class="flex flex-col items-center gap-10 md:gap-5">
     <img v-if="data?.cover" :src="`${baseUrl}/assets/images/portfolio/${data.key}/${data.cover}`" alt="" />
-    <div class="px-20 flex flex-col items-start gap-8">
-      <div v-if="data?.name" class="text-3xl font-bold">{{ data?.name }}</div>
-      <div class="text-lg font-light text-gray-800 flex flex-col gap-1" v-if="data?.desc && data?.desc.length != 0">
+    <div class="px-20 lg:px-5 md:px-0 flex flex-col items-start gap-8 md:gap-5">
+      <div v-if="data?.name" class="text-3xl font-bold md:text-2xl">{{ data?.name }}</div>
+      <div class="text-lg md:text-base font-light text-gray-800 flex flex-col gap-1" v-if="data?.desc && data?.desc.length != 0">
         <div class="" v-for="(d, index) in data?.desc" :key="index">{{ d }}</div>
       </div>
-      <div class="text-xl font-light">
+      <div class="text-xl font-light md:text-lg">
         <popupSingleInfo v-if="data?.type">
           <template #title>類型：</template>
           {{ data?.type }}
@@ -42,7 +42,7 @@ const baseUrl = inject("baseUrl");
           <a :href="data?.link" class="text-blue-500" target="_blank" rel="noreferrer noopener">{{ data?.link }}</a>
         </popupSingleInfo>
       </div>
-      <div class="flex justify-between w-full" v-if="(data?.works && data?.works.length != 0) || (data?.tools && data?.tools.length != 0)">
+      <div class="flex justify-between w-full md:flex-col gap-5" v-if="(data?.works && data?.works.length != 0) || (data?.tools && data?.tools.length != 0)">
         <popupSingleTable v-if="data?.works && data?.works.length != 0">
           <template #title>工作項目：</template>
           <template #content>
@@ -57,8 +57,8 @@ const baseUrl = inject("baseUrl");
         </popupSingleTable>
       </div>
     </div>
-    <div class="flex flex-col gap-8 justify-center items-center" v-if="data?.images && data?.images.length != 0">
-      <div v-for="(imgs, index) in data?.images" class="justify-between items-start flex gap-2" :key="index">
+    <div class="flex flex-col gap-8 justify-center items-center md:gap-2" v-if="data?.images && data?.images.length != 0">
+      <div v-for="(imgs, index) in data?.images" class="justify-between items-start flex gap-2 md:flex-col" :key="index">
         <div v-for="(img, _index) in imgs" :key="_index">
           <img :src="`${baseUrl}/assets/images/portfolio/${data.key}/${img}`" alt="" />
         </div>

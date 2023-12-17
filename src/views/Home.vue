@@ -39,11 +39,7 @@ function popupSwitch(value, key = null) {
   switch (value) {
     case true: {
       document.body.style.overflow = "hidden";
-      console.log(projects);
-      console.log(key);
       currentKey.value = key;
-      console.log(currentKey.value);
-      // popupData.data = projects[key];
       break;
     }
     case false: {
@@ -51,7 +47,6 @@ function popupSwitch(value, key = null) {
       break;
     }
   }
-  // console.log(value);
 }
 
 onMounted(() => {
@@ -76,10 +71,11 @@ const baseUrl = computed(() => {
 });
 
 const hasLinkItemStyle = computed(() => {
-  return "hover:scale-105 transition duration-300 hover:text-blue-500 origin-left cursor-pointer";
+  return "hover:scale-105 transition duration-300 hover:text-white hover:bg-black cursor-pointer";
 });
 
 provide("baseUrl", baseUrl);
+provide("changeUrlQuery", changeUrlQuery);
 </script>
 
 <template>
@@ -255,7 +251,7 @@ provide("baseUrl", baseUrl);
       <div class="bg-gray-300 my-14 h-[1.5px] w-3/4 mx-auto" />
       <buttonPortfolio @open="changeUrlQuery('portfolio')" class="mb-5 sm:mb-10" link="https://www.behance.net/JinChengLiang"> 作品集</buttonPortfolio>
     </div>
-    <popup :_data="projects" :_key="currentKey" v-if="popupState" @close="changeUrlQuery()" />
+    <popup :_data="projects" :_key="currentKey" v-if="popupState" />
   </div>
 </template>
 
