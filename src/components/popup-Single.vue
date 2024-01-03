@@ -1,5 +1,5 @@
 <script setup>
-import { inject, toRefs } from "vue";
+import { inject, toRefs, onMounted, watchEffect, computed } from "vue";
 import popupSingleTable from "./popup-Single-Table.vue";
 import popupSingleTableItem from "./popup-Single-Table-Item.vue";
 import popupSingleInfo from "./popup-Single-Info.vue";
@@ -14,6 +14,18 @@ const props = defineProps({
 const { data } = toRefs(props);
 
 const baseUrl = inject("baseUrl");
+
+onMounted(() => {
+  watchEffect(() => {
+    console.log(data.value?.links);
+  });
+});
+
+// const links = computed(() => {
+//   const links = data.value?.links;
+//   console.log(links);
+//   return links;
+// });
 </script>
 
 <template>
@@ -37,9 +49,13 @@ const baseUrl = inject("baseUrl");
           <template #title>客戶：</template>
           {{ data?.client }}
         </popupSingleInfo>
-        <popupSingleInfo v-if="data?.link">
+        <popupSingleInfo v-if="data?.links && data?.links.length != 0">
           <template #title>連結：</template>
-          <a :href="data?.link" class="text-blue-500" target="_blank" rel="noreferrer noopener">{{ data?.link }}</a>
+          <template v-for="(_link, index) in data?.links" :key="index">
+            <a v-if="_link?.url" class="text-blue-500" :href="_link?.url" target="_blank">{{ _link?.title }}</a>
+            <span v-else class="italic font-medium text-gray-500">{{ _link?.title }}</span>
+            <span :class="{ hidden: index === data.links.length - 1 }">｜</span>
+          </template>
         </popupSingleInfo>
       </div>
       <div class="flex justify-between w-full md:flex-col gap-5" v-if="(data?.works && data?.works.length != 0) || (data?.tools && data?.tools.length != 0)">
@@ -53,6 +69,12 @@ const baseUrl = inject("baseUrl");
           <template #title>使用工具：</template>
           <template #content>
             <popupSingleTableItem v-for="(tool, index) in data?.tools" :key="index">{{ tool }}</popupSingleTableItem>
+          </template>
+        </popupSingleTable>
+        <popupSingleTable v-if="data?.interactions && data?.interactions.length != 0">
+          <template #title>互動方式：</template>
+          <template #content>
+            <popupSingleTableItem v-for="(tool, index) in data?.interactions" :key="index">{{ tool }}</popupSingleTableItem>
           </template>
         </popupSingleTable>
       </div>

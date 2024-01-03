@@ -204,10 +204,11 @@ provide("changeUrlQuery", changeUrlQuery);
               <ul class="list-disc text-sm pl-5">
                 <li>2022 國立臺灣文學館 文學館古蹟AR導覽</li>
                 <li @click="changeUrlQuery('ws_new')" :class="hasLinkItemStyle">2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）</li>
-                <li>2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站</li>
-                <li>2022 國立臺灣文學館 文學館古蹟導覽下載 網站</li>
+                <li @click="changeUrlQuery('ae_web')" :class="hasLinkItemStyle">2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站</li>
+                <li @click="changeUrlQuery('ws_build')" :class="hasLinkItemStyle">2022 國立臺灣文學館 文學館古蹟導覽下載 網站</li>
                 <li>2022 國立臺灣文學館 光影裁縫店：冷不防 兒童繪本互動劇場</li>
-                <li>2021 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （初版）</li>
+                <li @click="changeUrlQuery('ws_old')" :class="hasLinkItemStyle">2021 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （初版）</li>
+                <li @click="changeUrlQuery('ws_ar_ele')" :class="hasLinkItemStyle">2021 國立臺灣文學館 摺紙像偶AR 互動AR遊戲</li>
                 <li>2021 桃園安麗空間 賦能區 互動體感裝置</li>
                 <li>2021 桃園安麗空間 紐崔萊全程追朔 顯微鏡機構互動裝置</li>
                 <li>2021 桃園安麗空間 E-Spring 互動投影展示裝置</li>
@@ -231,18 +232,18 @@ provide("changeUrlQuery", changeUrlQuery);
             </template>
           </timelineItem>
           <timelineItem>
-            <template #position>Unity程式人員</template>
+            <template #position>程式負責人</template>
             <template #company>STEAMNANO</template>
             <template #time>2017 / 9～2018 / 4</template>
             <template #content>入圍2018 青春設計節、放視大賞、金點新秀、Ａ＋創意季，並且獲得青春設計節-互動科技與遊戲設計類「金獎」。</template>
           </timelineItem>
           <timelineItem>
-            <template #position>Unity程式人員</template>
+            <template #position>程式負責人</template>
             <template #company>LOVEGOD!</template>
             <template #time>2017 / 2～2017 / 6</template>
           </timelineItem>
           <timelineItem>
-            <template #position>Unity程式人員</template>
+            <template #position>程式負責人</template>
             <template #company>GODOG</template>
             <template #time>2016 / 9～2017 / 1</template>
           </timelineItem>
