@@ -225,8 +225,8 @@ provide("changeUrlQuery", changeUrlQuery);
               >以Unity為主要開發工具，同時也按需求使用了Arduino與Raspberry Pi等不同的開發工具。<br />
               參與了多項互動開發：<br />
               <ul class="list-disc text-sm pl-5">
-                <li>2020 國立科學工藝博物館－邁向 AIoT 意象牆</li>
-                <li @click="changeUrlQuery('ai_shoes_maker')" :class="hasLinkItemStyle">2020 國立科學工藝博物館－AI鞋匠</li>
+                <li>2020 國立科學工藝博物館 邁向 AIoT 意象牆</li>
+                <li @click="changeUrlQuery('ai_shoes_maker')" :class="hasLinkItemStyle">2020 國立科學工藝博物館 AI鞋匠 互動裝置</li>
                 <li>2020 昇平戲院 座‧無虛席：昇平戲院 ╳ 臺灣老戲院特展</li>
                 <li @click="changeUrlQuery('play_flower')" :class="hasLinkItemStyle">2020 玩花數位VR體驗</li>
                 <li>2020 尋常茶VR體驗</li>
@@ -237,7 +237,12 @@ provide("changeUrlQuery", changeUrlQuery);
             <template #position>程式負責人</template>
             <template #company>STEAMNANO</template>
             <template #time>2017 / 9～2018 / 4</template>
-            <template #content>入圍2018 青春設計節、放視大賞、金點新秀、Ａ＋創意季，並且獲得青春設計節-互動科技與遊戲設計類「金獎」。</template>
+            <template #content
+              >入圍2018 青春設計節、放視大賞、金點新秀、Ａ＋創意季，並且獲得青春設計節-互動科技與遊戲設計類「金獎」。<br />
+              <ul class="list-disc text-sm pl-5">
+                <li @click="changeUrlQuery('steam_nano')" :class="hasLinkItemStyle">2018 STEAMNANO 數位遊戲</li>
+              </ul>
+            </template>
           </timelineItem>
           <timelineItem>
             <template #position>程式負責人</template>
@@ -248,6 +253,11 @@ provide("changeUrlQuery", changeUrlQuery);
             <template #position>程式負責人</template>
             <template #company>GODOG</template>
             <template #time>2016 / 9～2017 / 1</template>
+            <template #content>
+              <ul class="list-disc text-sm pl-5">
+                <li @click="changeUrlQuery('godog')" :class="hasLinkItemStyle">2016 GODOG 數位遊戲</li>
+              </ul>
+            </template>
           </timelineItem>
         </template>
       </timeline>
