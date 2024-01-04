@@ -206,12 +206,14 @@ provide("changeUrlQuery", changeUrlQuery);
                 <li @click="changeUrlQuery('ws_new')" :class="hasLinkItemStyle">2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）</li>
                 <li @click="changeUrlQuery('ae_web')" :class="hasLinkItemStyle">2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站</li>
                 <li @click="changeUrlQuery('ws_build')" :class="hasLinkItemStyle">2022 國立臺灣文學館 文學館古蹟導覽下載 網站</li>
-                <li>2022 國立臺灣文學館 光影裁縫店：冷不防 兒童繪本互動劇場</li>
+                <li @click="changeUrlQuery('ws_tailor')" :class="hasLinkItemStyle">2022 國立臺灣文學館 光影裁縫店：冷不防 兒童繪本互動劇場</li>
                 <li @click="changeUrlQuery('ws_old')" :class="hasLinkItemStyle">2021 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （初版）</li>
                 <li @click="changeUrlQuery('ws_ar_ele')" :class="hasLinkItemStyle">2021 國立臺灣文學館 摺紙像偶AR 互動AR遊戲</li>
                 <li>2021 桃園安麗空間 賦能區 互動體感裝置</li>
                 <li>2021 桃園安麗空間 紐崔萊全程追朔 顯微鏡機構互動裝置</li>
                 <li>2021 桃園安麗空間 E-Spring 互動投影展示裝置</li>
+                <li @click="changeUrlQuery('ws_island')" :class="hasLinkItemStyle">2020 國立臺灣文學館 夢獸之島 多平台VR遊戲</li>
+                <li @click="changeUrlQuery('little_son')" :class="hasLinkItemStyle">2020 小兒子AR大冒險 互動AR遊戲APP</li>
               </ul>
             </template>
           </timelineItem>
@@ -224,9 +226,9 @@ provide("changeUrlQuery", changeUrlQuery);
               參與了多項互動開發：<br />
               <ul class="list-disc text-sm pl-5">
                 <li>2020 國立科學工藝博物館－邁向 AIoT 意象牆</li>
-                <li>2020 國立科學工藝博物館－AI鞋匠</li>
+                <li @click="changeUrlQuery('ai_shoes_maker')" :class="hasLinkItemStyle">2020 國立科學工藝博物館－AI鞋匠</li>
                 <li>2020 昇平戲院 座‧無虛席：昇平戲院 ╳ 臺灣老戲院特展</li>
-                <li>2020 玩花數位VR體驗</li>
+                <li @click="changeUrlQuery('play_flower')" :class="hasLinkItemStyle">2020 玩花數位VR體驗</li>
                 <li>2020 尋常茶VR體驗</li>
               </ul>
             </template>
