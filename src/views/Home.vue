@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive, computed, onMounted, watchEffect, provide } from "vue";
+import { ref, reactive, computed, onMounted, watchEffect, provide, watch } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import me from "/public/assets/images/resume/pic.jpeg";
 import data from "/public/assets/data.json";
@@ -50,19 +50,29 @@ function popupSwitch(value, key = null) {
 }
 
 onMounted(() => {
+
+  document.body.addEventListener("keyup", (e) => {
+    if(popupState.value === false) return;
+    if (e.key === "Escape") {
+      // popupSwitch(false);
+      router.push({
+      path: "/",
+    });
+    }
+  });
   data.forEach((x) => {
     const key = x.key;
     projects[key] = x;
   });
 
-  watchEffect(() => {
-    console.log(route.query.portfolio);
-    if (route.query.portfolio) {
-      popupSwitch(true, route.query.portfolio);
+
+  watch(()=>route.query.portfolio, (value) => {
+    if (value) {
+      popupSwitch(true, value);
     } else {
       popupSwitch(false);
     }
-  });
+  },{immediate:true});
 });
 
 const baseUrl = computed(() => {
@@ -90,16 +100,29 @@ provide("changeUrlQuery", changeUrlQuery);
         <template #place>臺北，Taiwan</template>
         <template #mail>cs2338139@gmail.com</template>
         <template #phone>0975-601935</template>
-        <template #portfolio>Behance 作品集 ↗</template>
+        <!-- <template #portfolio>Behance 作品集 ↗</template> -->
       </info>
 
       <introduction class="mb-10">
         <template #title>個人簡述</template>
         <template #content>
-          有多年的軟體開發經歷，曾作為工程師任職於互動設計公司，執行了多項網頁與互動設計相關的開發專案，隨著職涯規劃，開始以網頁開發為主要項目。<br />
+          <!-- 有多年的軟體開發經歷，曾作為工程師任職於互動設計公司，執行了多項網頁與互動設計相關的開發專案，隨著職涯規劃，開始以網頁開發為主要項目。<br />
           我能夠善用各種不同的開發工具來達到專案的目的，喜歡嘗試不同的新東西，會研究沒有使用過的開發工具，或是不同的程式撰寫方法，來達到更有效的開發。<br />
           在閒暇之餘也會翻開曾經執行過的專案，重新檢視程式碼，思考著要如何以更好更有效的方式來撰寫，重新審視是當時的邏輯是否有不通順的地方，確保自己能夠不斷的進步。<br />
-          同時也會把它們有趣的部分獨立出來嘗試做成一個獨立的side project。<br />
+          同時也會把它們有趣的部分獨立出來嘗試做成一個獨立的side project。<br /> -->
+          擁有4年軟體開發經驗的軟體工程師，專注於前端開發和互動設計。<br />
+          參與了數個專案的開發，大多以網站前端開發為主，但也有APP、VR/AR，線下展覽互動裝置開發的經驗。<br />
+          <br />
+          主要技術棧包括：<br />
+          前端：Vue.js (Nuxt.js), React.js, JavaScript, HTML, CSS, Tailwind<br />
+          後端：PHP, WordPress<br />
+          其他技術：Docker, AWS EC2, Socket.io, Git<br />
+          動畫庫：GSAP, p5.js<br />
+          <br />
+          擅長前後端分離架構的開發，並能夠使用Docker進行專案部署。在版塊設計期間，從無到有，參與了多個高度互動的網站專案，除了切版工作外，更專注於複雜的JavaScript以實現豐富的動態效果與功能實踐。<br />
+          曾主導基於Socket的大型互動展覽項目，負責整體架構設計和核心功能實現。<br />
+          此外，也具有Shopify電商平台的開發經驗。<br />
+          隨著經驗的積累，正逐步向產品開發方向發展，擴展技術棧至React.js，致力於創造更具影響力的數位體驗。<br />
         </template>
       </introduction>
 
@@ -116,8 +139,8 @@ provide("changeUrlQuery", changeUrlQuery);
                   <skillTableItem>RWD 響應式網頁規劃</skillTableItem>
                   <skillTableItem>Vue 3</skillTableItem>
                   <skillTableItem>Nuxt 3</skillTableItem>
-                  <skillTableItem>GraphQL API</skillTableItem>
-                  <skillTableItem>RESTful API</skillTableItem>
+                  <!-- <skillTableItem>GraphQL API</skillTableItem> -->
+                  <!-- <skillTableItem>RESTful API</skillTableItem> -->
                 </template>
               </skillTable>
               <skillTable>
@@ -156,14 +179,14 @@ provide("changeUrlQuery", changeUrlQuery);
                   <skillTableItem>Arduino</skillTableItem>
                   <skillTableItem>Kinect／Azure Kinect</skillTableItem>
                   <skillTableItem>Radar sensor</skillTableItem>
-                  <skillTableItem>多畫面融接投影</skillTableItem>
+                  <!-- <skillTableItem>多畫面融接投影</skillTableItem> -->
                 </template>
               </skillTable>
               <skillTable>
                 <template #title>其他</template>
                 <template #content>
                   <skillTableItem>Git</skillTableItem>
-                  <skillTableItem>Json</skillTableItem>
+                  <!-- <skillTableItem>Json</skillTableItem> -->
                 </template>
               </skillTable>
             </template>
@@ -182,15 +205,20 @@ provide("changeUrlQuery", changeUrlQuery);
               版塊設計是台灣業界知名的網站設計公司，我在其擔任前端工程師，並參與了許多專案。<br />
               使用的工具並不局限於常見的前端框架，同時也有Socket Sever、Shopify Liquid等不同開發類型。<br />
               <ul class="list-disc text-sm pl-5">
-                <li>2023 KKBOX風雲榜 線上互動遊戲 - <b>網站開發</b></li>
-                <li>2023 板塊設計 官方網站 - <b>Socket Client & Sever、動態開發</b> <a href="https://blockstudio.tw/" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li>2023 假期農場 - <b>後期開發與後台建制、資料串接</b> <a href="https://holidayfarm.info/" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li>2023 Shopify 商店 Desidere 7.1 - <b>前端主題開發</b></li>
-                <li>2023 Shopify 商店 NCI Studio - <b>前端主題開發</b> <a href="https://nci-studios.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li>2023 Organon-hhf - <b>網站開發</b></li>
-                <li>2023 維肯媒體 - <b>網站開發</b></li>
-                <li>2023 臺中州廳 城中串遊展覽 - <b>Socket Client & Sever</b></li>
-                <li>2023 臺中州廳 城中串遊展覽 意識樣貌 - <b>網站開發</b></li>
+                <!-- <li @click="changeUrlQuery('cmp-inspiration')":class="hasLinkItemStyle">2024 勤美術館 官方網站 - <b>網站開發 ＆ 後台建置 Api開發</b> <a href="" target="_blank" class="link font-bold">網站連結↗</a></li> -->
+                <!-- <li @click="changeUrlQuery('sasugas')" :class="hasLinkItemStyle">2024 流石五金官方網站 官方網站 - <b>網站開發</b> <a href="" target="_blank" class="link font-bold">網站連結↗</a></li> -->
+                <!-- <li @click="changeUrlQuery('venti-venti')" :class="hasLinkItemStyle">2024 幫推行銷 官方網站 - <b>網站開發</b> <a href="" target="_blank" class="link font-bold">網站連結↗</a></li> -->
+                <!-- <li @click="changeUrlQuery('touch-stone')" :class="hasLinkItemStyle">2024 投石行銷 官方網站 - <b>後台建置 Api開發</b> <a href="https://nci-studios.com/" target="_blank" class="link font-bold">網站連結↗</a></li> -->
+                <!-- <li @click="changeUrlQuery('sunmai')" :class="hasLinkItemStyle">2024 金色三麥 官方網站 - <b>網站開發</b> <a href="https://nci-studios.com/" target="_blank" class="link font-bold">網站連結↗</a></li> -->
+                <li @click="changeUrlQuery('nci_studio')" :class="hasLinkItemStyle">2023 Shopify 商店 NCI STUDIOS - <b>前端主題開發</b> <a href="https://nci-studios.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <!-- <li @click="changeUrlQuery('organno')" :class="hasLinkItemStyle">2023 Organon-hhf - <b>網站開發</b></li> -->
+                <li @click="changeUrlQuery('wenk')" to-do :class="hasLinkItemStyle">2023 維肯媒體 WENK MEDIA - <b>網站開發</b> <a href="https://tinyurl.com/y2zn5teu" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <!-- <li @click="changeUrlQuery('exhibition-socket')" :class="hasLinkItemStyle">2023 臺中州廳 城中串遊展覽 - <b>Socket Client & Sever</b></li> -->
+                <!-- <li @click="changeUrlQuery('exhibition-image')" :class="hasLinkItemStyle">2023 臺中州廳 城中串遊展覽 意識樣貌 - <b>網站開發</b></li> -->
+                <!-- <li @click="changeUrlQuery('vacation')" :class="hasLinkItemStyle">2023 假期農場 - <b>第二期開發與後台建制、資料串接</b> <a href="https://holidayfarm.info/" target="_blank" class="link font-bold">網站連結↗</a></li> -->
+                <!-- <li @click="changeUrlQuery('desider71')" :class="hasLinkItemStyle">2023 Shopify 商店 Desidere 7.1 - <b>前端主題開發</b></li> -->
+                <li @click="changeUrlQuery('block_studio')" :class="hasLinkItemStyle">2023 板塊設計 官方網站 - <b>Socket Client & Sever、動態開發</b> <a href="https://blockstudio.tw/" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <li @click="changeUrlQuery('kkbox')" :class="hasLinkItemStyle">2023 KKBOX風雲榜 線上互動遊戲 - <b>網站開發</b></li>
               </ul>
             </template>
           </timelineItem>

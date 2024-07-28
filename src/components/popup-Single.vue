@@ -85,8 +85,8 @@ onMounted(() => {
       </div>
     </div>
     <div class="flex flex-col gap-8 justify-center items-center md:gap-2" v-if="data?.images && data?.images.length != 0">
-      <div v-for="(imgs, index) in data?.images" class="justify-between items-start flex gap-2 md:flex-col" :key="index">
-        <div v-for="(img, _index) in imgs" :key="_index">
+      <div v-for="(imgs, index) in data?.images" class="justify-between items-start border flex gap-4 md:flex-col" :key="index">
+        <div v-for="(img, _index) in imgs" :key="_index" class="border">
           <img :src="`${baseUrl}/assets/images/portfolio/${data.key}/${img}`" alt="" />
         </div>
       </div>
