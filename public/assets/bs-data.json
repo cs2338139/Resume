@@ -1,0 +1,187 @@
+[
+  {
+    "key": "block_studio",
+    "name": "版塊設計 | 年度官方網站 | Socket | 網站 ",
+    "cover": "cover.webp",
+    "desc": [
+      "Shopify電商平台的專案開發。再以現有的模板主題下，針對首頁進行重新設計與製作，最大亮點在於Banner的拋磚塊特效。",
+      "",
+      "以Matter.js物理引擎製作，利用滑鼠拖曳來拋出磚塊，讓其與其他磚塊碰撞，製造出充滿玩味的小遊戲。除了此主要動態以外，其中還穿插SVG畫線動態等小動態。",
+      "",
+      "除了畫面動態切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。"
+    ],
+    "type": "網站 | Socket",
+    "date": "2023",
+    "client": "板塊設計",
+    "links": [{ "title": "網站", "url": "https://blockstudio.tw/" }],
+    "works": ["動態特效製作", "Matter.js物理碰撞功能", "內容切版與功能實作", "Liquid模板元件製作", "Shopify內容串接", "SVG動畫製作", "RWD"],
+    "tools": ["Liquid", "Shopify Cli", "HTML", "JavaScript", "CSS", "Matter.js"],
+    "images": [{ "images": ["1.gif"], "desc": "同時開啟多個畫面，能夠藉由socket將其他頁面的滑鼠座標傳遞，達到讓其他使用者一起同樂的效果感。" }, ["2.webp"], ["3.webp"], ["4.webp"], ["5.gif"], ["6.gif"]]
+  },
+  {
+    "key": "kkbox",
+    "name": "KKBOX | 年度風雲榜 音樂索票測驗 | 網站 ",
+    "cover": "cover.webp",
+    "desc": [
+      "Shopify電商平台的專案開發。再以現有的模板主題下，針對首頁進行重新設計與製作，最大亮點在於Banner的拋磚塊特效。",
+      "",
+      "以Matter.js物理引擎製作，利用滑鼠拖曳來拋出磚塊，讓其與其他磚塊碰撞，製造出充滿玩味的小遊戲。除了此主要動態以外，其中還穿插SVG畫線動態等小動態。",
+      "",
+      "除了畫面動態切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。"
+    ],
+    "type": "網站",
+    "date": "2023",
+    "client": "KKBOX",
+    "links": [{ "title": "已下線", "url": "" }],
+    "works": ["動態特效製作", "Matter.js物理碰撞功能", "內容切版與功能實作", "Liquid模板元件製作", "Shopify內容串接", "SVG動畫製作", "RWD"],
+    "tools": ["Liquid", "Shopify Cli", "HTML", "JavaScript", "CSS", "Matter.js"],
+    "images": [["1.webp"], ["2.webp"], ["3.webp"], ["4-1.webp", "4-2.webp", "4-3.webp"]]
+  },
+  {
+    "key": "nci_studio",
+    "name": "NCI STUDIOS | Shopify | 網站 | 主題開發",
+    "cover": "cover.webp",
+    "desc": [
+      "Shopify電商平台的專案開發。再以現有的模板主題下，針對首頁進行重新設計與製作，最大亮點在於Banner的拋磚塊特效。",
+      "",
+      "以Matter.js物理引擎製作，利用滑鼠拖曳來拋出磚塊，讓其與其他磚塊碰撞，製造出充滿玩味的小遊戲。除了此主要動態以外，其中還穿插SVG畫線動態等小動態。",
+      "",
+      "除了畫面動態切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。"
+    ],
+    "type": "Shopify | 網站 | 主題開發",
+    "date": "2023",
+    "client": "NCI STUDIOS",
+    "links": [{ "title": "網站（主視覺已改版）", "url": "https://nci-studios.com/" }],
+    "works": ["動態特效製作", "Matter.js物理碰撞功能", "內容切版與功能實作", "Liquid模板元件製作", "Shopify內容串接", "SVG動畫製作", "RWD"],
+    "tools": ["Liquid", "Shopify Cli", "HTML", "JavaScript", "CSS", "Matter.js"],
+    "ytIDs": ["-W-jdWMU-cc"],
+    "images": [["1.gif"], ["2.gif"], ["3.webp"], ["4.webp"], ["5-1.webp", "5-2.webp"]]
+  },
+  {
+    "key": "wenk",
+    "name": "維肯媒體 WENK MEDIA | Shopify | 網站 | 主題開發",
+    "cover": "cover.jpg",
+    "desc": [
+      "Shopify電商平台的專案開發。再以現有的模板主題下，針對首頁進行重新設計與製作，最大亮點在於Banner的拋磚塊特效。",
+      "",
+      "以Matter.js物理引擎製作，利用滑鼠拖曳來拋出磚塊，讓其與其他磚塊碰撞，製造出充滿玩味的小遊戲。除了此主要動態以外，其中還穿插SVG畫線動態等小動態。",
+      "",
+      "除了畫面動態切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。"
+    ],
+    "type": "Shopify | 網站 | 主題開發",
+    "date": "2023",
+    "client": "維肯媒體",
+    "links": [{ "title": "網站", "url": "https://www.wenk-media.com/" }],
+    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "後端資料串接", "SVG動畫製作", "RWD"],
+    "tools": ["Liquid", "Shopify Cli", "HTML", "JavaScript", "CSS"],
+    "ytIDs": ["WdU4bWkUJxU"],
+    "images": [["1.gif"], ["2.jpg"], ["4.jpg"], ["5-1.jpg", "5-2.jpg"], ["6-1.jpg", "6-2.jpg"], ["9.gif"], ["m-1-0.jpg", "m-1-1.jpg", "m-1-2.jpg"], ["m-2-0.jpg", "m-2-1.jpg", "m-2-2.jpg"]]
+  },
+  {
+    "key": "venti-venti",
+    "name": "幫推事務所 | 網站 | 主題開發",
+    "cover": "cover.jpg",
+    "desc": [
+      "Shopify電商平台的專案開發。再以現有的模板主題下，針對首頁進行重新設計與製作，最大亮點在於Banner的拋磚塊特效。",
+      "",
+      "以Matter.js物理引擎製作，利用滑鼠拖曳來拋出磚塊，讓其與其他磚塊碰撞，製造出充滿玩味的小遊戲。除了此主要動態以外，其中還穿插SVG畫線動態等小動態。",
+      "",
+      "除了畫面動態切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。"
+    ],
+    "type": "Shopify | 網站 | 主題開發",
+    "date": "2023",
+    "client": "維肯媒體",
+    "links": [{ "title": "網站", "url": "https://www.wenk-media.com/" }],
+    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "後端資料串接", "SVG動畫製作", "RWD"],
+    "tools": ["Liquid", "Shopify Cli", "HTML", "JavaScript", "CSS"],
+    "ytIDs": ["IxJspLIX-ak"],
+    "images": [["1.jpg"], ["2-1.jpg"], ["2-2.jpg"], ["3-1.jpg", "3-2.jpg"], ["4-1.jpg", "4-2.jpg"], ["5.jpg"], ["m-1-1.jpg", "m-1-2.jpg"], ["m-2-1.jpg", "m-2-2.jpg", "m-2-3.jpg"]]
+  },
+  {
+    "key": "organno",
+    "name": "Organon-hhf | Shopify | 網站 | 主題開發",
+    "cover": "cover.jpg",
+    "desc": [
+      "Shopify電商平台的專案開發。再以現有的模板主題下，針對首頁進行重新設計與製作，最大亮點在於Banner的拋磚塊特效。",
+      "",
+      "以Matter.js物理引擎製作，利用滑鼠拖曳來拋出磚塊，讓其與其他磚塊碰撞，製造出充滿玩味的小遊戲。除了此主要動態以外，其中還穿插SVG畫線動態等小動態。",
+      "",
+      "除了畫面動態切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。"
+    ],
+    "type": "Shopify | 網站 | 主題開發",
+    "date": "2023",
+    "client": "Organon",
+    "links": [{ "title": "網站", "url": "https://www.wenk-media.com/" }],
+    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "後端資料串接", "SVG動畫製作", "RWD"],
+    "tools": ["Liquid", "Shopify Cli", "HTML", "JavaScript", "CSS"],
+    "ytIDs": [],
+    "images": [["1.jpg"], ["2.jpg"], ["3.jpg"], ["4.jpg"], ["m-1-0.jpg", "m-1-1.jpg", "m-1-2.jpg"], ["m-2-0.jpg", "m-2-1.jpg"]]
+  },
+  {
+    "key": "vacation",
+    "name": "假期農場 HolidayFarm | Shopify | 網站 | 主題開發",
+    "cover": "cover.jpg",
+    "desc": [
+      "Shopify電商平台的專案開發。再以現有的模板主題下，針對首頁進行重新設計與製作，最大亮點在於Banner的拋磚塊特效。",
+      "",
+      "以Matter.js物理引擎製作，利用滑鼠拖曳來拋出磚塊，讓其與其他磚塊碰撞，製造出充滿玩味的小遊戲。除了此主要動態以外，其中還穿插SVG畫線動態等小動態。",
+      "",
+      "除了畫面動態切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。"
+    ],
+    "type": "Shopify | 網站 | 主題開發",
+    "date": "2023",
+    "client": "Organon",
+    "links": [{ "title": "網站", "url": "https://holidayfarm.info/" }],
+    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "後端資料串接", "SVG動畫製作", "RWD"],
+    "tools": ["Liquid", "Shopify Cli", "HTML", "JavaScript", "CSS"],
+    "ytIDs": [],
+    "images": [["1.jpg"], ["2.jpg"], ["3.jpg"], ["4.jpg"], ["5.jpg"], ["m-1-0.jpg", "m-1-1.jpg"], ["m-2-0.jpg", "m-2-1.jpg", "m-2-2.jpg"]]
+  },
+  {
+    "key": "desider71",
+    "name": "Desidere 7.1 | Shopify | 網站 | 主題開發",
+    "cover": "cover.jpg",
+    "desc": [
+      "Shopify電商平台的專案開發。再以現有的模板主題下，針對首頁進行重新設計與製作，最大亮點在於Banner的拋磚塊特效。",
+      "",
+      "以Matter.js物理引擎製作，利用滑鼠拖曳來拋出磚塊，讓其與其他磚塊碰撞，製造出充滿玩味的小遊戲。除了此主要動態以外，其中還穿插SVG畫線動態等小動態。",
+      "",
+      "除了畫面動態切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。"
+    ],
+    "type": "Shopify | 網站 | 主題開發",
+    "date": "2023",
+    "client": "NCI STUDIOS",
+    "links": [{ "title": "網站（主視覺已改版）", "url": "https://nci-studios.com/" }],
+    "works": ["動態特效製作", "Matter.js物理碰撞功能", "內容切版與功能實作", "Liquid模板元件製作", "Shopify內容串接", "SVG動畫製作", "RWD"],
+    "tools": ["Liquid", "Shopify Cli", "HTML", "JavaScript", "CSS", "Matter.js"],
+    "ytIDs": ["nFoIHmpIHp8"],
+    "images": [["1.jpg"], ["2.jpg"], ["3.jpg"], ["4.jpg"], ["5-1.gif", "5-2.gif"], ["6.gif"], ["7.gif"], ["9-1.jpg", "9-2.jpg"], ["10.jpg"], ["11.jpg"], ["12-1.jpg", "12-2.jpg"], ["13.gif"], ["m-1-0.jpg", "m-1-1.jpg", "m-1-2.jpg"], ["m-2-0.jpg", "m-2-1.jpg", "m-2-2.jpg"]]
+  },
+  {
+    "key": "sunmai",
+    "name": "金色三麥 | Shopify | 網站 | 主題開發",
+    "cover": "cover.webp",
+    "desc": [
+      "Shopify電商平台的專案開發。再以現有的模板主題下，針對首頁進行重新設計與製作，最大亮點在於Banner的拋磚塊特效。",
+      "",
+      "以Matter.js物理引擎製作，利用滑鼠拖曳來拋出磚塊，讓其與其他磚塊碰撞，製造出充滿玩味的小遊戲。除了此主要動態以外，其中還穿插SVG畫線動態等小動態。",
+      "",
+      "除了畫面動態切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。"
+    ],
+    "type": "Shopify | 網站 | 主題開發",
+    "date": "2023",
+    "client": "NCI STUDIOS",
+    "links": [{ "title": "網站（主視覺已改版）", "url": "https://nci-studios.com/" }],
+    "works": ["動態特效製作", "Matter.js物理碰撞功能", "內容切版與功能實作", "Liquid模板元件製作", "Shopify內容串接", "SVG動畫製作", "RWD"],
+    "tools": ["Liquid", "Shopify Cli", "HTML", "JavaScript", "CSS", "Matter.js"],
+    "ytIDs": ["EKJ0drWS7QY"],
+    "images": [
+      ["1-1.webp", "1-2.webp"],
+      ["2-1.webp", "2-2.webp"],
+      ["3-1.webp", "3-2.webp"],
+      ["4-1.webp", "4-2.webp", "4-2.webp"],
+      ["m-1-0.webp", "m-1-1.webp", "m-1-2.webp"],
+      ["m-2-0.webp", "m-2-1.webp", "m-2-2.webp", "m-2-3.webp"]
+    ]
+  }
+]

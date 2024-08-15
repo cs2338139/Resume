@@ -2,7 +2,10 @@
 import { ref, reactive, computed, onMounted, watchEffect, provide, watch } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import me from "/public/assets/images/resume/pic.jpeg";
-import data from "/public/assets/data.json";
+import bsData from "/public/assets/bs-data.json";
+import axis3dData from "/public/assets/axis3d-data.json";
+import pdlData from "/public/assets/pdl-data.json";
+import otherData from "/public/assets/other-data.json";
 import info from "../components/info.vue";
 import skill from "../components/skill.vue";
 import skillCategory from "../components/skill-category.vue";
@@ -60,6 +63,14 @@ onMounted(() => {
     });
     }
   });
+
+  const data=[
+    ...bsData,
+    ...axis3dData,
+    ...pdlData,
+    ...otherData,
+];
+
   data.forEach((x) => {
     const key = x.key;
     projects[key] = x;
@@ -207,16 +218,16 @@ provide("changeUrlQuery", changeUrlQuery);
               <ul class="list-disc text-sm pl-5">
                 <!-- <li @click="changeUrlQuery('cmp-inspiration')":class="hasLinkItemStyle">2024 勤美術館 官方網站 - <b>網站開發 ＆ 後台建置 Api開發</b> <a href="" target="_blank" class="link font-bold">網站連結↗</a></li> -->
                 <!-- <li @click="changeUrlQuery('sasugas')" :class="hasLinkItemStyle">2024 流石五金官方網站 官方網站 - <b>網站開發</b> <a href="" target="_blank" class="link font-bold">網站連結↗</a></li> -->
-                <!-- <li @click="changeUrlQuery('venti-venti')" :class="hasLinkItemStyle">2024 幫推行銷 官方網站 - <b>網站開發</b> <a href="" target="_blank" class="link font-bold">網站連結↗</a></li> -->
+                <li @click="changeUrlQuery('venti-venti')" :class="hasLinkItemStyle">2024 幫推行銷 官方網站 - <b>網站開發</b> <a href="" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <!-- <li @click="changeUrlQuery('touch-stone')" :class="hasLinkItemStyle">2024 投石行銷 官方網站 - <b>後台建置 Api開發</b> <a href="https://nci-studios.com/" target="_blank" class="link font-bold">網站連結↗</a></li> -->
-                <!-- <li @click="changeUrlQuery('sunmai')" :class="hasLinkItemStyle">2024 金色三麥 官方網站 - <b>網站開發</b> <a href="https://nci-studios.com/" target="_blank" class="link font-bold">網站連結↗</a></li> -->
+                <li @click="changeUrlQuery('sunmai')" :class="hasLinkItemStyle">2024 金色三麥 官方網站 - <b>網站開發</b> <a href="https://nci-studios.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <li @click="changeUrlQuery('nci_studio')" :class="hasLinkItemStyle">2023 Shopify 商店 NCI STUDIOS - <b>前端主題開發</b> <a href="https://nci-studios.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <!-- <li @click="changeUrlQuery('organno')" :class="hasLinkItemStyle">2023 Organon-hhf - <b>網站開發</b></li> -->
+                <li @click="changeUrlQuery('organno')" :class="hasLinkItemStyle">2023 Organon-hhf - <b>網站開發</b></li>
                 <li @click="changeUrlQuery('wenk')" to-do :class="hasLinkItemStyle">2023 維肯媒體 WENK MEDIA - <b>網站開發</b> <a href="https://tinyurl.com/y2zn5teu" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <!-- <li @click="changeUrlQuery('exhibition-socket')" :class="hasLinkItemStyle">2023 臺中州廳 城中串遊展覽 - <b>Socket Client & Sever</b></li> -->
                 <!-- <li @click="changeUrlQuery('exhibition-image')" :class="hasLinkItemStyle">2023 臺中州廳 城中串遊展覽 意識樣貌 - <b>網站開發</b></li> -->
-                <!-- <li @click="changeUrlQuery('vacation')" :class="hasLinkItemStyle">2023 假期農場 - <b>第二期開發與後台建制、資料串接</b> <a href="https://holidayfarm.info/" target="_blank" class="link font-bold">網站連結↗</a></li> -->
-                <!-- <li @click="changeUrlQuery('desider71')" :class="hasLinkItemStyle">2023 Shopify 商店 Desidere 7.1 - <b>前端主題開發</b></li> -->
+                <li @click="changeUrlQuery('vacation')" :class="hasLinkItemStyle">2023 假期農場 - <b>第二期開發與後台建制、資料串接</b> <a href="https://holidayfarm.info/" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <li @click="changeUrlQuery('desider71')" :class="hasLinkItemStyle">2023 Shopify 商店 Desidere 7.1 - <b>前端主題開發</b></li>
                 <li @click="changeUrlQuery('block_studio')" :class="hasLinkItemStyle">2023 板塊設計 官方網站 - <b>Socket Client & Sever、動態開發</b> <a href="https://blockstudio.tw/" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <li @click="changeUrlQuery('kkbox')" :class="hasLinkItemStyle">2023 KKBOX風雲榜 線上互動遊戲 - <b>網站開發</b></li>
               </ul>

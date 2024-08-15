@@ -17,15 +17,9 @@ const baseUrl = inject("baseUrl");
 
 onMounted(() => {
   watchEffect(() => {
-    console.log(data.value);
   });
 });
 
-// const links = computed(() => {
-//   const links = data.value?.links;
-//   console.log(links);
-//   return links;
-// });
 </script>
 
 <template>
@@ -85,9 +79,17 @@ onMounted(() => {
       </div>
     </div>
     <div class="flex flex-col gap-8 justify-center items-center md:gap-2" v-if="data?.images && data?.images.length != 0">
-      <div v-for="(imgs, index) in data?.images" class="justify-between items-start border flex gap-4 md:flex-col" :key="index">
-        <div v-for="(img, _index) in imgs" :key="_index" class="border">
-          <img :src="`${baseUrl}/assets/images/portfolio/${data.key}/${img}`" alt="" />
+      <div v-for="(items, index) in data?.images" class="justify-between items-start flex gap-4 md:flex-col" :key="index">
+        <template v-if="Array.isArray(items)">
+          <div v-for="(img, _index) in items" :key="_index" class="border">
+            <img :src="`${baseUrl}/assets/images/portfolio/${data.key}/${img}`" alt="" />
+          </div>
+        </template>
+        <div v-else class="flex flex-col gap-4">
+          <div v-for="(img, _index) in items?.images" :key="_index" class="border">
+            <img :src="`${baseUrl}/assets/images/portfolio/${data.key}/${img}`" alt="" />
+          </div>
+          <div class='text-base text-gray-500' v-if="items?.desc">．{{ items?.desc }}</div>
         </div>
       </div>
     </div>
