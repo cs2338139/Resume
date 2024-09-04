@@ -216,19 +216,19 @@ provide("changeUrlQuery", changeUrlQuery);
               版塊設計是台灣業界知名的網站設計公司，我在其擔任前端工程師，並參與了許多專案。<br />
               使用的工具並不局限於常見的前端框架，同時也有Socket Sever、Shopify Liquid等不同開發類型。<br />
               <ul class="list-disc text-sm pl-5">
-                <li @click="changeUrlQuery('cmp-inspiration')" :class="hasLinkItemStyle">2024 勤美術館 官方網站 - <b>網站開發 ＆ 後台建置 Api開發</b> <a href="" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('sasugas')" :class="hasLinkItemStyle">2024 流石五金官方網站 官方網站 - <b>網站開發</b> <a href="" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('venti-venti')" :class="hasLinkItemStyle">2024 幫推行銷 官方網站 - <b>網站開發</b> <a href="" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li>2024 投石行銷 官方網站 - <b>後台建置 Api開發</b> <a href="https://nci-studios.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('sunmai')" :class="hasLinkItemStyle">2024 金色三麥 官方網站 - <b>網站開發</b> <a href="https://nci-studios.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('nci_studio')" :class="hasLinkItemStyle">2023 Shopify 商店 NCI STUDIOS - <b>前端主題開發</b> <a href="https://nci-studios.com/" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <li @click="changeUrlQuery('cmp-inspiration')" :class="hasLinkItemStyle">2024 勤美術館 官方網站 - <b>網站開發 ＆ 後台建置 Api開發</b></li>
+                <li @click="changeUrlQuery('sasugas')" :class="hasLinkItemStyle">2024 流石五金官方網站 官方網站 - <b>網站開發</b></li>
+                <li @click="changeUrlQuery('venti-venti')" :class="hasLinkItemStyle">2024 幫推行銷 官方網站 - <b>網站開發</b></li>
+                <li>2024 投石行銷 官方網站 - <b>後台建置 Api開發</b></li>
+                <li @click="changeUrlQuery('sunmai')" :class="hasLinkItemStyle">2024 金色三麥 官方網站 - <b>網站開發</b></li>
+                <li @click="changeUrlQuery('nci_studio')" :class="hasLinkItemStyle">2023 Shopify 商店 NCI STUDIOS - <b>前端主題開發</b> <a href="https://tinyurl.com/n2k9v24z" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <li @click="changeUrlQuery('organno')" :class="hasLinkItemStyle">2023 Organon-hhf - <b>網站開發</b></li>
                 <li @click="changeUrlQuery('wenk')" to-do :class="hasLinkItemStyle">2023 維肯媒體 WENK MEDIA - <b>網站開發</b> <a href="https://tinyurl.com/y2zn5teu" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <li @click="changeUrlQuery('exhibition-socket')" :class="hasLinkItemStyle">2023 臺中州廳 城中串遊展覽 - <b>Socket Client & Sever</b></li>
                 <li @click="changeUrlQuery('exhibition-image')" :class="hasLinkItemStyle">2023 臺中州廳 城中串遊展覽 意識樣貌 - <b>網站開發</b></li>
-                <li @click="changeUrlQuery('vacation')" :class="hasLinkItemStyle">2023 假期農場 - <b>第二期開發與後台建制、資料串接</b> <a href="https://holidayfarm.info/" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('desider71')" :class="hasLinkItemStyle">2023 Shopify 商店 Desidere 7.1 - <b>前端主題開發</b></li>
-                <li @click="changeUrlQuery('block_studio')" :class="hasLinkItemStyle">2023 板塊設計 官方網站 - <b>Socket Client & Sever、動態開發</b> <a href="https://blockstudio.tw/" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <li @click="changeUrlQuery('vacation')" :class="hasLinkItemStyle">2023 假期農場 - <b>第二期開發與後台建制、資料串接</b> <a href="https://tinyurl.com/329h65c5" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <li @click="changeUrlQuery('desider71')" :class="hasLinkItemStyle">2023 Shopify 商店 Desidere 7.1 - <b>前端主題開發</b> <a href="https://tinyurl.com/4h5fhvuj" target="_blank" class="link font-bold">網站連結↗</a></li>
+                <li @click="changeUrlQuery('block_studio')" :class="hasLinkItemStyle">2023 板塊設計 官方網站 - <b>Socket Client & Sever、動態開發</b> <a href="https://tinyurl.com/ym8mc56k" target="_blank" class="link font-bold">網站連結↗</a></li>
                 <li @click="changeUrlQuery('kkbox')" :class="hasLinkItemStyle">2023 KKBOX風雲榜 線上互動遊戲 - <b>網站開發</b></li>
               </ul>
             </template>

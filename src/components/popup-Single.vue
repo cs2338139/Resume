@@ -24,7 +24,7 @@ onMounted(() => {
 
 <template>
   <div class="flex flex-col items-center gap-10  md:gap-5">
-    <img v-if="data?.cover" :src="`${baseUrl}/assets/images/portfolio/${data.key}/${data.cover}`" alt="" />
+    <img v-if="data?.cover" :src="`${baseUrl}/assets/images/portfolio/${data.key}/${data.cover}`" class=" w-full object-cover"  alt="" />
     <div class="px-20 lg:px-5 md:px-0 flex flex-col  w-full items-start gap-8 md:gap-5">
       <div v-if="data?.name" class="text-3xl font-bold md:text-2xl">{{ data?.name }}</div>
       <div class="text-lg md:text-base font-light text-gray-800 flex flex-col gap-1" v-if="data?.desc && data?.desc.length != 0">
@@ -79,15 +79,15 @@ onMounted(() => {
       </div>
     </div>
     <div class="flex flex-col gap-8 justify-center items-center md:gap-2" v-if="data?.images && data?.images.length != 0">
-      <div v-for="(items, index) in data?.images" class="justify-between items-start flex gap-4 md:flex-col" :key="index">
+      <div v-for="(items, index) in data?.images" class=" justify-between w-full items-start flex gap-4 md:flex-col" :key="index">
         <template v-if="Array.isArray(items)">
-          <div v-for="(img, _index) in items" :key="_index" class="border">
-            <img :src="`${baseUrl}/assets/images/portfolio/${data.key}/${img}`" alt="" />
+          <div v-for="(img, _index) in items" :key="_index" class=" border w-full">
+            <img :src="`${baseUrl}/assets/images/portfolio/${data.key}/${img}`" alt="" class="object-cover w-full" />
           </div>
         </template>
         <div v-else class="flex flex-col gap-4">
-          <div v-for="(img, _index) in items?.images" :key="_index" class="border">
-            <img :src="`${baseUrl}/assets/images/portfolio/${data.key}/${img}`" alt="" />
+          <div v-for="(img, _index) in items?.images" :key="_index" class="border w-full">
+            <img :src="`${baseUrl}/assets/images/portfolio/${data.key}/${img}`" alt="" class="object-cover w-full"  />
           </div>
           <div class='text-base text-gray-500' v-if="items?.desc">．{{ items?.desc }}</div>
         </div>
