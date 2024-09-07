@@ -1,38 +1,90 @@
 [
   {
-    "key": "block_studio",
-    "name": "版塊設計 | 年度官方網站 | Socket | 網站 ",
+    "key": "cmp-inspiration",
+    "name": "勤美術館 | 官方網站 | 網站",
     "cover": "cover.webp",
     "desc": [
-        "版塊設計是台灣知名的網頁設計公司，常以絢麗的特效互動手法，讓使用者體會到不同的感受。",
-        "",
-        "我其中主要負責首頁彩蛋Socket互動特效的製作與機制設計，透過滑鼠的拖曳，能夠讓使用者與其他網頁使用者互動。",
-        "在設計時有考慮到長時間多人使用，會造成伺服器負擔與流量費用的消耗，因此設計了一套機制，在降低流量的同時，也能體現互動的樂趣。",
-        "",
-        "除此之外也有進行後台欄位與其API撰寫與前後端的內容串接 與ＳＶＧ動態製作。"
-      ],
-    "type": "網站 | Socket | 動態特效特效",
-    "date": "2023",
-    "client": "版塊設計",
-    "links": [{ "title": "網站", "url": "https://blockstudio.tw/" }],
-    "works": ["Socket互動機制設計","Socket Server與前後端邏輯撰寫","動態特效製作", "內容切版與功能實作", "SVG動畫製作", "RWD","PHP API撰寫"],
-    "tools": ["NUXT","Tailwind css","Socket.io","JavaScript","PHP","WordPress","GSAP"],
-    "images": [{ "images": ["1.gif"], "desc": "同時開啟多個畫面，能夠藉由socket將其他頁面的滑鼠座標傳遞，達到讓其他使用者一起同樂的效果感。" }, ["2.webp"], ["3.webp"], ["4.webp"], ["5.gif"], ["6.gif"]]
+      "勤美術館是臺中預計於2024年底新開幕的美術館。",
+      "此專案製作時，我為前端主工程師，複雜設計架構與until function給其他參與工程師使用。",
+      "除了前端以外，我同時也負責了後端的API撰寫，並且與前端進行資料串接。"
+    ],
+    "type": "網站",
+    "date": "2024",
+    "client": "勤美術館",
+    "links": [],
+    "works": ["Canvas動態製作","Socket互動機制設計","Socket Server與前後端邏輯撰寫","動態特效製作","內容切版與功能實作", "SVG動畫製作", "RWD","PHP API撰寫"],
+    "tools": ["NUXT","Tailwind css","Socket.io","JavaScript","PHP","WordPress","GSAP","Lenis.js","p5.js"],
+    "ytIDs": ["Ti01gSvFy2U"],
+    "images": [
+      ["1-1.gif"],
+      ["2-1.webp"],
+      ["2-2.webp", "2-3.webp"],
+      ["3-1.webp", "3-2.webp"],
+      ["4-1.webp", "4-2.webp", "4-3.webp"],
+      ["m-1-1.webp", "m-1-2.webp", "m-1-3.webp", "m-1-4.webp"]
+    ]
   },
   {
-    "key": "kkbox",
-    "name": "KKBOX | 年度風雲榜 音樂索票測驗 | 網站 ",
+    "key": "sasugas",
+    "name": "流石五金 | 官方網站 | 網站",
     "cover": "cover.webp",
     "desc": [
-      "KKBOX 2023年年度風雲榜的活動頁面，採用問答計分的方式進行遊戲，最後在依照分數參與票卷的抽獎活動。"
+      "流石五金是精品五金選物平台，匯聚了國內外設計金美的居家五金，展現出不同的生活品味。"
     ],
-    "type": "單頁式網站",
-    "date": "2023",
-    "client": "KKBOX",
-    "links": [{ "title": "已下線", "url": "" }],
-    "works": ["OAuth2 身份驗證串接","動態特效製作", "內容切版與功能實作", "內容串接","計分機制實作", "RWD","GSAP"],
-    "tools": ["NUXT","Tailwind css","JavaScript"],
-    "images": [["1.webp"], ["2.webp"], ["3.webp"], ["4-1.webp", "4-2.webp", "4-3.webp"]]
+    "type": "網站",
+    "date": "2024",
+    "client": "流石五金",
+    "links": [{ "title": "已完成，客戶尚未發布上線", "url": "" }],
+    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接", "RWD"],
+    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js"],
+    "ytIDs": [],
+    "images":[["01.webp"],["02.webp"],["03.webp"],["04.webp"]]
+  },
+  {
+    "key": "venti-venti",
+    "name": "幫推事務所 | 官方網站 | 網站",
+    "cover": "cover.webp",
+    "desc": [
+      "幫推有別於整合行銷與媒體服務的公關團隊，專注於國際與台灣政府政策的研究、產業利害關係人的分析、公眾倡議路徑的評估與溝通觀點的建構。幫推協助客戶掌握政府、民眾與專業團體對公共議題的完整觀點，並提供環境分析、策略擬定、顧問諮詢與專案執行等多面向的合作服務。",
+      "",
+      "這在此專站案中我負責前端的程式製作，除了切版外，也包含頁面的架構設計與資料串接、動態製作"
+    ],
+    "type": "網站",
+    "date": "2024",
+    "client": "幫推事務所",
+    "links": [{ "title": "已完成，客戶尚未發布上線", "url": "" }],
+    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接", "SVG動畫製作", "RWD"],
+    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js"],
+    "ytIDs": ["IxJspLIX-ak"],
+    "images": [["1.webp"], ["2-1.webp"], ["2-2.webp"], ["3-1.webp", "3-2.webp"], ["4-1.webp", "4-2.webp"], ["5.webp"], ["m-1-1.webp", "m-1-2.webp"], ["m-2-1.webp", "m-2-2.webp", "m-2-3.webp"]]
+  },
+  {
+    "key": "sunmai",
+    "name": "金色三麥 | 官方網站 | 網站",
+    "cover": "cover.webp",
+    "desc": [
+      "金色三麥是台灣知名的啤酒品牌，以台灣在地的原料釀製出獨特的風味。",
+      "",
+      "首頁以js來操控各個section區塊，並且以gsap的timeline來組裝各個動態管理，並且達到上下無限滾動的效果。",
+      "",
+      "產品頁則是計算各個產品的數量位置與當前螢幕尺寸，來達到地圖拖曳探索的效果。",
+      "比較特別的部分是經由特殊演算法，達到了不管商品數量多寡與螢幕寬高改變都能夠呈現相同的比例畫面。"
+    ],
+    "type": "網站",
+    "date": "2024",
+    "client": "金色三麥",
+    "links": [{ "title": "已完成，客戶尚未發布上線", "url": "" }],
+    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接", "SVG動畫製作","首頁無限滾動效果","產品地圖探索效果", "RWD"],
+    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js"],
+    "ytIDs": ["EKJ0drWS7QY"],
+    "images": [
+      ["1-1.webp", "1-2.webp"],
+      ["2-1.webp", "2-2.webp"],
+      ["3-1.webp", "3-2.webp"],
+      ["4-1.webp", "4-2.webp", "4-3.webp"],
+      ["m-1-0.webp", "m-1-1.webp", "m-1-2.webp"],
+      ["m-2-0.webp", "m-2-1.webp", "m-2-2.webp", "m-2-3.webp"]
+    ]
   },
   {
     "key": "nci_studio",
@@ -55,6 +107,20 @@
     "images": [["1.gif"], ["2.gif"], ["3.webp"], ["4.webp"], ["5-1.webp", "5-2.webp"]]
   },
   {
+    "key": "organno",
+    "name": "Organon-hhf | 網站 ",
+    "cover": "cover.webp",
+    "desc": [],
+    "type": "單頁式網站",
+    "date": "2023",
+    "client": "Organon",
+    "links": [],
+    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "RWD"],
+    "tools": ["HTML", "JavaScript", "CSS","GSAP"],
+    "ytIDs": [],
+    "images": [["1.webp"], ["2.webp"], ["3.webp"], ["4.webp"], ["m-1-0.webp", "m-1-1.webp", "m-1-2.webp"], ["m-2-0.webp", "m-2-1.webp"]]
+  },
+  {
     "key": "wenk",
     "name": "維肯媒體 WENK MEDIA | 官方網站 | 網站 ",
     "cover": "cover.webp",
@@ -73,36 +139,44 @@
     "images": [["1.gif"], ["2.webp"], ["4.webp"], ["5-1.webp", "5-2.webp"], ["6-1.webp", "6-2.webp"], ["9.gif"], ["m-1-0.webp", "m-1-1.webp", "m-1-2.webp"], ["m-2-0.webp", "m-2-1.webp", "m-2-2.webp"]]
   },
   {
-    "key": "venti-venti",
-    "name": "幫推事務所 | 官方網站 | 網站",
+    "key": "exhibition-socket",
+    "name": "臺中州廳 城中串遊展覽 | Socket Server | 主程式架構設計 | 體驗流程設計",
     "cover": "cover.webp",
     "desc": [
-      "幫推有別於整合行銷與媒體服務的公關團隊，專注於國際與台灣政府政策的研究、產業利害關係人的分析、公眾倡議路徑的評估與溝通觀點的建構。幫推協助客戶掌握政府、民眾與專業團體對公共議題的完整觀點，並提供環境分析、策略擬定、顧問諮詢與專案執行等多面向的合作服務。",
+      "臺中州廳 城中串遊展覽 是個臺中線下展覽，其中亦是樣貌為其中一個展項，部署到網站上，讓線下民眾可以搭配socket.io與網站互動。",
       "",
-      "這在此專站案中我負責前端的程式製作，除了切版外，也包含頁面的架構設計與資料串接、動態製作"
+      "由於我有互動展演工程的背景，所以我在起步階段設計了整個展覽流程，並且設計前端主程式架構。",
+      "除此之外，其展覽的互動核心Socket機制也經由我設計與撰寫。",
+      "此展覽以場次的方式進行，會由Socket Server進行場次的管理，在每次展覽開始時自動產生來賓的ＱＲ Code。來賓可以透過掃描ＱＲ Code連接進Socket，並且以手機為遙控器操作展覽裡的各項互動設施。",
+      "每個設施皆有獨立的互動方式，像是輸入姓名的姓名牆，或是透過webcam與canvas的濾鏡效果、抑或是串接ＧＰＴ的聊天機器人等。",
+      "其互動方式皆由Socket來實現。"
     ],
-    "type": "網站",
-    "date": "2024",
-    "client": "幫推事務所",
-    "links": [{ "title": "已完成，客戶尚未發布上線", "url": "" }],
-    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接", "SVG動畫製作", "RWD"],
-    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js"],
-    "ytIDs": ["IxJspLIX-ak"],
-    "images": [["1.webp"], ["2-1.webp"], ["2-2.webp"], ["3-1.webp", "3-2.webp"], ["4-1.webp", "4-2.webp"], ["5.webp"], ["m-1-1.webp", "m-1-2.webp"], ["m-2-1.webp", "m-2-2.webp", "m-2-3.webp"]]
+    "type": "Socket Server | 主程式架構設計 | 體驗流程設計",
+    "date": "2023",
+    "client": "臺中州廳 城中串遊展覽",
+    "links": [],
+    "works": ["Socket互動機制設計","Socket Server與前後端邏輯撰寫","體驗流程設計","前端主程式架構設計","場次機制","裝置事件傳遞機制","流程圖繪製"],
+    "tools": ["JavaScript", "Socket.io","Node.js"],
+    "ytIDs": [],
+    "images": [["1.webp"], ["2.webp"], ["3.webp"], ["cover.webp"],["Device.webp"]]
   },
   {
-    "key": "organno",
-    "name": "Organon-hhf | 網站 ",
-    "cover": "cover.webp",
-    "desc": [],
-    "type": "單頁式網站",
+    "key": "exhibition-image",
+    "name": "臺中州廳 城中串遊展覽 意識樣貌 | 網站 ",
+    "cover": "cover.gif",
+    "desc": [
+      "臺中州廳 城中串遊展覽 是個臺中線下展覽，其中亦是樣貌為其中一個展項，部署到網站上，讓線下民眾可以搭配socket.io與網站互動。",
+      "",
+      "此項目為搭配webcam搭配canvas的shader濾鏡效果呈現。"
+    ],
+    "type": "活動網站",
     "date": "2023",
-    "client": "Organon",
+    "client": "臺中州廳 城中串遊展覽",
     "links": [],
-    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "RWD"],
-    "tools": ["HTML", "JavaScript", "CSS","GSAP"],
+    "works": ["功能實作", "Shader製作", "Socket互動機制設計","Canvas動態製作"],
+    "tools": ["Shader","p5.js","JavaScript"],
     "ytIDs": [],
-    "images": [["1.webp"], ["2.webp"], ["3.webp"], ["4.webp"], ["m-1-0.webp", "m-1-1.webp", "m-1-2.webp"], ["m-2-0.webp", "m-2-1.webp"]]
+    "images": [["1.webp"], ["2.gif"], ["3.gif"], ["cover.gif"]]
   },
   {
     "key": "vacation",
@@ -145,112 +219,38 @@
     "images": [["1.webp"], ["2.webp"], ["3.webp"], ["4.webp"], ["5-1.gif", "5-2.gif"], ["6.gif"], ["7.gif"], ["9-1.webp", "9-2.webp"], ["10.webp"], ["11.webp"], ["12-1.webp", "12-2.webp"], ["13.gif"], ["m-1-0.webp", "m-1-1.webp", "m-1-2.webp"], ["m-2-0.webp", "m-2-1.webp", "m-2-2.webp"]]
   },
   {
-    "key": "sunmai",
-    "name": "金色三麥 | 官方網站 | 網站",
+    "key": "block_studio",
+    "name": "版塊設計 | 年度官方網站 | Socket | 網站 ",
     "cover": "cover.webp",
     "desc": [
-      "金色三麥是台灣知名的啤酒品牌，以台灣在地的原料釀製出獨特的風味。",
-      "",
-      "首頁以js來操控各個section區塊，並且以gsap的timeline來組裝各個動態管理，並且達到上下無限滾動的效果。",
-      "",
-      "產品頁則是計算各個產品的數量位置與當前螢幕尺寸，來達到地圖拖曳探索的效果。",
-      "比較特別的部分是經由特殊演算法，達到了不管商品數量多寡與螢幕寬高改變都能夠呈現相同的比例畫面。"
-    ],
-    "type": "網站",
-    "date": "2024",
-    "client": "金色三麥",
-    "links": [{ "title": "已完成，客戶尚未發布上線", "url": "" }],
-    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接", "SVG動畫製作","首頁無限滾動效果","產品地圖探索效果", "RWD"],
-    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js"],
-    "ytIDs": ["EKJ0drWS7QY"],
-    "images": [
-      ["1-1.webp", "1-2.webp"],
-      ["2-1.webp", "2-2.webp"],
-      ["3-1.webp", "3-2.webp"],
-      ["4-1.webp", "4-2.webp", "4-3.webp"],
-      ["m-1-0.webp", "m-1-1.webp", "m-1-2.webp"],
-      ["m-2-0.webp", "m-2-1.webp", "m-2-2.webp", "m-2-3.webp"]
-    ]
-  },
-  {
-    "key": "sasugas",
-    "name": "流石五金 | 官方網站 | 網站",
-    "cover": "cover.webp",
-    "desc": [
-      "流石五金是精品五金選物平台，匯聚了國內外設計金美的居家五金，展現出不同的生活品味。"
-    ],
-    "type": "網站",
-    "date": "2024",
-    "client": "流石五金",
-    "links": [{ "title": "已完成，客戶尚未發布上線", "url": "" }],
-    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接", "RWD"],
-    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js"],
-    "ytIDs": [],
-    "images":[["01.webp"],["02.webp"],["03.webp"],["04.webp"]]
-  },
-  {
-    "key": "cmp-inspiration",
-    "name": "勤美術館 | 官方網站 | 網站",
-    "cover": "cover.webp",
-    "desc": [
-      "勤美術館是臺中預計於2024年底新開幕的美術館。",
-      "此專案製作時，我為前端主工程師，複雜設計架構與until function給其他參與工程師使用。",
-      "除了前端以外，我同時也負責了後端的API撰寫，並且與前端進行資料串接。"
-    ],
-    "type": "網站",
-    "date": "2024",
-    "client": "勤美術館",
-    "links": [],
-    "works": ["Canvas動態製作","Socket互動機制設計","Socket Server與前後端邏輯撰寫","動態特效製作","內容切版與功能實作", "SVG動畫製作", "RWD","PHP API撰寫"],
-    "tools": ["NUXT","Tailwind css","Socket.io","JavaScript","PHP","WordPress","GSAP","Lenis.js","p5.js"],
-    "ytIDs": ["Ti01gSvFy2U"],
-    "images": [
-      ["1-1.gif"],
-      ["2-1.webp"],
-      ["2-2.webp", "2-3.webp"],
-      ["3-1.webp", "3-2.webp"],
-      ["4-1.webp", "4-2.webp", "4-3.webp"],
-      ["m-1-1.webp", "m-1-2.webp", "m-1-3.webp", "m-1-4.webp"]
-    ]
-  },
-  {
-    "key": "exhibition-image",
-    "name": "臺中州廳 城中串遊展覽 意識樣貌 | 網站 ",
-    "cover": "cover.gif",
-    "desc": [
-      "臺中州廳 城中串遊展覽 是個臺中線下展覽，其中亦是樣貌為其中一個展項，部署到網站上，讓線下民眾可以搭配socket.io與網站互動。",
-      "",
-      "此項目為搭配webcam搭配canvas的shader濾鏡效果呈現。"
-    ],
-    "type": "活動網站",
+        "版塊設計是台灣知名的網頁設計公司，常以絢麗的特效互動手法，讓使用者體會到不同的感受。",
+        "",
+        "我其中主要負責首頁彩蛋Socket互動特效的製作與機制設計，透過滑鼠的拖曳，能夠讓使用者與其他網頁使用者互動。",
+        "在設計時有考慮到長時間多人使用，會造成伺服器負擔與流量費用的消耗，因此設計了一套機制，在降低流量的同時，也能體現互動的樂趣。",
+        "",
+        "除此之外也有進行後台欄位與其API撰寫與前後端的內容串接 與ＳＶＧ動態製作。"
+      ],
+    "type": "網站 | Socket | 動態特效特效",
     "date": "2023",
-    "client": "臺中州廳 城中串遊展覽",
-    "links": [],
-    "works": ["功能實作", "Shader製作", "Socket互動機制設計","Canvas動態製作"],
-    "tools": ["Shader","p5.js","JavaScript"],
-    "ytIDs": [],
-    "images": [["1.webp"], ["2.gif"], ["3.gif"], ["cover.gif"]]
+    "client": "版塊設計",
+    "links": [{ "title": "網站", "url": "https://blockstudio.tw/" }],
+    "works": ["Socket互動機制設計","Socket Server與前後端邏輯撰寫","動態特效製作", "內容切版與功能實作", "SVG動畫製作", "RWD","PHP API撰寫"],
+    "tools": ["NUXT","Tailwind css","Socket.io","JavaScript","PHP","WordPress","GSAP"],
+    "images": [{ "images": ["1.gif"], "desc": "同時開啟多個畫面，能夠藉由socket將其他頁面的滑鼠座標傳遞，達到讓其他使用者一起同樂的效果感。" }, ["2.webp"], ["3.webp"], ["4.webp"], ["5.gif"], ["6.gif"]]
   },
   {
-    "key": "exhibition-socket",
-    "name": "臺中州廳 城中串遊展覽 | Socket Server | 主程式架構設計 | 體驗流程設計",
+    "key": "kkbox",
+    "name": "KKBOX | 年度風雲榜 音樂索票測驗 | 網站 ",
     "cover": "cover.webp",
     "desc": [
-      "臺中州廳 城中串遊展覽 是個臺中線下展覽，其中亦是樣貌為其中一個展項，部署到網站上，讓線下民眾可以搭配socket.io與網站互動。",
-      "",
-      "由於我有互動展演工程的背景，所以我在起步階段設計了整個展覽流程，並且設計前端主程式架構。",
-      "除此之外，其展覽的互動核心Socket機制也經由我設計與撰寫。",
-      "此展覽以場次的方式進行，會由Socket Server進行場次的管理，在每次展覽開始時自動產生來賓的ＱＲ Code。來賓可以透過掃描ＱＲ Code連接進Socket，並且以手機為遙控器操作展覽裡的各項互動設施。",
-      "每個設施皆有獨立的互動方式，像是輸入姓名的姓名牆，或是透過webcam與canvas的濾鏡效果、抑或是串接ＧＰＴ的聊天機器人等。",
-      "其互動方式皆由Socket來實現。"
+      "KKBOX 2023年年度風雲榜的活動頁面，採用問答計分的方式進行遊戲，最後在依照分數參與票卷的抽獎活動。"
     ],
-    "type": "Socket Server | 主程式架構設計 | 體驗流程設計",
+    "type": "單頁式網站",
     "date": "2023",
-    "client": "臺中州廳 城中串遊展覽",
-    "links": [],
-    "works": ["Socket互動機制設計","Socket Server與前後端邏輯撰寫","體驗流程設計","前端主程式架構設計","場次機制","裝置事件傳遞機制","流程圖繪製"],
-    "tools": ["JavaScript", "Socket.io","Node.js"],
-    "ytIDs": [],
-    "images": [["1.webp"], ["2.webp"], ["3.webp"], ["cover.webp"],["Device.webp"]]
+    "client": "KKBOX",
+    "links": [{ "title": "已下線", "url": "" }],
+    "works": ["OAuth2 身份驗證串接","動態特效製作", "內容切版與功能實作", "內容串接","計分機制實作", "RWD","GSAP"],
+    "tools": ["NUXT","Tailwind css","JavaScript"],
+    "images": [["1.webp"], ["2.webp"], ["3.webp"], ["4-1.webp", "4-2.webp", "4-3.webp"]]
   }
 ]

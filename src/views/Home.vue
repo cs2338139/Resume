@@ -114,19 +114,8 @@ provide("changeUrlQuery", changeUrlQuery);
       <introduction class="mb-10">
         <template #title>個人簡述</template>
         <template #content>
-          <!-- 有多年的軟體開發經歷，曾作為工程師任職於互動設計公司，執行了多項網頁與互動設計相關的開發專案，隨著職涯規劃，開始以網頁開發為主要項目。<br />
-          我能夠善用各種不同的開發工具來達到專案的目的，喜歡嘗試不同的新東西，會研究沒有使用過的開發工具，或是不同的程式撰寫方法，來達到更有效的開發。<br />
-          在閒暇之餘也會翻開曾經執行過的專案，重新檢視程式碼，思考著要如何以更好更有效的方式來撰寫，重新審視是當時的邏輯是否有不通順的地方，確保自己能夠不斷的進步。<br />
-          同時也會把它們有趣的部分獨立出來嘗試做成一個獨立的side project。<br /> -->
           擁有4年軟體開發經驗的軟體工程師，專注於前端開發和互動設計。<br />
           參與了數個專案的開發，大多以網站前端開發為主，但也有APP、VR/AR，線下展覽互動裝置開發的經驗。<br />
-          <!-- <br />
-          主要技術棧包括：<br />
-          前端：Vue.js (Nuxt.js), React.js, JavaScript, HTML, CSS, Tailwind<br />
-          後端：PHP, WordPress<br />
-          其他技術：Docker, AWS EC2, Socket.io, Git<br />
-          動畫庫：GSAP, p5.js<br />
-          <br /> -->
           擅長前後端分離架構的開發，並能夠使用Docker進行專案部署。在版塊設計期間，從無到有，參與了多個高度互動的網站專案，除了切版工作外，更專注於複雜的JavaScript以實現豐富的動態效果與功能實踐。<br />
           曾主導基於Socket的大型互動展覽項目，負責整體架構設計和核心功能實現。<br />
           此外，也具有Shopify電商平台的開發經驗。<br />
@@ -212,9 +201,6 @@ provide("changeUrlQuery", changeUrlQuery);
             <template #company>版塊設計 Block Studio</template>
             <template #time>2023 / 5～2024 / 8</template>
             <template #content>
-              <!-- 版塊設計是台灣業界知名的網站設計公司，我在其擔任前端工程師，並參與了許多專案。<br />
-              使用的工具並不局限於常見的前端框架，同時也有Socket Sever、Shopify Liquid等不同開發類型。<br /> -->
-
               <div class="">
                 版塊設計是台灣知名的網站設計公司，以炫麗的特效與新穎的互動方式聞名於業界。 <br />
                 在任職期間獨立完成數個專案的開發，主要的架構是使用Vue.js (Nuxt.js)進行前端開發，後端則用WordPress作為CMS系統並且以PHP撰寫REST API。<br />
