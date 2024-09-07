@@ -53,37 +53,34 @@ function popupSwitch(value, key = null) {
 }
 
 onMounted(() => {
-
   document.body.addEventListener("keyup", (e) => {
-    if(popupState.value === false) return;
+    if (popupState.value === false) return;
     if (e.key === "Escape") {
       // popupSwitch(false);
       router.push({
-      path: "/",
-    });
+        path: "/",
+      });
     }
   });
 
-  const data=[
-    ...bsData,
-    ...axis3dData,
-    ...pdlData,
-    ...otherData,
-];
+  const data = [...bsData, ...axis3dData, ...pdlData, ...otherData];
 
   data.forEach((x) => {
     const key = x.key;
     projects[key] = x;
   });
 
-
-  watch(()=>route.query.portfolio, (value) => {
-    if (value) {
-      popupSwitch(true, value);
-    } else {
-      popupSwitch(false);
-    }
-  },{immediate:true});
+  watch(
+    () => route.query.portfolio,
+    (value) => {
+      if (value) {
+        popupSwitch(true, value);
+      } else {
+        popupSwitch(false);
+      }
+    },
+    { immediate: true }
+  );
 });
 
 const baseUrl = computed(() => {
@@ -123,13 +120,13 @@ provide("changeUrlQuery", changeUrlQuery);
           同時也會把它們有趣的部分獨立出來嘗試做成一個獨立的side project。<br /> -->
           擁有4年軟體開發經驗的軟體工程師，專注於前端開發和互動設計。<br />
           參與了數個專案的開發，大多以網站前端開發為主，但也有APP、VR/AR，線下展覽互動裝置開發的經驗。<br />
-          <br />
+          <!-- <br />
           主要技術棧包括：<br />
           前端：Vue.js (Nuxt.js), React.js, JavaScript, HTML, CSS, Tailwind<br />
           後端：PHP, WordPress<br />
           其他技術：Docker, AWS EC2, Socket.io, Git<br />
           動畫庫：GSAP, p5.js<br />
-          <br />
+          <br /> -->
           擅長前後端分離架構的開發，並能夠使用Docker進行專案部署。在版塊設計期間，從無到有，參與了多個高度互動的網站專案，除了切版工作外，更專注於複雜的JavaScript以實現豐富的動態效果與功能實踐。<br />
           曾主導基於Socket的大型互動展覽項目，負責整體架構設計和核心功能實現。<br />
           此外，也具有Shopify電商平台的開發經驗。<br />
@@ -141,38 +138,40 @@ provide("changeUrlQuery", changeUrlQuery);
         <template #title>技能</template>
         <template #content>
           <skillCategory>
-            <template #title> 前端網頁</template>
+            <template #title> Web</template>
             <template #content>
               <skillTable>
                 <template #title>基礎技能</template>
                 <template #content>
-                  <skillTableItem>HTML5 / CSS / javascript</skillTableItem>
+                  <skillTableItem>React.js</skillTableItem>
+                  <skillTableItem>Vue.js (Nuxt.js)</skillTableItem>
+                  <skillTableItem>HTML5／CSS／javascript</skillTableItem>
                   <skillTableItem>RWD 響應式網頁規劃</skillTableItem>
-                  <skillTableItem>Vue 3</skillTableItem>
-                  <skillTableItem>Nuxt 3</skillTableItem>
-                  <!-- <skillTableItem>GraphQL API</skillTableItem> -->
-                  <!-- <skillTableItem>RESTful API</skillTableItem> -->
+                  <skillTableItem>Tailwind</skillTableItem>
+                  <skillTableItem>PHP</skillTableItem>
+                  <skillTableItem>C#</skillTableItem>
                 </template>
               </skillTable>
               <skillTable>
                 <template #title>工具</template>
                 <template #content>
                   <skillTableItem>Socket.io</skillTableItem>
-                  <skillTableItem>Tailwind</skillTableItem>
-                  <skillTableItem>GSAP / ScrollTrigger</skillTableItem>
+                  <skillTableItem>GSAP／ScrollTrigger</skillTableItem>
+                  <skillTableItem>Canvas／WebGL</skillTableItem>
                   <skillTableItem>i18n</skillTableItem>
                   <skillTableItem>three.js</skillTableItem>
-                  <skillTableItem>Axios</skillTableItem>
                   <skillTableItem>Liquid</skillTableItem>
                   <skillTableItem>P5.js</skillTableItem>
                   <skillTableItem>Matter.js</skillTableItem>
                   <skillTableItem>Swiper.js</skillTableItem>
+                  <skillTableItem>Keen Slider.js</skillTableItem>
                 </template>
               </skillTable>
               <skillTable>
                 <template #title>其他</template>
                 <template #content>
-                  <skillTableItem>WordPress（作爲CMS）</skillTableItem>
+                  <skillTableItem>WordPress CMS</skillTableItem>
+                  <skillTableItem>Shopify</skillTableItem>
                 </template>
               </skillTable>
             </template>
@@ -182,7 +181,7 @@ provide("changeUrlQuery", changeUrlQuery);
             <template #title>其他</template>
             <template #content>
               <skillTable>
-                <template #title>互動</template>
+                <template #title>互動／新媒體</template>
                 <template #content>
                   <skillTableItem>Unity／C＃</skillTableItem>
                   <skillTableItem>VR (HTC Vive／Oculus／Google CardBoard)</skillTableItem>
@@ -190,14 +189,14 @@ provide("changeUrlQuery", changeUrlQuery);
                   <skillTableItem>Arduino</skillTableItem>
                   <skillTableItem>Kinect／Azure Kinect</skillTableItem>
                   <skillTableItem>Radar sensor</skillTableItem>
-                  <!-- <skillTableItem>多畫面融接投影</skillTableItem> -->
                 </template>
               </skillTable>
               <skillTable>
                 <template #title>其他</template>
                 <template #content>
                   <skillTableItem>Git</skillTableItem>
-                  <!-- <skillTableItem>Json</skillTableItem> -->
+                  <skillTableItem>AWS EC2 部署</skillTableItem>
+                  <skillTableItem>Docker</skillTableItem>
                 </template>
               </skillTable>
             </template>
@@ -213,8 +212,28 @@ provide("changeUrlQuery", changeUrlQuery);
             <template #company>版塊設計 Block Studio</template>
             <template #time>2023 / 5～2024 / 8</template>
             <template #content>
-              版塊設計是台灣業界知名的網站設計公司，我在其擔任前端工程師，並參與了許多專案。<br />
-              使用的工具並不局限於常見的前端框架，同時也有Socket Sever、Shopify Liquid等不同開發類型。<br />
+              <!-- 版塊設計是台灣業界知名的網站設計公司，我在其擔任前端工程師，並參與了許多專案。<br />
+              使用的工具並不局限於常見的前端框架，同時也有Socket Sever、Shopify Liquid等不同開發類型。<br /> -->
+
+              <div class="">
+                版塊設計是台灣知名的網站設計公司，以炫麗的特效與新穎的互動方式聞名於業界。 <br />
+                在任職期間獨立完成數個專案的開發，主要的架構是使用Vue.js (Nuxt.js)進行前端開發，後端則用WordPress作為CMS系統並且以PHP撰寫REST API。<br />
+                除了Nuxt.js的網站開發以外，我還曾參與了Shopify專案的建置 與Socket.io Server建置。<br />
+                在職期間主要工作內容包括：
+                <ul class="list-disc text-gray-800 text-[15px] pl-10">
+                  <li>前端開發： 用Nuxt.js打造高度動態互動的網站，並且串接後端資料。</li>
+                  <li>後端開發： 撰寫PHP的REST API。</li>
+                  <li>Shopify專案： 建立Shopify主題，並且為其客製樣式組件，同時協助客戶部署上線。</li>
+                  <li>Socket服務： 規劃基於Socket的即時通訊體驗流程，並且實作其程式前後端邏輯。</li>
+                  <li>專案架構： 規劃專案的結構和使用者體驗流程。</li>
+                  <li>動態特效開發： 使用GSAP、p5.js、WebGL、Matter.js等工具製作動態效果。</li>
+                  <li>開發文件： 撰寫詳細的開發和技術文件。</li>
+                  <li>新人輔導： 協助和指導新進的開發人員，帶領他們進入公司專案，並且提供程式上的建議與除錯。</li>
+                  <li>專案部署： 協助撰寫Docker File，使用Docker將專案部署到AWS EC2。</li>
+                  <li>技術探索與分享： 在工程部門裡面，我的職位不只於專案開發，同時也扮演了新技術的測試工具化的角色。我在職期間研究了Shopify、WebAR與Socket.io等工具，並且建立適合同仁快速使用的開發工具與技術文件。</li>
+                </ul>
+              </div>
+              <div class="h-[1px] w-full bg-black my-2"></div>
               <ul class="list-disc text-sm pl-5">
                 <li @click="changeUrlQuery('cmp-inspiration')" :class="hasLinkItemStyle">2024 勤美術館 官方網站 - <b>網站開發 ＆ 後台建置 Api開發</b></li>
                 <li @click="changeUrlQuery('sasugas')" :class="hasLinkItemStyle">2024 流石五金官方網站 官方網站 - <b>網站開發</b></li>
@@ -238,8 +257,11 @@ provide("changeUrlQuery", changeUrlQuery);
             <template #company>愛迪斯科技 專案部 ／Pixelight</template>
             <template #time>2020 / 10～2023 / 2</template>
             <template #content>
-              任職於公司專案部門，開發項目以網頁與互動設計為主，並且成為公司網站相關專案負責人。<br />
-              開發了數個網站前端與參與互動設計：<br />
+              <div class="mb-2">
+                任職於公司專案部門，開發項目以網頁與互動設計為主，並且成為公司網站相關專案負責人。<br />
+                開發了數個網站前端與參與互動設計：
+              </div>
+              <div class="h-[1px] w-full bg-black my-2"></div>
               <ul class="list-disc text-sm pl-5">
                 <li>2022 國立臺灣文學館 文學館古蹟AR導覽</li>
                 <li @click="changeUrlQuery('ws_new')" :class="hasLinkItemStyle">2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）</li>
@@ -260,9 +282,12 @@ provide("changeUrlQuery", changeUrlQuery);
             <template #position>互動工程師</template>
             <template #company>玩味創研 Play Design Lab</template>
             <template #time>2020 / 6～202 / 9</template>
-            <template #content
-              >以Unity為主要開發工具，同時也按需求使用了Arduino與Raspberry Pi等不同的開發工具。<br />
-              參與了多項互動開發：<br />
+            <template #content>
+              <div class="mb-2">
+                以Unity為主要開發工具，同時也按需求使用了Arduino與Raspberry Pi等不同的開發工具。<br />
+                參與了多項互動開發：
+              </div>
+              <div class="h-[1px] w-full bg-black my-2"></div>
               <ul class="list-disc text-sm pl-5">
                 <li>2020 國立科學工藝博物館 邁向 AIoT 意象牆</li>
                 <li @click="changeUrlQuery('ai_shoes_maker')" :class="hasLinkItemStyle">2020 國立科學工藝博物館 AI鞋匠 互動裝置</li>
@@ -276,8 +301,9 @@ provide("changeUrlQuery", changeUrlQuery);
             <template #position>程式負責人</template>
             <template #company>STEAMNANO</template>
             <template #time>2017 / 9～2018 / 4</template>
-            <template #content
-              >入圍2018 青春設計節、放視大賞、金點新秀、Ａ＋創意季，並且獲得青春設計節-互動科技與遊戲設計類「金獎」。<br />
+            <template #content>
+              <div class="mb-2">入圍2018 青春設計節、放視大賞、金點新秀、Ａ＋創意季，並且獲得青春設計節-互動科技與遊戲設計類「金獎」。</div>
+              <div class="h-[1px] w-full bg-black my-2"></div>
               <ul class="list-disc text-sm pl-5">
                 <li @click="changeUrlQuery('steam_nano')" :class="hasLinkItemStyle">2018 STEAMNANO 數位遊戲</li>
               </ul>

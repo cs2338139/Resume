@@ -37,9 +37,9 @@ const props = defineProps({
         <div>
           <a :href="'mailto:' + email" class="link"> <slot name="mail" /> </a>｜<slot name="phone" />
         </div>
-        <div>
+        <!-- <div>
           <span class="font-bold">作品集：</span><a :href="portfolio" target="_blank" class="link"><slot name="portfolio" /></a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

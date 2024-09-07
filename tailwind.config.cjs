@@ -15,7 +15,12 @@ module.exports = {
 
       sm: { max: "575.98px" },
     },
-    extend: {},
+    extend: {
+      listStyleType: {
+        square: 'square',
+        roman: 'upper-roman',
+      }
+    },
   },
   plugins: [],
 };
