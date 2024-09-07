@@ -25,8 +25,8 @@ onMounted(() => {
     <img v-if="data?.cover" :src="`${baseUrl}/assets/images/portfolio/${data.key}/${data.cover}`" class="w-full object-cover" alt="" />
     <div class="px-20 lg:px-5 md:px-0 flex flex-col w-full items-start gap-8 md:gap-5">
       <div v-if="data?.name" class="text-3xl font-bold md:text-2xl">{{ data?.name }}</div>
-      <div class="text-lg md:text-base font-light text-gray-800 flex flex-col gap-1" v-if="data?.desc && data?.desc.length != 0">
-        <div class="" v-for="(d, index) in data?.desc" :key="index">{{ d }}</div>
+      <div class="text-lg md:text-base font-light text-gray-800 flex flex-col gap-3" v-if="data?.desc && data?.desc.length != 0">
+        <div class="whitespace-pre-wrap" v-for="(d, index) in data?.desc" :key="index">{{ d }}</div>
       </div>
       <div class="text-xl font-light md:text-lg">
         <popupSingleInfo v-if="data?.type">
