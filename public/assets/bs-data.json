@@ -16,7 +16,7 @@
     "client": "勤美術館",
     "links": [],
     "works": ["Canvas動態製作","Socket互動機制設計","Socket Server與前後端邏輯撰寫","搜尋功能","動態特效製作","內容切版與功能實作", "SVG動畫製作", "RWD","PHP API撰寫"],
-    "tools": ["NUXT","Tailwind css","Socket.io","JavaScript","PHP","WordPress","GSAP","Lenis.js","p5.js"],
+    "tools": ["NUXT","Tailwind css","Socket.io","JavaScript","PHP","WordPress","GSAP","Lenis.js","p5.js","Keen Slider.js"],
     "ytIDs": ["Ti01gSvFy2U"],
     "images": [
       {"images":["1-1.gif"],"desc":"首頁主視覺Banner Canvas，以p5.js製作。以24根柱狀圖片作為遮罩呈現，偵測滑鼠位置，再以比例來換算位移或是縮放的變量。\n底部的圖片可以從後台去做變更。"},
@@ -39,8 +39,8 @@
     "date": "2024",
     "client": "流石五金",
     "links": [{ "title": "已完成，客戶尚未發布上線", "url": "" }],
-    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接", "RWD"],
-    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js"],
+    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接","表單串接", "RWD"],
+    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js","Keen Slider.js"],
     "ytIDs": [],
     "images":[["01.webp"],["02.webp"],["03.webp"],["04.webp"]]
   },
@@ -58,8 +58,8 @@
     "date": "2024",
     "client": "幫推事務所",
     "links": [{ "title": "已完成，客戶尚未發布上線", "url": "" }],
-    "works": ["SVG動畫製作","SVG路徑跑動動態","動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接",  "RWD"],
-    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js"],
+    "works": ["SVG動畫製作","SVG路徑跑動動態","動態特效製作", "內容切版與功能實作", "前端架構規劃", "表單串接","資料串接",  "RWD"],
+    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js","Keen Slider.js"],
     "ytIDs": ["IxJspLIX-ak"],
     "images": [["1.webp"], ["2-1.webp"], ["2-2.webp"], ["3-1.webp", "3-2.webp"], ["4-1.webp", "4-2.webp"], ["5.webp"], ["m-1-1.webp", "m-1-2.webp"], ["m-2-1.webp", "m-2-2.webp", "m-2-3.webp"]]
   },
@@ -68,19 +68,17 @@
     "name": "金色三麥 | 官方網站 | 網站",
     "cover": "cover.webp",
     "desc": [
-      "金色三麥是台灣知名的啤酒品牌，以台灣在地的原料釀製出獨特的風味。",
-      "",
-      "首頁以js來操控各個section區塊，並且以gsap的timeline來組裝各個動態管理，並且達到上下無限滾動的效果。",
-      "",
-      "產品頁則是計算各個產品的數量位置與當前螢幕尺寸，來達到地圖拖曳探索的效果。",
-      "比較特別的部分是經由特殊演算法，達到了不管商品數量多寡與螢幕寬高改變都能夠呈現相同的比例畫面。"
+      "金色三麥是台灣知名的啤酒品牌，以台灣在地的原料釀製出獨特的風味。此次為他們的新版官網改版。",
+      "這在此專站案中我負責前端的程式製作，除了切版外，也包含頁面的架構設計與資料串接、動態製作。\n此專案是以Nuxt 3開發，整體使用Lenis.js達到緩數滾動的效果，使滾動體驗更加柔和。",
+      "該網站有兩個特別的大動態，其一是首頁的雙向無限滾動動態。以js來操控各個滿版Section，每個Section都有各自的進退場動態。為了統一操控管理這些動態，我將其動態function export出來給父層component來統一控制。\n並且以GSAP的Timeline add各個動態，同時偵測當前滾動的progress值，來判斷是否要進行迴轉Loop，以此達到上下無限滾動的效果。",
+      "第二特別的動態則是在於產品頁面，產品頁面是以拖曳探索地圖的方式來讓使用者找尋自己想要閱覽的產品。\n並且在進去產品頁面時會有一個特殊排列組合的進場動態，由於產品數量會在後台不斷的新增，同時畫面也會依照螢幕當前大小而有所改變，為了在各種情況下不會再成跑版的狀況，因此我設計了一個特殊的演算方式來動態調整畫面的情況，確保在任何情況下畫面都能夠統一的在初次畫面呈現5X4的排列組合。"
     ],
     "type": "網站",
     "date": "2024",
     "client": "金色三麥",
     "links": [{ "title": "已完成，客戶尚未發布上線", "url": "" }],
-    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接", "SVG動畫製作","首頁無限滾動效果","產品地圖探索效果", "RWD"],
-    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js"],
+    "works": ["首頁無限滾動效果","產品地圖探索效果","動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接","表單串接", "RWD"],
+    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js","Keen Slider.js"],
     "ytIDs": ["EKJ0drWS7QY"],
     "images": [
       ["1-1.webp", "1-2.webp"],
