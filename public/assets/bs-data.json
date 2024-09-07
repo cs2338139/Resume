@@ -95,17 +95,16 @@
     "cover": "cover.webp",
     "desc": [
       "Shopify電商平台的專案開發。再以現有的模板主題下，針對首頁進行重新設計與製作，最大亮點在於Banner的拋磚塊特效。",
-      "",
       "以Matter.js物理引擎製作，利用滑鼠拖曳來拋出磚塊，讓其與其他磚塊碰撞，製造出充滿玩味的小遊戲。除了此主要動態以外，其中還穿插SVG畫線動態等小動態。",
-      "",
-      "除了畫面動態切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。"
+      "除了畫面動態切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。",
+      "此網站模板的新增元件皆以web component的方式製作，並且將其封裝成獨立的元件，以避免在shopify的架構下程式所造成的污染。"
     ],
     "type": "Shopify | 網站 | 主題開發",
     "date": "2023",
     "client": "NCI STUDIOS",
     "links": [{ "title": "網站（主視覺已改版）", "url": "https://nci-studios.com/" }],
     "works": ["Canvas動態製作","動態特效製作", "Matter.js物理碰撞功能", "內容切版與功能實作", "Liquid模板元件製作", "Shopify內容串接", "SVG動畫製作", "RWD"],
-    "tools": ["Liquid", "Shopify Cli", "HTML", "JavaScript", "CSS", "Matter.js","GSAP"],
+    "tools": ["Liquid", "Shopify Cli","web component", "HTML", "JavaScript", "CSS", "Matter.js","GSAP"],
     "ytIDs": ["-W-jdWMU-cc"],
     "images": [["1.gif"], ["2.gif"], ["3.webp"], ["4.webp"], ["5-1.webp", "5-2.webp"]]
   },
