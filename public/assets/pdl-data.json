@@ -8,7 +8,7 @@
     "date": "2020",
     "interactions": ["AR"],
     "works": ["程式架構規劃", "開發互動功能", "VR遊戲內容開發", "UGUI功能製作", "光影調校", "遊戲物理與環境互動系統"],
-    "tools": ["Unity", "Google CardBoard SDK"],
+    "tools": ["Unity", "Google CardBoard SDK","C#"],
     "ytIDs": ["sl6a3NpwtPc"],
     "images": []
   },
@@ -18,10 +18,7 @@
     "cover": "cover.webp",
     "desc": [
       "AI鞋匠是Unity搭配C++與Azure Kinect DK結合出來的作品。",
-      "",
-      "依靠電腦的運算，解析使用者的服裝配色，替他搭配出最適合的鞋款配色，並且以畫面呈現出即時試穿效果。",
-      "作品利用Azure Kinect DK取得現實鏡頭前的畫面，解析出畫面裡人像的骨架，並且透過C++將數據傳送至Unity來進行視覺呈現。",
-      "",
+      "依靠電腦的運算，解析使用者的服裝配色，替他搭配出最適合的鞋款配色，並且以畫面呈現出即時試穿效果。\n作品利用Azure Kinect DK取得現實鏡頭前的畫面，解析出畫面裡人像的骨架，並且透過C++將數據傳送至Unity來進行視覺呈現。",
       "畫面運用了大量的粒子效果，充滿了未來與科技感。"
     ],
     "type": "體感互動裝置軟體開發",
@@ -29,7 +26,7 @@
     "date": "2020",
     "interactions": ["體感"],
     "works": ["程式架構規劃", "開發互動功能", "場景建構與layer設定", "UGUI功能製作", "模型Animator建置與狀態機程式", "粒子Particle運動呈現", "Shader撰寫", "光影調校", "視覺工程呈現", "使用者穿著顏色HSL分析系統"],
-    "tools": ["Unity", "Kinect"],
+    "tools": ["Unity", "Kinect","C#","Shader"],
     "ytIDs": ["OOGj7BWKCv4"],
     "images": []
   },
@@ -38,25 +35,15 @@
     "name": "PointCloud Mesh vertice補足系統 | Side Project",
     "cover": "cover.webp",
     "desc": [
-      "PointCloud Mesh vertice補足系統是AI鞋匠衍生出來的Side Project。",
-      "面對Mesh變成PointCloud時，頂點不夠的問題，自行撰寫了一支程式來增加頂點數，使得PointCloud不再只捕捉目標Mesh的骨架，而是將頂點平均的分布於Mesh模型上。",
-      "",
-      "如果只利用Mesh原生的頂點(vertice)來製作PointCloud，由於大多數Mesh原生的vertice為該模型的骨架部分，如果以此來製作PointCloud會顯得很空洞。但是透過該程式的演算法補足，將原本沒有vertice的位置按造triangle大小來平均填補vertice，並且抓取填補後位置texture的顏色，實現PointCloud效果。",
-      "",
-      "",
-      "-",
-      "※影片1.為利用Mesh原生點頂版本:",
-      "利用Mesh原生的頂點(vertice)來製作PointCloud，由於大多數Mesh原生的vertice為該模型的骨架部分，如果以此來製作PointCloud會顯得很空洞。",
-      "",
-      "-",
-      "※影片2.為利用Mesh補強後點頂版本",
-      "經過程式的運算，將原本沒有vertice的位置按造triangle大小來平均填補vertice，並且抓取填補後位置texture的顏色，實現PointCloud效果。"
+      "PointCloud Mesh vertice補足系統是AI鞋匠衍生出來的Side Project。\n面對Mesh變成PointCloud時，頂點不夠的問題，自行撰寫了一支程式來增加頂點數，使得PointCloud不再只捕捉目標Mesh的骨架，而是將頂點平均的分布於Mesh模型上。",
+      "如果只利用Mesh原生的頂點(vertice)來製作PointCloud，由於大多數Mesh原生的vertice為該模型的骨架部分，如果以此來製作PointCloud會顯得很空洞。但是透過該程式的演算法補足，將原本沒有vertice的位置按造triangle大小來平均填補vertice，並且抓取填補後位置texture的顏色，實現PointCloud效果。"
     ],
-    "type": "Side Project",
-    "date": "2020",
+    "type": "功能實現",
     "works": ["程式架構規劃", "模型點面掃描", "虛擬頂點創建", "粒子Particle補足公式推導與實作", "粒子Particle運動呈現", "Shader撰寫"],
-    "tools": ["Unity"],
-    "ytIDs": ["9csGdvBwYQU", "YHcpsJKGe5A"],
+    "tools": ["Unity","C#","Shader"],
+    "ytIDs": [
+      {"video":"9csGdvBwYQU","desc":"Mesh原生點頂版本:\n利用Mesh原生的頂點(vertice)來製作PointCloud，由於大多數Mesh原生的vertice為該模型的骨架部分，如果以此來製作PointCloud會顯得很空洞。"},
+      {"video":"YHcpsJKGe5A","desc":"補強後點頂版本:\n經過程式的運算，將原本沒有vertice的位置按造triangle大小來平均填補vertice，並且抓取填補後位置texture的顏色，實現PointCloud效果。"}],
     "images": []
   }
 ]

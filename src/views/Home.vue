@@ -1,7 +1,8 @@
 <script setup>
-import { ref, reactive, computed, onMounted, watchEffect, provide, watch } from "vue";
+import { ref, reactive, computed, onMounted, provide, watch } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import me from "/public/assets/images/resume/pic.jpeg";
+import sideData from "/public/assets/side-data.json";
 import bsData from "/public/assets/bs-data.json";
 import axis3dData from "/public/assets/axis3d-data.json";
 import pdlData from "/public/assets/pdl-data.json";
@@ -63,7 +64,7 @@ onMounted(() => {
     }
   });
 
-  const data = [...bsData, ...axis3dData, ...pdlData, ...otherData];
+  const data = [...sideData, ...bsData, ...axis3dData, ...pdlData, ...otherData];
 
   data.forEach((x) => {
     const key = x.key;
@@ -196,6 +197,22 @@ provide("changeUrlQuery", changeUrlQuery);
       <timeline class="mb-10">
         <template #title>工作經歷</template>
         <template #content>
+          <timelineItem>
+            <template #position>Side Project</template>
+            <template #company>自由接案</template>
+            <template #content>
+              <div class="">
+                在本職以外，我也會有將一些覺得有趣的或是想要學習的新技術，以Side Project的方式做成一個專案作品。<br />
+                為此增加工程開發上的經驗，或是挑戰一些沒使用過的新技術。
+              </div>
+              <div class="h-[1px] w-full bg-black my-2"></div>
+              <ul class="list-disc text-sm pl-5">
+                <li @click="changeUrlQuery('socket-demo')" :class="hasLinkItemStyle">Socket功能實作 | 共筆畫版 | 聊天室<b>功能實現</b></li>
+                <li @click="changeUrlQuery('vibe-400')" :class="hasLinkItemStyle">VIBE-400 - <b>網站開發</b></li>
+                <li @click="changeUrlQuery('point_cloud_changer')" :class="hasLinkItemStyle">粒子化3D模型頂點補足器 - <b>演算法實現</b></li>
+              </ul>
+            </template>
+          </timelineItem>
           <timelineItem>
             <template #position>前端工程師</template>
             <template #company>版塊設計 Block Studio</template>

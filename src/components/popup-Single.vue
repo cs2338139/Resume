@@ -72,8 +72,17 @@ onMounted(() => {
       </div>
     </div>
     <div class="flex flex-col gap-8 justify-center items-center md:gap-2 w-full" v-if="data?.ytIDs && data?.ytIDs.length != 0">
-      <div v-for="(ytID, index) in data?.ytIDs" class="w-full aspect-video flex gap-2 md:flex-col" :key="index">
-        <iframe width="100%" height="100%" :src="`https://www.youtube.com/embed/${ytID}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div v-for="(item, index) in data?.ytIDs" class="w-full aspect-video flex gap-2 md:flex-col" :key="index">
+        <template v-if="typeof item === 'string'">
+          <iframe width="100%" height="100%" :src="`https://www.youtube.com/embed/${item}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </template>
+        <div v-else class="flex gap-4 flex-col">
+          <iframe width="100%" height="100%" :src="`https://www.youtube.com/embed/${item?.video}`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="flex gap-2">
+            <div class="">•</div>
+            <div class="text-base text-gray-500 whitespace-pre-wrap" v-if="item?.desc">{{ item?.desc }}</div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="flex flex-col gap-8 justify-center items-center md:gap-2" v-if="data?.images && data?.images.length != 0">

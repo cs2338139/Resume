@@ -1,0 +1,32 @@
+[
+  {
+    "key": "socket-demo",
+    "name": "Socket功能實作 | 共筆畫版 | 聊天室",
+    "cover": "cover.webp",
+    "desc": [
+      ""
+    ],
+    "type": "功能實現",
+    "date": "2024",
+    "links": [{ "title": "Demo連結", "url": "" }],
+    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接","表單串接", "RWD"],
+    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js","Keen Slider.js"],
+    "ytIDs": [],
+    "images":[["01.webp"],["02.webp"],["03.webp"],["04.webp"]]
+  },
+  {
+    "key": "vibe-400",
+    "name": "VIBE-400 | 網站",
+    "cover": "cover.webp",
+    "desc": [
+      "此網站是應朋友的邀約而製作的，網站內容為他設計的網站。\n網站風格為不規則性排列，有大量的穿插進場元素，網站是以React制作而成。"
+    ],
+    "type": "網站",
+    "date": "2024",
+    "links": [],
+    "works": ["動態特效製作","內容切版與功能實作", "SVG動畫製作", "RWD"],
+    "tools": ["React","Tailwind css","JavaScript","GSAP"],
+    "ytIDs": ["E1aDCs-cIhg"],
+    "images": []
+  }
+]
