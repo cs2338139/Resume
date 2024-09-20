@@ -120,7 +120,7 @@ provide("changeUrlQuery", changeUrlQuery);
           擅長前後端分離架構的開發，並能夠使用Docker進行專案部署。在版塊設計期間，從無到有，參與了多個高度互動的網站專案，除了切版工作外，更專注於複雜的JavaScript以實現豐富的動態效果與功能實踐。<br />
           曾主導基於Socket的大型互動展覽項目，負責整體架構設計和核心功能實現。<br />
           此外，也具有Shopify電商平台的開發經驗。<br />
-          隨著經驗的積累，正逐步向產品開發方向發展，擴展技術棧至React.js，致力於創造更具影響力的數位體驗。<br />
+          隨著經驗的積累，正逐步向產品開發方向發展，致力於創造更具影響力的數位體驗。<br />
         </template>
       </introduction>
 
@@ -220,12 +220,12 @@ provide("changeUrlQuery", changeUrlQuery);
             <template #time>2023 / 5～2024 / 8</template>
             <template #content>
               <div class="">
-                版塊設計是台灣知名的網站設計公司，以炫麗的特效與新穎的互動方式聞名於業界。 <br />
-                在任職期間獨立完成數個專案的開發，主要的架構是使用Vue.js (Nuxt.js)進行前端開發，後端則用WordPress作為CMS系統並且以PHP撰寫REST API。<br />
-                除了Nuxt.js的網站開發以外，我還曾參與了Shopify專案的建置 與Socket.io Server建置。<br />
-                在職期間主要工作內容包括：
+                版塊設計是台灣知名的網站設計公司，以炫麗的特效與新穎的互動方式聞名於業界。<br />
+                在任職期間獨立完成數個專案的開發，累積了大量開發經驗。<br />
+                除了前端網站開發以外，我還曾參與了Shopify專案的建置 與Socket.io Server建置。<br />
+                在職期間主要工作內容包括：<br />
                 <ul class="list-disc text-gray-800 text-[15px] pl-10">
-                  <li>前端開發： 用Nuxt.js打造高度動態互動的網站，並且串接後端資料。</li>
+                  <li>前端開發： 打造高度動態互動的網站，並且串接後端資料。</li>
                   <li>後端開發： 撰寫PHP的REST API。</li>
                   <li>Shopify專案： 建立Shopify主題，並且為其客製樣式組件，同時協助客戶部署上線。</li>
                   <li>Socket服務： 規劃基於Socket的即時通訊體驗流程，並且實作其程式前後端邏輯。</li>
