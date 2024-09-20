@@ -207,7 +207,8 @@ provide("changeUrlQuery", changeUrlQuery);
               </div>
               <div class="h-[1px] w-full bg-black my-2"></div>
               <ul class="list-disc text-sm pl-5">
-                <li @click="changeUrlQuery('socket-demo')" :class="hasLinkItemStyle">Socket功能實作 | 共筆畫版 | 聊天室<b>功能實現</b></li>
+                <li @click="changeUrlQuery('socket-draw')" :class="hasLinkItemStyle">Socket功能實作 | 共筆畫版 - <b>功能實現</b></li>
+                <li @click="changeUrlQuery('socket-chat')" :class="hasLinkItemStyle">Socket功能實作 | 多房間即時聊天通訊 - <b>功能實現</b></li>
                 <li @click="changeUrlQuery('vibe-400')" :class="hasLinkItemStyle">VIBE-400 - <b>網站開發</b></li>
                 <li @click="changeUrlQuery('point_cloud_changer')" :class="hasLinkItemStyle">粒子化3D模型頂點補足器 - <b>演算法實現</b></li>
               </ul>
