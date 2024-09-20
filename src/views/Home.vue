@@ -261,9 +261,19 @@ provide("changeUrlQuery", changeUrlQuery);
             <template #company>愛迪斯科技 專案部 ／Pixelight</template>
             <template #time>2020 / 10～2023 / 2</template>
             <template #content>
-              <div class="mb-2">
+              <div class="">
                 任職於公司專案部門，開發項目以網頁與互動設計為主，並且成為公司網站相關專案負責人。<br />
-                開發了數個網站前端與參與互動設計：
+                開發了數個網站前端與參與互動設計：<br />
+                <ul class="list-disc text-gray-800 text-[15px] pl-10">
+                  <li>APP應用、網頁開發</li>
+                  <li>制定專案所需的技術</li>
+                  <li>體驗流程設計與程式邏輯撰寫、架構規劃</li>
+                  <li>專案技術整合</li>
+                  <li>專案上線部署、Google Play、APP Store上架</li>
+                  <li>新技術研發與應用測試</li>
+                  <li>現場專案進場安裝與調校</li>
+                  <li>硬體專案研發測試</li>
+                </ul>
               </div>
               <div class="h-[1px] w-full bg-black my-2"></div>
               <ul class="list-disc text-sm pl-5">
