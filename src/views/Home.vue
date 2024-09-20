@@ -285,7 +285,7 @@ provide("changeUrlQuery", changeUrlQuery);
           <timelineItem>
             <template #position>互動工程師</template>
             <template #company>玩味創研 Play Design Lab</template>
-            <template #time>2020 / 6～202 / 9</template>
+            <template #time>2020 / 6～2020 / 9</template>
             <template #content>
               <div class="mb-2">
                 以Unity為主要開發工具，同時也按需求使用了Arduino與Raspberry Pi等不同的開發工具。<br />
