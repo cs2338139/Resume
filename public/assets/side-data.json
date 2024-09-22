@@ -30,6 +30,7 @@
     ],
     "type": "功能實現",
     "date": "2024",
+    "links": [{ "title": "Demo 網站 （ＡＷＳ部署）", "url": "https://socket-chat.jinchengliang.com/" }],
     "works": ["訊息發送與接收","Socket Room功能","登入驗證與登出","使用者重新命名同步更新","事件邏輯與資料傳遞","Socket Server功能設計與程式撰寫","前後端架構規劃","內容切版與功能實作", "RWD"],
     "tools": ["React.js","Socket.io","Canvas","P5.js","Tailwind css","JavaScript"],
     "ytIDs": ["YvtjQ5_1Teg"]
