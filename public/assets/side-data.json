@@ -11,6 +11,7 @@
     ],
     "type": "功能實現",
     "date": "2024",
+    "links": [{ "title": "Demo 網站 （ＡＷＳ部署）", "url": "https://socket-draw.jinchengliang.com/" }],
     "works": ["Canvas 畫筆功能實現","Canvas 圖片上傳與拖曳功能實現","事件邏輯與資料傳遞","Socket Server功能設計與程式撰寫","前後端架構規劃","內容切版與功能實作"],
     "tools": ["React.js","Socket.io","Canvas","P5.js","Tailwind css","JavaScript"],
     "ytIDs": ["FkVe5veJT50"]
