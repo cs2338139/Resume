@@ -117,6 +117,12 @@ provide("changeUrlQuery", changeUrlQuery);
         <!-- <template #portfolio>Behance 作品集 ↗</template> -->
       </info>
 
+      <div class="w-full flex flex-col items-center justify-center py-4">
+        <button @click="changeUrlQuery('portfolio')" class="font-bold text-lg sm:text-base origin-center w-1/4 sm:w-full shadow-2xl sm:rounded-sm rounded-2xl hover:w-full bg-black text-white hover:rounded-sm py-1 transition-all duration-300" link="https://www.behance.net/JinChengLiang">
+          作品集
+        </button>
+      </div>
+
       <introduction class="mb-10">
         <template #title>個人簡述</template>
         <template #content>
