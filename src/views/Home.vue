@@ -113,8 +113,8 @@ provide("changeUrlQuery", changeUrlQuery);
         <template #phone>0975-601935</template>
         <template #portfolio>
           <div class="flex gap-2 mt-1">
-            <a target="_blank" href="https://resume.jinchengliang.com/?portfolio=portfolio" class="border-2 border-black px-10 origin-center sm:w-full shadow-2xl rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">作品集</a>
-            <a target="_blank" href="https://github.com/cs2338139" class="border-2 border-black px-10 origin-center sm:w-full shadow-2xl rounded-2xl hover:bg-black hover:text-white bg-white text-black transition-all duration-300">GitHub</a>
+            <a target="_blank" href="https://resume.jinchengliang.com/?portfolio=portfolio" class="border-2 border-black px-10 origin-center sm:w-full rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">作品集</a>
+            <a target="_blank" href="https://github.com/cs2338139" class="border-2 border-black px-10 origin-center sm:w-full rounded-2xl hover:bg-black hover:text-white bg-white text-black transition-all duration-300">GitHub</a>
           </div>
         </template>
       </info>
