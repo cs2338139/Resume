@@ -223,7 +223,7 @@ provide("changeUrlQuery", changeUrlQuery);
           </timelineItem>
           <timelineItem>
             <template #position>前端工程師</template>
-            <template #company>版塊設計 Block Studio</template>
+            <template #company>版塊 Studio</template>
             <template #time>2023 / 5～2024 / 8</template>
             <template #content>
               <div class="">
