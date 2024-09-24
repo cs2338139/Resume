@@ -1,4 +1,5 @@
 <script setup>
+import { inject } from "@vercel/analytics";
 import { ref, reactive, computed, onMounted, provide, watch } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import me from "/public/assets/images/resume/pic.jpeg";
@@ -24,6 +25,8 @@ const popupState = ref(false);
 // const popupData = reactive({ data });
 const router = useRouter();
 const route = useRoute();
+
+inject();
 
 function changeUrlQuery(value) {
   if (!value) {
