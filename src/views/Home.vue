@@ -125,15 +125,23 @@ provide("changeUrlQuery", changeUrlQuery);
         </template>
       </info>
 
-      <!-- <div class="w-full flex flex-col items-center justify-center py-4"></div> -->
-
       <introduction class="mb-6">
         <template #content>
-          擁有多年軟體開發經驗的軟體工程師，專注於前端開發和互動設計。<br />
-          我程式技能起步於C#，並且是以數位遊戲與互動人機界面的開發為主，後來轉向Web前端開發。<br />
-          能熟系使用React.js、Vue.js等前端框架，並且有豐富的前端開發經驗。參與了數個專案的開發，大多以Web前端開發為主，但也有APP、VR/AR，線下展覽互動裝置開發的經驗。<br />
-          擅長前後端分離架構的開發，並能夠使用Docker進行專案部署。在版塊Studio期間，從無到有，參與了多個高度互動的網站專案，專注於複雜的JavaScript以實現豐富的動態效果與功能實踐。<br />
-          曾主導基於Socket的大型互動展覽項目，負責整體架構設計和核心功能實現。<br />
+          <div class="flex flex-col gap-1.5">
+            <div>
+              擁有多年軟體開發經驗的前端工程師，專注於互動設計與Web開發。<br />
+              我程式技能起步於C#，並且以數位遊戲與互動人機界面的開發為主，後來轉向Web前端開發。
+            </div>
+            <div>
+              能夠熟練使用React.js和Vue.js（Nuxt.js）前端框架，開發CSR和SSR網站，擁有豐富的前端開發經驗。曾參與多個高度互動的專案，並專注於實現複雜的JavaScript動態效果與功能。<br />
+              除了前端開發外，我也有PHP後端語言的經驗，能夠使用WordPress CMS系統進行REST API開發。我擅長前後端分離架構的開發，並使用Tailwind、Material UI，構建RWD響應式網站。<br />
+              同時也具備使用Docker、Nginx和pm2等工具，將應用部署至AWS EC2等雲端平台的能力。<br />
+            </div>
+            <div>
+              曾主導基於Socket的大型互動展覽專案，負責整體架構設計及核心功能實現。<br />
+              此外，還有APP、VR/AR開發經驗，並參與過線下展覽的互動裝置開發。
+            </div>
+          </div>
         </template>
       </introduction>
 
@@ -141,7 +149,6 @@ provide("changeUrlQuery", changeUrlQuery);
         <template #title>技能</template>
         <template #content>
           <skillCategory>
-            <!-- <template #title> Web</template> -->
             <template #content>
               <skillTable>
                 <template #title>Base</template>
@@ -298,33 +305,6 @@ provide("changeUrlQuery", changeUrlQuery);
                 <li>2020 昇平戲院 座‧無虛席：昇平戲院 ╳ 臺灣老戲院特展</li>
                 <li @click="changeUrlQuery('play_flower')" :class="hasLinkItemStyle">2020 玩花數位VR體驗</li>
                 <li>2020 尋常茶VR體驗</li>
-              </ul>
-            </template>
-          </timelineItem>
-          <timelineItem>
-            <template #position>程式負責人</template>
-            <template #company>STEAMNANO</template>
-            <template #time>2017 / 9～2018 / 4</template>
-            <template #content>
-              <div class="mb-2">入圍2018 青春設計節、放視大賞、金點新秀、Ａ＋創意季，並且獲得青春設計節-互動科技與遊戲設計類「金獎」。</div>
-              <div class="h-[1px] w-full bg-black my-2"></div>
-              <ul class="list-disc text-sm pl-5">
-                <li @click="changeUrlQuery('steam_nano')" :class="hasLinkItemStyle">2018 STEAMNANO 數位遊戲</li>
-              </ul>
-            </template>
-          </timelineItem>
-          <timelineItem>
-            <template #position>程式負責人</template>
-            <template #company>LOVEGOD!</template>
-            <template #time>2017 / 2～2017 / 6</template>
-          </timelineItem>
-          <timelineItem>
-            <template #position>程式負責人</template>
-            <template #company>GODOG</template>
-            <template #time>2016 / 9～2017 / 1</template>
-            <template #content>
-              <ul class="list-disc text-sm pl-5">
-                <li @click="changeUrlQuery('godog')" :class="hasLinkItemStyle">2016 GODOG 數位遊戲</li>
               </ul>
             </template>
           </timelineItem>
