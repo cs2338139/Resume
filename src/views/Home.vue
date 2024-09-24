@@ -92,11 +92,6 @@ const baseUrl = computed(() => {
   return "";
 });
 
-const webUrl = computed(() => {
-  if (process.env.NODE_ENV === "development") return "http://localhost:5173";
-  return "https://www.jinchengliang.com";
-});
-
 const hasLinkItemStyle = computed(() => {
   return "hover:scale-105 transition duration-300 hover:text-white hover:bg-black cursor-pointer";
 });
@@ -113,13 +108,12 @@ provide("changeUrlQuery", changeUrlQuery);
         <template #enName>LIANG JIN CHENG</template>
         <template #title>Frontend Engineer</template>
         <template #skill>Web前端／React.js／Vue.js／JavaScript</template>
-        <!-- <template #education>南臺科技大學 多媒體與電腦娛樂科學系 / 遊戲工程</template> -->
         <template #place>臺北，Taiwan</template>
         <template #mail>cs2338139@gmail.com</template>
         <template #phone>0975-601935</template>
         <template #portfolio>
           <div class="flex gap-2 mt-1">
-            <button @click="changeUrlQuery('portfolio')" class="border-2 border-black px-10 origin-center sm:w-full shadow-2xl rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">作品集</button>
+            <a target="_blank" href="https://resume.jinchengliang.com/?portfolio=portfolio" class="border-2 border-black px-10 origin-center sm:w-full shadow-2xl rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">作品集</a>
             <a target="_blank" href="https://github.com/cs2338139" class="border-2 border-black px-10 origin-center sm:w-full shadow-2xl rounded-2xl hover:bg-black hover:text-white bg-white text-black transition-all duration-300">GitHub</a>
           </div>
         </template>
@@ -234,28 +228,11 @@ provide("changeUrlQuery", changeUrlQuery);
                   <li>技術探索與分享： 在日常的專案開發外，同時扮演了新技術的測試工具化的角色。在職期間研究了Shopify、WebAR與Socket.io等工具，並且建立適合同仁快速使用的開發工具與技術文件。</li>
                 </ul>
               </div>
-              <!-- <div class="h-[1px] w-full bg-black my-2"></div>
-              <ul class="list-disc text-sm pl-5">
-                <li @click="changeUrlQuery('cmp-inspiration')" :class="hasLinkItemStyle">2024 勤美術館 官方網站 - <b>網站開發 ＆ 後台建置 Api開發</b></li>
-                <li @click="changeUrlQuery('sasugas')" :class="hasLinkItemStyle">2024 流石五金官方網站 官方網站 - <b>網站開發</b></li>
-                <li @click="changeUrlQuery('venti-venti')" :class="hasLinkItemStyle">2024 幫推行銷 官方網站 - <b>網站開發</b></li>
-                <li>2024 投石行銷 官方網站 - <b>後台建置 Api開發</b></li>
-                <li @click="changeUrlQuery('sunmai')" :class="hasLinkItemStyle">2024 金色三麥 官方網站 - <b>網站開發</b></li>
-                <li @click="changeUrlQuery('nci_studio')" :class="hasLinkItemStyle">2023 Shopify 商店 NCI STUDIOS - <b>前端主題開發</b> <a href="https://tinyurl.com/n2k9v24z" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('organno')" :class="hasLinkItemStyle">2023 Organon-hhf - <b>網站開發</b></li>
-                <li @click="changeUrlQuery('wenk')" to-do :class="hasLinkItemStyle">2023 維肯媒體 WENK MEDIA - <b>網站開發</b> <a href="https://tinyurl.com/y2zn5teu" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('exhibition-socket')" :class="hasLinkItemStyle">2023 臺中州廳 城中串遊展覽 - <b>Socket Client & Sever</b></li>
-                <li @click="changeUrlQuery('exhibition-image')" :class="hasLinkItemStyle">2023 臺中州廳 城中串遊展覽 意識樣貌 - <b>網站開發</b></li>
-                <li @click="changeUrlQuery('vacation')" :class="hasLinkItemStyle">2023 假期農場 - <b>第二期開發與後台建制、資料串接</b> <a href="https://tinyurl.com/329h65c5" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('desider71')" :class="hasLinkItemStyle">2023 Shopify 商店 Desidere 7.1 - <b>前端主題開發</b> <a href="https://tinyurl.com/4h5fhvuj" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('block_studio')" :class="hasLinkItemStyle">2023 板塊設計 官方網站 - <b>Socket Client & Sever、動態開發</b> <a href="https://tinyurl.com/ym8mc56k" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('kkbox')" :class="hasLinkItemStyle">2023 KKBOX風雲榜 線上互動遊戲 - <b>網站開發</b></li>
-              </ul> -->
             </template>
           </timelineItem>
           <timelineItem>
-            <template #position>Frontend Engineer／Interactive Engineer</template>
-            <template #company>愛迪斯科技 AXIS 3D 專案部 ／Pixelight</template>
+            <template #position>Frontend／Interactive Engineer</template>
+            <template #company>愛迪斯科技 專案部 ／Pixelight</template>
             <template #time>2020 / 10～2023 / 2</template>
             <template #content>
               <div class="">
@@ -272,21 +249,6 @@ provide("changeUrlQuery", changeUrlQuery);
                   <li>硬體專案研發測試</li>
                 </ul>
               </div>
-              <!-- <div class="h-[1px] w-full bg-black my-2"></div>
-              <ul class="list-disc text-sm pl-5">
-                <li>2022 國立臺灣文學館 文學館古蹟AR導覽</li>
-                <li @click="changeUrlQuery('ws_new')" :class="hasLinkItemStyle">2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）</li>
-                <li @click="changeUrlQuery('ae_web')" :class="hasLinkItemStyle">2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站</li>
-                <li @click="changeUrlQuery('ws_build')" :class="hasLinkItemStyle">2022 國立臺灣文學館 文學館古蹟導覽下載 網站</li>
-                <li @click="changeUrlQuery('ws_tailor')" :class="hasLinkItemStyle">2022 國立臺灣文學館 光影裁縫店：冷不防 兒童繪本互動劇場</li>
-                <li @click="changeUrlQuery('ws_old')" :class="hasLinkItemStyle">2021 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （初版）</li>
-                <li @click="changeUrlQuery('ws_ar_ele')" :class="hasLinkItemStyle">2021 國立臺灣文學館 摺紙像偶AR 互動AR遊戲</li>
-                <li>2021 桃園安麗空間 賦能區 互動體感裝置</li>
-                <li>2021 桃園安麗空間 紐崔萊全程追朔 顯微鏡機構互動裝置</li>
-                <li>2021 桃園安麗空間 E-Spring 互動投影展示裝置</li>
-                <li @click="changeUrlQuery('ws_island')" :class="hasLinkItemStyle">2020 國立臺灣文學館 夢獸之島 多平台VR遊戲</li>
-                <li @click="changeUrlQuery('little_son')" :class="hasLinkItemStyle">2020 小兒子AR大冒險 互動AR遊戲APP</li>
-              </ul> -->
             </template>
           </timelineItem>
           <timelineItem>
