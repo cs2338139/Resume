@@ -16,31 +16,38 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="flex justify-between w-full h-60 text-justify sm:flex-col sm:h-auto sm:items-center">
-    <div class="overflow-hidden flex items-center shadow-xl justify-center rounded-md border w-1/3 h-full mr-14 sm:w-2/3 sm:mr-0 sm:mb-5">
+  <div class="flex justify-between w-full h-48 text-justify sm:flex-col sm:h-auto sm:items-center">
+    <div class="overflow-hidden flex items-center shadow-xl justify-center rounded-md border aspect-square h-full mr-10 sm:w-1/2 sm:mr-0 sm:mb-5">
       <img class="object-cover w-full h-full" :src="img" />
     </div>
     <div class="grow flex flex-col justify-around sm:items-center">
       <div class="flex flex-col sm:items-center">
-        <div class="font-bold text-4xl"><slot name="name" /></div>
-        <div class="text-2xl"><slot name="enName" /></div>
-        <div><slot name="birthday" /></div>
+        <div class="flex gap-5 items-end sm:flex-col sm:gap-0 sm:items-center">
+          <div class="font-semibold text-4xl">
+            <slot name="name" />
+          </div>
+          <div class="text-2xl sm:text-base">
+            <slot name="enName" />
+          </div>
+        </div>
+        <!-- <div><slot name="birthday" /></div> -->
       </div>
 
       <div class="flex flex-col sm:items-center">
-        <div class="text-lg font-bold mb-0.5"><slot name="skill" /></div>
-        <div><slot name="education" /></div>
+        <div class="text-xl font-semibold sm:text-2xl"><slot name="title" /></div>
+        <div><slot name="skill" /></div>
+        <!-- <div><slot name="education" /></div> -->
       </div>
 
       <div class="flex flex-col sm:items-center">
         <div><slot name="place" /></div>
         <div>
-          <a :href="'mailto:' + email" class="link"> <slot name="mail" /> </a>｜<slot name="phone" />
+          <a :href="'mailto:' + email" class="link"> <slot name="mail" /> </a>｜<a class="link" target="_blank" href="https://www.linkedin.com/in/jin-cheng-liang-320103206/">Linkedin</a>｜<slot name="phone" />
         </div>
-        <!-- <div> -->
-        <!-- <span class="font-bold">作品集：</span><a :href="portfolio" target="_blank" class="link"><slot name="portfolio" /></a> -->
-        <!-- <slot name="portfolio" /> -->
-        <!-- </div> -->
+
+        <div>
+          <slot name="portfolio" />
+        </div>
       </div>
     </div>
   </div>

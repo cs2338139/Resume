@@ -48,15 +48,20 @@ b {
   }
   .wrap {
     @apply max-w-[1080px] relative mx-auto py-10 px-6;
-    @apply xl:px-2 xl:py-5;
+    @apply xl:px-2 xl:py-5 md:px-0;
   }
 
   .wrapInner {
     @apply px-20 py-14;
-    @apply xl:px-10 xl:py-5 sm:px-3;
+    @apply xl:px-10 xl:py-5 md:px-6 sm:px-3;
   }
 
   .link {
     @apply text-blue-600 hover:underline hover:text-blue-900;
   }
+}
+
+
+@page{
+  margin: 1cm;
 }

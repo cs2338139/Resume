@@ -33,7 +33,7 @@ onMounted(() => {
   <div class="w-full flex flex-col justify-center items-center h-screen top-0 md:justify-start fixed">
     <div class="w-full h-full absolute top-0 bg-black/80" @click="changeUrlQuery()"></div>
     <div class="relative max-w-[1200px] flex justify-between w-full top-0 md:mt-5 sm:mt-2 pointer-events-none">
-      <button @click="changeUrlQuery('portfolio')" class="w-16 h-16 sm:w-12 sm:h-12 hover:scale-110 origin-center pointer-events-auto duration-300 transition-transform">
+      <button @click="changeUrlQuery('portfolio')" :class="{ invisible: _key.toLowerCase() === 'portfolio' }" class="w-16 h-16 sm:w-12 sm:h-12 hover:scale-110 origin-center pointer-events-auto duration-300 transition-transform">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="text-white">
           <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292" />
         </svg>
