@@ -238,7 +238,7 @@ provide("changeUrlQuery", changeUrlQuery);
                 除了前端網站開發以外，我還曾參與了Shopify專案的建置 與Socket.io Server建置。<br />
                 在職期間主要工作內容包括：<br />
                 <ul class="list-disc text-gray-800 text-[15px] pl-10">
-                  <li>前端開發： 打造高度動態互動的網站，並且串接後端資料。</li>
+                  <li>前端開發： 運用前端框架（Vue.js / React.js）打造高度動態互動的網站，並且串接後端資料。</li>
                   <li>後端開發： 撰寫PHP的REST API。</li>
                   <li>Shopify專案： 建立Shopify主題，並且為其客製樣式組件，同時協助客戶部署上線。</li>
                   <li>Socket服務： 規劃基於Socket的即時通訊體驗流程，並且實作其程式前後端邏輯。</li>
