@@ -216,6 +216,7 @@ provide("changeUrlQuery", changeUrlQuery);
             <template #content>
               <div class="">
                 在本職以外，我也會有將一些覺得有趣的或是想要學習的新技術，以Side Project的方式做成一個專案作品。<br />
+
                 為此增加工程開發上的經驗，或是挑戰一些沒使用過的新技術。
               </div>
               <div class="h-[1px] w-full bg-black my-2"></div>
