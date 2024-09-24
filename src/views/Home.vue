@@ -107,8 +107,10 @@ provide("changeUrlQuery", changeUrlQuery);
         <template #name>梁晋誠</template>
         <template #enName>LIANG JIN CHENG</template>
         <template #birthday>1995／12／08</template>
-        <template #skill>前端網頁／Unity／VR／互動工程／遊戲開發</template>
-        <template #education>南臺科技大學 多媒體與電腦娛樂科學系 / 遊戲工程</template>
+        <!-- <template #skill>Web前端／Unity／VR／互動工程／遊戲開發</template> -->
+        <template #skill>Web前端／React.js／Vue.js／JavaScript</template>
+        <!-- <template #education>南臺科技大學 多媒體與電腦娛樂科學系 / 遊戲工程</template> -->
+        <template #education>南臺科技大學</template>
         <template #place>臺北，Taiwan</template>
         <template #mail>cs2338139@gmail.com</template>
         <template #phone>0975-601935</template>
@@ -118,11 +120,12 @@ provide("changeUrlQuery", changeUrlQuery);
       <introduction class="mb-10">
         <template #title>個人簡述</template>
         <template #content>
-          擁有4年軟體開發經驗的軟體工程師，專注於前端開發和互動設計。<br />
-          參與了數個專案的開發，大多以網站前端開發為主，但也有APP、VR/AR，線下展覽互動裝置開發的經驗。<br />
-          擅長前後端分離架構的開發，並能夠使用Docker進行專案部署。在版塊設計期間，從無到有，參與了多個高度互動的網站專案，除了切版工作外，更專注於複雜的JavaScript以實現豐富的動態效果與功能實踐。<br />
+          擁有多年軟體開發經驗的軟體工程師，專注於前端開發和互動設計。<br />
+          熟系使用React.js、Vue.js等前端框架，並且有豐富的網站開發經驗。<br />
+          參與了數個專案的開發，大多以Web前端開發為主，但也有APP、VR/AR，線下展覽互動裝置開發的經驗。<br />
+          擅長前後端分離架構的開發，並能夠使用Docker進行專案部署。在版塊Studio期間，從無到有，參與了多個高度互動的網站專案，除了切版工作外，更專注於複雜的JavaScript以實現豐富的動態效果與功能實踐。<br />
           曾主導基於Socket的大型互動展覽項目，負責整體架構設計和核心功能實現。<br />
-          此外，也具有Shopify電商平台的開發經驗。<br />
+          <!-- 此外，也具有Shopify電商平台的開發經驗。<br /> -->
           <!-- 隨著經驗的積累，正逐步向產品開發方向發展，致力於創造更具影響力的數位體驗。<br /> -->
         </template>
       </introduction>
@@ -138,9 +141,9 @@ provide("changeUrlQuery", changeUrlQuery);
                 <template #content>
                   <skillTableItem>React.js</skillTableItem>
                   <skillTableItem>Vue.js (Nuxt.js)</skillTableItem>
+                  <skillTableItem>TypeScript</skillTableItem>
                   <skillTableItem>HTML5／CSS／javascript</skillTableItem>
                   <skillTableItem>RWD 響應式網頁規劃</skillTableItem>
-                  <skillTableItem>TypeScript</skillTableItem>
                   <skillTableItem>Tailwind</skillTableItem>
                   <skillTableItem>PHP</skillTableItem>
                   <skillTableItem>C#</skillTableItem>
