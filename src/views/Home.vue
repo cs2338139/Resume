@@ -109,14 +109,14 @@ provide("changeUrlQuery", changeUrlQuery);
   <div class="wrap flex flex-col items-center">
     <div class="border border-gray-100 shadow-xl wrapInner">
       <info class="mb-10" email="cs2338139@gmail.com" portfolio="https://www.behance.net/JinChengLiang" :img="me">
-        <template #name>LIANG JIN CHENG</template>
-        <template #enName>Anton</template>
-        <template #title>Frontend Engineer</template>
-        <template #skill>Web Frontend／React.js／Vue.js／JavaScript</template>
+        <template #name>梁晋誠</template>
+        <template #enName>LIANG JIN CHENG</template>
+        <template #title>前端工程師</template>
+        <template #skill>Web前端／React.js／Vue.js／JavaScript</template>
         <!-- <template #education>南臺科技大學 多媒體與電腦娛樂科學系 / 遊戲工程</template> -->
-        <template #place>Taipei，Taiwan</template>
+        <template #place>臺北，Taiwan</template>
         <template #mail>cs2338139@gmail.com</template>
-        <template #phone>(+886) 975-601935</template>
+        <template #phone>0975-601935</template>
         <template #portfolio>
           <div class="flex gap-2 mt-1">
             <button @click="changeUrlQuery('portfolio')" class="border-2 border-black px-10 origin-center sm:w-full shadow-2xl rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">作品集</button>
@@ -128,26 +128,25 @@ provide("changeUrlQuery", changeUrlQuery);
       <introduction class="mb-6">
         <template #content>
           <div class="flex flex-col gap-1.5">
-            <div>Frontend Engineer with Years of Software Development Experience, Specializing in Interactive Design and Web Development</div>
-
             <div>
-              My programming journey began with C#, focusing on the development of digital games and interactive human-machine interfaces, before transitioning to web frontend development. I am proficient in using frontend frameworks like React.js and Vue.js (Nuxt.js) to develop CSR (Client-Side
-              Rendering) and SSR (Server-Side Rendering) websites, with extensive frontend development experience. I have participated in multiple highly interactive projects and specialize in implementing complex JavaScript dynamic effects and functionalities.
+              擁有多年軟體開發經驗的前端工程師，專注於互動設計與Web開發。<br />
+              我程式技能起步於C#，並且以數位遊戲與互動人機界面的開發為主，後來轉向Web前端開發。
             </div>
-
-            <div>In addition to frontend development, I also have experience in backend development using PHP and WordPress CMS to develop REST APIs. I excel in developing frontend-backend decoupled architectures and building responsive websites (RWD) using Tailwind and Material UI.</div>
-
             <div>
-              I am also skilled in using tools such as Docker, Nginx, and pm2 to deploy applications to cloud platforms like AWS EC2. I have led large-scale interactive exhibition projects based on Socket technology, responsible for overall architecture design and core feature implementation.
+              能夠熟練使用React.js和Vue.js（Nuxt.js）前端框架，開發CSR和SSR網站，擁有豐富的前端開發經驗。曾參與多個高度互動的專案，並專注於實現複雜的JavaScript動態效果與功能。<br />
+              除了前端開發外，我也有PHP後端語言的經驗，能夠使用WordPress CMS系統進行REST API開發。我擅長前後端分離架構的開發，並使用Tailwind、Material UI，構建RWD響應式網站。<br />
+              同時也具備使用Docker、Nginx和pm2等工具，將應用部署至AWS EC2等雲端平台的能力。<br />
             </div>
-
-            <div>Additionally, I have experience in APP, VR/AR development, and have participated in the development of interactive devices for offline exhibitions.</div>
+            <div>
+              曾主導基於Socket的大型互動展覽專案，負責整體架構設計及核心功能實現。<br />
+              此外，還有APP、VR/AR開發經驗，並參與過線下展覽的互動裝置開發。
+            </div>
           </div>
         </template>
       </introduction>
 
       <skill class="mb-10">
-        <template #title>Skill</template>
+        <template #title>技能</template>
         <template #content>
           <skillCategory>
             <template #content>
@@ -158,7 +157,7 @@ provide("changeUrlQuery", changeUrlQuery);
                   <skillTableItem>Vue.js (Nuxt.js)</skillTableItem>
                   <skillTableItem>TypeScript</skillTableItem>
                   <skillTableItem>HTML5／CSS／javascript</skillTableItem>
-                  <skillTableItem>RWD</skillTableItem>
+                  <skillTableItem>RWD 響應式網頁規劃</skillTableItem>
                   <skillTableItem>Tailwind</skillTableItem>
                   <skillTableItem>PHP</skillTableItem>
                   <skillTableItem>C#</skillTableItem>
