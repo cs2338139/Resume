@@ -159,7 +159,7 @@ provide("field", field);
       <timeline class="mb-10" :data="{ title: field?.education, content: info?.education }" />
 
       <div class="bg-gray-300 my-14 h-[1.5px] w-3/4 mx-auto" />
-      <buttonPortfolio @open="changeUrlQuery('portfolio')" class="mb-5 sm:mb-10" link="https://www.behance.net/JinChengLiang"> 作品集</buttonPortfolio>
+      <buttonPortfolio @open="changeUrlQuery('portfolio')" class="mb-5 sm:mb-10" link="https://www.behance.net/JinChengLiang"> {{ field?.portfolio }}</buttonPortfolio>
     </div>
     <popup :_data="projects" :_key="currentKey" v-if="popupState" />
   </div>
