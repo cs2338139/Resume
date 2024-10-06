@@ -1,3 +1,6 @@
 {
-  "portfolio": "Portfolio"
+  "portfolio": "Portfolio",
+  "skill": "Skill",
+  "experience": "Experience",
+  "education": "Education"
 }

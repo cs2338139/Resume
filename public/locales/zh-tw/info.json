@@ -64,7 +64,7 @@
             },
             {
               "query": "point_cloud_changer",
-              "title": "粒子化3D模型頂點補足器",
+              "title": "粒子化3D模型頂點強化法",
               "type": "演算法實現"
             }
           ]
@@ -99,7 +99,7 @@
     },
     {
       "position": "前端工程師／互動工程師",
-      "for": "愛迪斯科技 AXIS 3D 專案部 ／Pixelight",
+      "for": "愛迪斯科技 AXIS 3D ／Pixelight",
       "time": "2020 / 10～2023 / 2",
       "content": [
         {

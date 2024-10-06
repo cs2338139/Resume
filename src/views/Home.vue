@@ -9,12 +9,11 @@ import information from "../components/information.vue";
 import skill from "../components/skill/skill.vue";
 import introduction from "../components/introduction.vue";
 import timeline from "../components/timeline/timeline.vue";
-import timelineItem from "../components/timeline/timeline-Item.vue";
 import buttonPortfolio from "../components/buttonPortfolio.vue";
-import popup from "../components/popup.vue";
+import popup from "../components/popup/popup.vue";
 import localeBtn from "../components/localeBtn.vue";
 
-const { locale, t, availableLocales, getLocaleMessage } = useI18n();
+const { locale, availableLocales, getLocaleMessage } = useI18n();
 const info = ref({});
 const field = ref({});
 const projects = reactive({});
@@ -136,12 +135,9 @@ const webUrl = computed(() => {
   return "https://www.jinchengliang.com";
 });
 
-const hasLinkItemStyle = computed(() => {
-  return "hover:scale-105 transition duration-300 hover:text-white hover:bg-black cursor-pointer";
-});
-
 provide("baseUrl", baseUrl);
 provide("changeUrlQuery", changeUrlQuery);
+provide("field", field);
 </script>
 
 <template>
