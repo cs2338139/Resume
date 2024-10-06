@@ -148,18 +148,11 @@ provide("changeUrlQuery", changeUrlQuery);
   <div class="wrap flex flex-col items-center">
     <div class="border relative border-gray-100 shadow-xl wrapInner">
       <localeBtn class="absolute right-5 top-5 md:fixed" />
-      <information class="mb-10" :email="info?.mail" :linkedin="info?.linkedin" :img="me">
-        <template #name>{{ info?.name }}</template>
-        <template #enName>{{ info?.enName }}</template>
-        <template #title>{{ info?.title }}</template>
-        <template #skill>{{ info?.keyWord }}</template>
-        <template #place>{{ info?.place }}</template>
-        <template #mail>{{ info?.mail }}</template>
-        <template #phone>{{ info?.phone }}</template>
+      <information :data="{ img: me, ...info?.information }" class="mb-10" :email="info?.mail" :linkedin="info?.linkedin" :img="me">
         <template #portfolio>
           <div class="flex gap-2 mt-1">
             <button @click="changeUrlQuery('portfolio')" class="border-2 border-black px-10 origin-center sm:w-full shadow-2xl rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">{{ field?.portfolio }}</button>
-            <a target="_blank" :href="info?.github" class="border-2 border-black px-10 origin-center sm:w-full shadow-2xl rounded-2xl hover:bg-black hover:text-white bg-white text-black transition-all duration-300">GitHub</a>
+            <a v-if="info?.information?.github" target="_blank" :href="info?.information?.github" class="border-2 border-black px-10 origin-center sm:w-full shadow-2xl rounded-2xl hover:bg-black hover:text-white bg-white text-black transition-all duration-300">GitHub</a>
           </div>
         </template>
       </information>
