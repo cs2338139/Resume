@@ -33,7 +33,7 @@ const changeUrlQuery = inject("changeUrlQuery");
     </div>
     <div class="flex">
       <div class="w-3 mr-10 sm:mr-5"></div>
-      <div class="text-justify">
+      <div>
         <div class="hidden text-xl font-bold sm:block">
           {{ data?.for }}
         </div>

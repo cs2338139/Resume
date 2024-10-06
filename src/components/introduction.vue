@@ -21,7 +21,7 @@ const { data } = toRefs(props);
       <div class="text-3xl font-bold mb-3">
         {{ data?.title }}
       </div>
-      <div class="text-justify">
+      <div>
         <div class="flex flex-col gap-1.5">
           <div class="whitespace-pre-wrap" v-for="(d, index) in data?.content" :key="index">{{ d }}</div>
         </div>
