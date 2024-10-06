@@ -6,7 +6,7 @@ import { useI18n } from "vue-i18n";
 import me from "/public/assets/images/resume/pic.jpeg";
 
 import information from "../components/information.vue";
-import skill from "../components/Skill/skill.vue";
+import skill from "../components/skill/skill.vue";
 import introduction from "../components/introduction.vue";
 import timeline from "../components/timeline.vue";
 import timelineItem from "../components/timeline-Item.vue";
