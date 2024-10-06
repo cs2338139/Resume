@@ -29,7 +29,7 @@ export const i18n = createI18n({
     locale: 'zh-tw',
     fallbackLocale: 'en',
     messages: {
-        'zh-tw': zh_tw,
+        'zh-TW': zh_tw,
         'en': en,
     }
   });

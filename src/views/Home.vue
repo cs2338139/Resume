@@ -31,12 +31,15 @@ function changeUrlQuery(value) {
   if (!value) {
     router.push({
       path: "/",
+      query: null,
+      hash: route.hash,
     });
     return;
   }
   router.push({
     path: "/",
     query: { portfolio: value },
+    hash: route.hash,
   });
 }
 
@@ -65,12 +68,30 @@ function createData() {
   });
 }
 
+function pushToDefaultLang() {
+  const browserLang = navigator.language || navigator.userLanguage;
+  let targetLang = "";
+  if (availableLocales.includes(browserLang)) {
+    targetLang = browserLang;
+  } else {
+    targetLang = "en";
+  }
+
+  router.push({
+    path: "/",
+    hash: `#${targetLang}`,
+    query: route.query,
+  });
+}
+
 onMounted(() => {
   document.body.addEventListener("keyup", (e) => {
     if (popupState.value === false) return;
     if (e.key === "Escape") {
       router.push({
         path: "/",
+        hash: route.hash,
+        query: null,
       });
     }
   });
@@ -96,14 +117,10 @@ onMounted(() => {
           locale.value = lang;
           createData();
         } else {
-          router.push({
-            hash: `#zh-tw`,
-          });
+          pushToDefaultLang();
         }
       } else {
-        router.push({
-          hash: `#zh-tw`,
-        });
+        pushToDefaultLang();
       }
     },
     { immediate: true }

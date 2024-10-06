@@ -4,10 +4,13 @@ import { useRouter, useRoute } from "vue-router";
 const { availableLocales, getLocaleMessage } = useI18n();
 
 const router = useRouter();
+const route = useRoute();
 
 function changeLanguage(lang) {
   router.push({
+    path: "/",
     hash: `#${lang}`,
+    query: route.query,
   });
 }
 </script>
