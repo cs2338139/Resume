@@ -2,12 +2,9 @@
 import { inject } from "@vercel/analytics";
 import { ref, reactive, computed, onMounted, provide, watch } from "vue";
 import { useRouter, useRoute } from "vue-router";
+import { useI18n } from "vue-i18n";
 import me from "/public/assets/images/resume/pic.jpeg";
-import sideData from "/public/assets/side-data.json";
-import bsData from "/public/assets/bs-data.json";
-import axis3dData from "/public/assets/axis3d-data.json";
-import pdlData from "/public/assets/pdl-data.json";
-import otherData from "/public/assets/other-data.json";
+
 import info from "../components/info.vue";
 import skill from "../components/skill.vue";
 import skillCategory from "../components/skill-category.vue";
@@ -18,11 +15,13 @@ import timeline from "../components/timeline.vue";
 import timelineItem from "../components/timeline-Item.vue";
 import buttonPortfolio from "../components/buttonPortfolio.vue";
 import popup from "../components/popup.vue";
+import localeBtn from "../components/localeBtn.vue";
 
+const { locale, t, availableLocales, getLocaleMessage } = useI18n();
+const data = ref({});
 const projects = reactive({});
 const currentKey = ref("");
 const popupState = ref(false);
-// const popupData = reactive({ data });
 const router = useRouter();
 const route = useRoute();
 
@@ -56,22 +55,24 @@ function popupSwitch(value, key = null) {
   }
 }
 
+function createData() {
+  const localeData = getLocaleMessage(locale.value);
+
+  data.value = localeData.data;
+  localeData.portfolio.forEach((x) => {
+    const key = x.key;
+    projects[key] = x;
+  });
+}
+
 onMounted(() => {
   document.body.addEventListener("keyup", (e) => {
     if (popupState.value === false) return;
     if (e.key === "Escape") {
-      // popupSwitch(false);
       router.push({
         path: "/",
       });
     }
-  });
-
-  const data = [...sideData, ...bsData, ...axis3dData, ...pdlData, ...otherData];
-
-  data.forEach((x) => {
-    const key = x.key;
-    projects[key] = x;
   });
 
   watch(
@@ -81,6 +82,28 @@ onMounted(() => {
         popupSwitch(true, value);
       } else {
         popupSwitch(false);
+      }
+    },
+    { immediate: true }
+  );
+
+  watch(
+    () => route.hash,
+    (value) => {
+      if (value) {
+        const lang = value.replace("#", "");
+        if (availableLocales.includes(lang)) {
+          locale.value = lang;
+          createData();
+        } else {
+          router.push({
+            hash: `#zh-tw`,
+          });
+        }
+      } else {
+        router.push({
+          hash: `#zh-tw`,
+        });
       }
     },
     { immediate: true }
@@ -107,7 +130,9 @@ provide("changeUrlQuery", changeUrlQuery);
 
 <template>
   <div class="wrap flex flex-col items-center">
-    <div class="border border-gray-100 shadow-xl wrapInner">
+    <div class="border relative border-gray-100 shadow-xl wrapInner">
+      <localeBtn class="absolute right-5 top-5" />
+      {{ data }}
       <info class="mb-10" email="cs2338139@gmail.com" portfolio="https://www.behance.net/JinChengLiang" :img="me">
         <template #name>梁晋誠</template>
         <template #enName>LIANG JIN CHENG</template>
@@ -234,23 +259,6 @@ provide("changeUrlQuery", changeUrlQuery);
                   <li>技術探索與分享： 在日常的專案開發外，同時扮演了新技術的測試工具化的角色。在職期間研究了Shopify、WebAR與Socket.io等工具，並且建立適合同仁快速使用的開發工具與技術文件。</li>
                 </ul>
               </div>
-              <!-- <div class="h-[1px] w-full bg-black my-2"></div>
-              <ul class="list-disc text-sm pl-5">
-                <li @click="changeUrlQuery('cmp-inspiration')" :class="hasLinkItemStyle">2024 勤美術館 官方網站 - <b>網站開發 ＆ 後台建置 Api開發</b></li>
-                <li @click="changeUrlQuery('sasugas')" :class="hasLinkItemStyle">2024 流石五金官方網站 官方網站 - <b>網站開發</b></li>
-                <li @click="changeUrlQuery('venti-venti')" :class="hasLinkItemStyle">2024 幫推行銷 官方網站 - <b>網站開發</b></li>
-                <li>2024 投石行銷 官方網站 - <b>後台建置 Api開發</b></li>
-                <li @click="changeUrlQuery('sunmai')" :class="hasLinkItemStyle">2024 金色三麥 官方網站 - <b>網站開發</b></li>
-                <li @click="changeUrlQuery('nci_studio')" :class="hasLinkItemStyle">2023 Shopify 商店 NCI STUDIOS - <b>前端主題開發</b> <a href="https://tinyurl.com/n2k9v24z" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('organno')" :class="hasLinkItemStyle">2023 Organon-hhf - <b>網站開發</b></li>
-                <li @click="changeUrlQuery('wenk')" to-do :class="hasLinkItemStyle">2023 維肯媒體 WENK MEDIA - <b>網站開發</b> <a href="https://tinyurl.com/y2zn5teu" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('exhibition-socket')" :class="hasLinkItemStyle">2023 臺中州廳 城中串遊展覽 - <b>Socket Client & Sever</b></li>
-                <li @click="changeUrlQuery('exhibition-image')" :class="hasLinkItemStyle">2023 臺中州廳 城中串遊展覽 意識樣貌 - <b>網站開發</b></li>
-                <li @click="changeUrlQuery('vacation')" :class="hasLinkItemStyle">2023 假期農場 - <b>第二期開發與後台建制、資料串接</b> <a href="https://tinyurl.com/329h65c5" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('desider71')" :class="hasLinkItemStyle">2023 Shopify 商店 Desidere 7.1 - <b>前端主題開發</b> <a href="https://tinyurl.com/4h5fhvuj" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('block_studio')" :class="hasLinkItemStyle">2023 板塊設計 官方網站 - <b>Socket Client & Sever、動態開發</b> <a href="https://tinyurl.com/ym8mc56k" target="_blank" class="link font-bold">網站連結↗</a></li>
-                <li @click="changeUrlQuery('kkbox')" :class="hasLinkItemStyle">2023 KKBOX風雲榜 線上互動遊戲 - <b>網站開發</b></li>
-              </ul> -->
             </template>
           </timelineItem>
           <timelineItem>
@@ -272,21 +280,6 @@ provide("changeUrlQuery", changeUrlQuery);
                   <li>硬體專案研發測試</li>
                 </ul>
               </div>
-              <!-- <div class="h-[1px] w-full bg-black my-2"></div>
-              <ul class="list-disc text-sm pl-5">
-                <li>2022 國立臺灣文學館 文學館古蹟AR導覽</li>
-                <li @click="changeUrlQuery('ws_new')" :class="hasLinkItemStyle">2022 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （新版）</li>
-                <li @click="changeUrlQuery('ae_web')" :class="hasLinkItemStyle">2022 國立臺灣藝術教育館 夢境漫遊：繪本藝術展 網站</li>
-                <li @click="changeUrlQuery('ws_build')" :class="hasLinkItemStyle">2022 國立臺灣文學館 文學館古蹟導覽下載 網站</li>
-                <li @click="changeUrlQuery('ws_tailor')" :class="hasLinkItemStyle">2022 國立臺灣文學館 光影裁縫店：冷不防 兒童繪本互動劇場</li>
-                <li @click="changeUrlQuery('ws_old')" :class="hasLinkItemStyle">2021 國立臺灣文學館 數位遊戲開發暨藏品3D掃描建模計畫 網站 （初版）</li>
-                <li @click="changeUrlQuery('ws_ar_ele')" :class="hasLinkItemStyle">2021 國立臺灣文學館 摺紙像偶AR 互動AR遊戲</li>
-                <li>2021 桃園安麗空間 賦能區 互動體感裝置</li>
-                <li>2021 桃園安麗空間 紐崔萊全程追朔 顯微鏡機構互動裝置</li>
-                <li>2021 桃園安麗空間 E-Spring 互動投影展示裝置</li>
-                <li @click="changeUrlQuery('ws_island')" :class="hasLinkItemStyle">2020 國立臺灣文學館 夢獸之島 多平台VR遊戲</li>
-                <li @click="changeUrlQuery('little_son')" :class="hasLinkItemStyle">2020 小兒子AR大冒險 互動AR遊戲APP</li>
-              </ul> -->
             </template>
           </timelineItem>
           <timelineItem>

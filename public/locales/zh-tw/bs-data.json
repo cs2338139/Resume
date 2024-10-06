@@ -1,0 +1,253 @@
+[
+  {
+    "key": "cmp-inspiration",
+    "name": "勤美術館 | 官方網站 | 網站",
+    "cover": "cover.webp",
+    "desc": [
+      "勤美術館是臺中預計於2024年底新開幕的美術館。",
+      "此專案製作時，我為前端主工程師，複雜設計架構與until function給其他參與工程師使用。\n除了前端以外，我同時也負責了後端ＣＭＳ系統與其API撰寫，並且與前端進行資料串接。",
+      "此專案是以Nuxt 3開發，整體使用Lenis.js達到緩數滾動的效果，使滾動體驗更加柔和。\n首頁Banner是使用p5.js製作的Canvas互動動態，以24根柱狀圖片作為遮罩呈現，偵測滑鼠位置，再以比例來換算位移或是縮放的變量。而底部的圖片也可以藉由後端ＣＭＳ來做更換。",
+      "除了主動態以外，首頁還有搭配Socket.io作為彩蛋，當使用者進入網站後，同時會連線上Socket Server，並且與其他使用者互動。互動方式除了傳遞滑鼠座標給其他使用者外，同時也可以輸入訊息傳遞。\n在設計時有考慮到長時間多人使用，會造成伺服器負擔與流量費用的消耗，因此設計了一套機制，在降低流量的同時，也能體現互動的樂趣。\n除了流量問題外，也有針對各裝置大小而有所調整，傳送過去的座標不會直接按數值顯示．而是會換算當前螢幕比例來顯示位置。",
+      "除了這兩大亮點外，整體網站還有大大小小的GSAP製作的動態，像是偵測Scroll位置的引導閱讀動態等。",
+      "功能面除了頁面以外，同時還有搜尋功能，利用url的query來進行搜尋，並且串接後端API來取得搜尋結果資料。"
+    ],
+    "type": "網站",
+    "date": "2024",
+    "client": "勤美術館",
+    "links": [],
+    "works": ["Canvas動態製作","Socket互動機制設計","Socket Server與前後端邏輯撰寫","搜尋功能","動態特效製作","內容切版與功能實作", "SVG動畫製作", "RWD","PHP API撰寫"],
+    "tools": ["NUXT","Tailwind css","Socket.io","JavaScript","PHP","WordPress","GSAP","Lenis.js","p5.js","Keen Slider.js"],
+    "ytIDs": ["Ti01gSvFy2U"],
+    "images": [
+      {"images":["1-1.gif"],"desc":"首頁主視覺Banner Canvas，以p5.js製作。以24根柱狀圖片作為遮罩呈現，偵測滑鼠位置，再以比例來換算位移或是縮放的變量。\n底部的圖片可以從後台去做變更。"},
+      ["2-1.webp"],
+      ["2-2.webp", "2-3.webp"],
+      ["3-1.webp", "3-2.webp"],
+      ["4-1.webp", "4-2.webp", "4-3.webp"],
+      ["m-1-1.webp", "m-1-2.webp", "m-1-3.webp", "m-1-4.webp"]
+    ]
+  },
+  {
+    "key": "sasugas",
+    "name": "流石五金 | 官方網站 | 網站",
+    "cover": "cover.webp",
+    "desc": [
+      "流石五金是精品五金選物平台，匯聚了國內外設計金美的居家五金，展現出不同的生活品味。",
+      "此專案是以Nuxt 3開發，整體使用Lenis.js達到緩數滾動的效果，使滾動體驗更加柔和。"
+    ],
+    "type": "網站",
+    "date": "2024",
+    "client": "流石五金",
+    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接","表單串接", "RWD"],
+    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js","Keen Slider.js"],
+    "ytIDs": [],
+    "images":[["01.webp"],["02.webp"],["03.webp"],["04.webp"]]
+  },
+  {
+    "key": "venti-venti",
+    "name": "幫推事務所 | 官方網站 | 網站",
+    "cover": "cover.webp",
+    "desc": [
+      "幫推有別於整合行銷與媒體服務的公關團隊，專注於國際與台灣政府政策的研究、產業利害關係人的分析、公眾倡議路徑的評估與溝通觀點的建構。幫推協助客戶掌握政府、民眾與專業團體對公共議題的完整觀點，並提供環境分析、策略擬定、顧問諮詢與專案執行等多面向的合作服務。",
+      "這在此專站案中我負責前端的程式製作，除了切版外，也包含頁面的架構設計與資料串接、動態製作。\n此專案是以Nuxt 3開發，整體使用Lenis.js達到緩數滾動的效果，使滾動體驗更加柔和。",
+      "該網站最特別的部分是採用大量的ＳＶＧ畫線動態、路徑跑動動態，全部的動態皆是以js手動製作調整，並未使用到Lottie等工具呈現。在製作的時候我製作了三種不同的通用Class來製作動態的呈現，這些Class的使用上只需要帶入指定的物件與參數就能夠依照timeline進行對應的的動態效果。\n這些Class本身包含start, end, play, pause, reset等方法，讓動態的控制更加方便。\n同時這也將這些Class工具化，撰寫使用文件，並且交付給其他工程師，以便在後續專案能夠使用。",
+      "除此之外，此網站大量此用敘事型的方式呈現，所以搭配了大量的Scroll Trigger來控制動畫。在首頁上面，使用者能夠將目光焦點跟隨畫面正中央的小紅球來瀏覽網站，隨著小紅球，網頁會呈現不圖的跑動效果。"
+    ],
+    "type": "網站",
+    "date": "2024",
+    "client": "幫推事務所",
+    "works": ["SVG動畫製作","SVG路徑跑動動態","動態特效製作", "內容切版與功能實作", "前端架構規劃", "表單串接","資料串接",  "RWD"],
+    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js","Keen Slider.js"],
+    "ytIDs": ["IxJspLIX-ak"],
+    "images": [["1.webp"], ["2-1.webp"], ["2-2.webp"], ["3-1.webp", "3-2.webp"], ["4-1.webp", "4-2.webp"], ["5.webp"], ["m-1-1.webp", "m-1-2.webp"], ["m-2-1.webp", "m-2-2.webp", "m-2-3.webp"]]
+  },
+  {
+    "key": "sunmai",
+    "name": "金色三麥 | 官方網站 | 網站",
+    "cover": "cover.webp",
+    "desc": [
+      "金色三麥是台灣知名的啤酒品牌，以台灣在地的原料釀製出獨特的風味。此次為他們的新版官網改版。",
+      "這在此專站案中我負責前端的程式製作，除了切版外，也包含頁面的架構設計與資料串接、動態製作。\n此專案是以Nuxt 3開發，整體使用Lenis.js達到緩數滾動的效果，使滾動體驗更加柔和。",
+      "該網站有兩個特別的大動態，其一是首頁的雙向無限滾動動態。以js來操控各個滿版Section，每個Section都有各自的進退場動態。為了統一操控管理這些動態，我將其動態function export出來給父層component來統一控制。\n並且以GSAP的Timeline add各個動態，同時偵測當前滾動的progress值，來判斷是否要進行迴轉Loop，以此達到上下無限滾動的效果。",
+      "第二特別的動態則是在於產品頁面，產品頁面是以拖曳探索地圖的方式來讓使用者找尋自己想要閱覽的產品。\n並且在進去產品頁面時會有一個特殊排列組合的進場動態，由於產品數量會在後台不斷的新增，同時畫面也會依照螢幕當前大小而有所改變，為了在各種情況下不會再成跑版的狀況，因此我設計了一個特殊的演算方式來動態調整畫面的情況，確保在任何情況下畫面都能夠統一的在初次畫面呈現5X4的排列組合。"
+    ],
+    "type": "網站",
+    "date": "2024",
+    "client": "金色三麥",
+    "works": ["首頁無限滾動效果","產品地圖探索效果","動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接","表單串接", "RWD"],
+    "tools": ["NUXT","Tailwind css","JavaScript","GSAP","Lenis.js","Keen Slider.js"],
+    "ytIDs": ["EKJ0drWS7QY"],
+    "images": [
+      ["1-1.webp", "1-2.webp"],
+      ["2-1.webp", "2-2.webp"],
+      ["3-1.webp", "3-2.webp"],
+      ["4-1.webp", "4-2.webp", "4-3.webp"],
+      ["m-1-0.webp", "m-1-1.webp", "m-1-2.webp"],
+      ["m-2-0.webp", "m-2-1.webp", "m-2-2.webp", "m-2-3.webp"]
+    ]
+  },
+  {
+    "key": "nci_studio",
+    "name": "NCI STUDIOS | Shopify | 網站 | 主題開發",
+    "cover": "cover.webp",
+    "desc": [
+      "Shopify電商平台的專案開發。再以現有的模板主題下，針對首頁進行重新設計與製作，最大亮點在於Banner的拋磚塊特效。",
+      "以Matter.js物理引擎製作，利用滑鼠拖曳來拋出磚塊，讓其與其他磚塊碰撞，製造出充滿玩味的小遊戲。除了此主要動態以外，其中還穿插SVG畫線動態等小動態。",
+      "除了畫面動態切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。",
+      "此網站模板的新增元件皆以web component的方式製作，並且將其封裝成獨立的元件，以避免在shopify的架構下程式所造成的污染。"
+    ],
+    "type": "Shopify | 網站 | 主題開發",
+    "date": "2023",
+    "client": "NCI STUDIOS",
+    "links": [{ "title": "網站（主視覺已改版）", "url": "https://pse.is/6g6ap8" }],
+    "works": ["Canvas動態製作","動態特效製作", "Matter.js物理碰撞功能", "內容切版與功能實作", "Liquid模板元件製作", "Shopify內容串接", "SVG動畫製作", "RWD"],
+    "tools": ["Liquid", "Shopify Cli","web component", "HTML", "JavaScript", "CSS", "Matter.js","GSAP"],
+    "ytIDs": ["-W-jdWMU-cc"],
+    "images": [["1.gif"], ["2.gif"], ["3.webp"], ["4.webp"], ["5-1.webp", "5-2.webp"]]
+  },
+  {
+    "key": "organno",
+    "name": "Organon-hhf | 網站 ",
+    "cover": "cover.webp",
+    "desc": ["此網站由於客戶的要求，故未使用任何框架、Library，僅使用原生的HTML、CSS、JavaScript製作。","該網站有許多不同的重複性元件，因此在元件的建立上，我使用web component來處理。"],
+    "type": "單頁式網站",
+    "date": "2023",
+    "client": "Organon",
+    "links": [],
+    "works": ["web component","動態特效製作", "內容切版與功能實作", "前端架構規劃", "RWD"],
+    "tools": ["HTML", "JavaScript", "CSS","GSAP"],
+    "ytIDs": [],
+    "images": [["1.webp"], ["2.webp"], ["3.webp"], ["4.webp"], ["m-1-0.webp", "m-1-1.webp", "m-1-2.webp"], ["m-2-0.webp", "m-2-1.webp"]]
+  },
+  {
+    "key": "wenk",
+    "name": "維肯媒體 WENK MEDIA | 官方網站 | 網站 ",
+    "cover": "cover.webp",
+    "desc": [
+      "維肯專注在解決市場行銷碎片化問題，提供多面向的行銷策略與服務。",
+      "此專案是以Nuxt 3開發。這在此專站案中我負責前端的程式製作，除了切版外，也包含頁面的架構設計與資料串接、動態製作。"
+    ],
+    "type": "網站",
+    "date": "2023",
+    "client": "維肯媒體",
+    "links": [{ "title": "網站", "url": "https://pse.is/6g6ac6" }],
+    "works": ["動態特效製作", "內容切版與功能實作", "前端架構規劃", "資料串接", "SVG動畫製作", "RWD"],
+    "tools": ["NUXT","Tailwind css","JavaScript","GSAP"],
+    "ytIDs": ["WdU4bWkUJxU"],
+    "images": [["1.gif"], ["2.webp"], ["4.webp"], ["5-1.webp", "5-2.webp"], ["6-1.webp", "6-2.webp"], ["9.gif"], ["m-1-0.webp", "m-1-1.webp", "m-1-2.webp"], ["m-2-0.webp", "m-2-1.webp", "m-2-2.webp"]]
+  },
+  {
+    "key": "exhibition-socket",
+    "name": "臺中州廳 城中串遊展覽 | Socket Server | 主程式架構設計 | 體驗流程設計",
+    "cover": "cover.webp",
+    "desc": [
+      "臺中州廳 城中串遊展覽 是個臺中線下展覽，其中亦是樣貌為其中一個展項，部署到網站上，讓線下民眾可以搭配socket.io與網站互動。",
+      "由於我有互動展演工程的背景，所以我在起步階段設計了整個展覽流程，並且設計前端主程式架構。\n除此之外，其展覽的互動核心Socket機制也經由我設計與撰寫。",
+      "此展覽以場次的方式進行，會由Socket Server進行場次的管理，在每次展覽開始時自動產生來賓的QR Code。來賓可以透過掃描QR Code連接進Socket，並且以手機為遙控器操作展覽裡的各項互動設施。",
+      "每個設施皆有獨立的互動方式，像是輸入姓名資訊的佈告牆，或是透過webcam與canvas的濾鏡效果、串接ＧＰＴ的聊天機器人等。",
+      "其互動方式皆由Socket來實現。其中最大的難度在於要如何將指定的事件傳送到指定的組別與裝置上，同一場次會有3組來賓可以同時使用，每組可以使用的裝置內容皆相同，所以要讓指定的事件送到指定的裝置上會是個挑戰。\n因此我使用了Socket ID來辨識每個裝置，並且我把每組來賓與其可以使用的裝置群組化（Group），再把在為每個裝置建立額外的獨立碼（Uni code），利用這些獨立碼可以清楚的辨識該事件是由誰發送，又要送去哪個裝置。",
+      "除了事件處理外，Socket Server的邏輯上，我也設計了一套場次機制，讓每個場次的互動內容可以獨立運作，他們會依照時間自動開始、自動結束，並且在場次結束後自動清除，同時每個場次都會有固定的流程，像是結束倒數事件、公共跑馬燈事件等。",
+      "在各個裝置外，我也特別設立了一個中控台（Manager Border），他的主要作用在於定時顯示該場次的來賓QR Code、顯示該場次剩下的時間、當日目前的場次資訊，同時也可以對場次進行外部操作，像是強制開始與強制結束等。",
+      "同時也建立了防止重複登入的機制，不管是裝置還是使用者的遙控器，都無法進行重複登入，每次連上線時會利用Uni Code來判斷該Group的對應設備是否有被登入，如果有則會把前一個登入的設備強制登出，由新進設備取代。",
+      "以各方面來說，這是一個規劃完整的互動體驗與程式架構。"
+    ],
+    "type": "Socket Server | 主程式架構設計 | 體驗流程設計",
+    "date": "2023",
+    "client": "臺中州廳 城中串遊展覽",
+    "links": [],
+    "works": ["Socket互動機制設計","Socket Server與前後端邏輯撰寫","體驗流程設計","前端主程式架構設計","場次機制","裝置事件傳遞機制","流程圖繪製"],
+    "tools": ["JavaScript", "Socket.io","Node.js"],
+    "ytIDs": [],
+    "images": [{"images":["1.webp"],"desc":"活動現場照片，每一個螢幕接一個裝置。"}, {"images":["2.webp"],"desc":"手機遙控器畫面，來賓使用自己的手機掃描QR Code後即會連上Socket，變成搖控器來操作現場裝置。"} , ["3.webp"], ["cover.webp"],{"images":["Device.webp"],"desc":"Socket系統架構示意圖。"} ]
+  },
+  {
+    "key": "exhibition-image",
+    "name": "臺中州廳 城中串遊展覽 意識樣貌 | 網站 ",
+    "cover": "cover.gif",
+    "desc": [
+      "臺中州廳 城中串遊展覽 是個臺中線下展覽，其中意識樣貌為其中一個展項目，部署到網站上，讓線下民眾可以搭配socket.io與網站互動。",
+      "此項目是以p5.js搭配Webcam製作的互動網站。使用者可以透過Webcam拍攝自己的照片，並且透過p5.js的濾鏡效果，將照片轉換成不同的樣貌。",
+      "全部的濾鏡共我3種，第一種是ASCII編碼解析，先將webcam畫面投放到canvas上，再將canvas的像素點轉換成ASCII編碼，再將編碼轉換成文字，最後再將文字顯示在畫面上。",
+      "第二種是模糊效果，是搭配Shader製作的，設定一個計時器，將計時器的數值傳進Shader裡面，動態調整模糊程度的效果。",
+      "第三種是變色效果，這同樣是使用Shader達成，麗玉Shader的方式將畫面內容顏色反轉，不同顏色都會反轉成對應的顏色。"
+    ],
+    "type": "活動網站",
+    "date": "2023",
+    "client": "臺中州廳 城中串遊展覽",
+    "links": [],
+    "works": ["功能實作", "Shader製作", "Socket互動機制設計","Canvas動態製作"],
+    "tools": ["Shader","p5.js","JavaScript","Socket.io"],
+    "ytIDs": [],
+    "images": [["1.webp"], ["2.gif"], ["3.gif"], ["cover.gif"]]
+  },
+  {
+    "key": "vacation",
+    "name": "假期農場 HolidayFarm | 網站 ",
+    "cover": "cover.webp",
+    "desc": [
+      "假期農場是版塊設計的主題網站。\n該網站會將該年度的連假整理完整，並以趣味的方式展示。",
+      "該網站有分2階段，我負責2.0階段，2.0階段為增加後台別且串接資料，同時在做前端頁面的調整。",
+      "此專案是以Nuxt 2開發，並且用Wordpress作為後台管理內容。"
+    ],
+    "type": "網站",
+    "date": "2023",
+    "client": "版塊設計",
+    "links": [{ "title": "網站", "url": "https://pse.is/6g6a64" }],
+    "works": ["動態特效製作", "內容切版與功能實作", "後端資料串接", "PHP API撰寫", "RWD"],
+    "tools": ["NUXT","Tailwind css","JavaScript","PHP","WordPress","GSAP"],
+    "ytIDs": [],
+    "images": [["1.webp"], ["2.webp"], ["3.webp"], ["4.webp"], ["5.webp"], ["m-1-0.webp", "m-1-1.webp"], ["m-2-0.webp", "m-2-1.webp", "m-2-2.webp"]]
+  },
+  {
+    "key": "desider71",
+    "name": "Desidere 7.1 | Shopify | 網站 | 主題開發",
+    "cover": "cover.webp",
+    "desc": [
+      "Desidere 7.1為架設在Shopify上的線上選物平台。",
+      "此次專案為Shopify全站主題開發，包含首頁、商品頁、購物車頁、關於頁等都全部重新設計製作。",
+      "製作內容包含畫面動態、切版外，網頁也串接了Shopify商店的部落格文章、商品等項目。\n此網站模板的新增元件皆以web component的方式製作，並且將其封裝成獨立的元件，以避免在shopify的架構下程式所造成的污染。",
+      "除了製作外，也協助客戶在Shopify平台上線發布，同時也擔任Shopify使用顧問一職。",
+      "同時按照客戶的需求，在現有的Shopify架構下，融合新設計一套的架構，達到客製化的目的。"
+    ],
+    "type": "Shopify | 網站 | 主題開發",
+    "date": "2023",
+    "client": "Desidere 7.1",
+    "links": [{ "title": "網站", "url": "https://pse.is/6g6at8" }],
+    "works": ["動態特效製作", "內容切版與功能實作", "Liquid模板元件製作", "Shopify內容串接", "SVG動畫製作", "RWD","Shopify後台設定","文字分割引導閱讀動態","相反色動態效果"],
+    "tools": ["Liquid", "Shopify Cli", "HTML", "JavaScript", "CSS","GSAP"],
+    "ytIDs": ["nFoIHmpIHp8"],
+    "images": [["1.webp"], ["2.webp"], ["3.webp"], ["4.webp"], ["5-1.gif", "5-2.gif"], ["6.gif"], ["7.gif"], ["9-1.webp", "9-2.webp"], ["10.webp"], ["11.webp"], ["12-1.webp", "12-2.webp"], ["13.gif"], ["m-1-0.webp", "m-1-1.webp", "m-1-2.webp"], ["m-2-0.webp", "m-2-1.webp", "m-2-2.webp"]]
+  },
+  {
+    "key": "block_studio",
+    "name": "版塊設計 | 年度官方網站 | Socket | 網站 ",
+    "cover": "cover.webp",
+    "desc": [
+        "版塊設計是台灣知名的網頁設計公司，常以絢麗的特效互動手法，讓使用者體會到不同的感受。",
+        "我其中主要負責首頁彩蛋Socket互動的製作與機制設計。透過滑鼠的移動，傳送滑鼠的座標給其他使用者，並讓其顯示在自己的網頁上，達到多人同樂的趣味效果。除了傳送座標外，亦能夠傳遞文字訊息。\n在設計時有考慮到長時間多人使用，會造成伺服器負擔與流量費用的消耗，因此設計了一套機制，在降低流量的同時，也能體現互動的樂趣。\n除了流量問題外，也有針對各裝置大小而有所調整，傳送過去的座標不會直接按數值顯示．而是會換算當前螢幕比例來顯示位置。",
+        "除此之外也有進行後台欄位與其API撰寫與前後端的內容串接 與ＳＶＧ畫線動態製作。"
+      ],
+    "type": "網站 | Socket | 動態特效特效",
+    "date": "2023",
+    "client": "版塊設計",
+    "links": [{ "title": "網站", "url": "https://pse.is/6g6agq" }],
+    "works": ["Socket互動機制設計","Socket Server與前後端邏輯撰寫","動態特效製作", "內容切版與功能實作", "SVG動畫製作", "RWD","PHP API撰寫"],
+    "tools": ["NUXT","Tailwind css","Socket.io","JavaScript","PHP","WordPress","GSAP"],
+    "images": [{ "images": ["1.gif"], "desc": "同時開啟多個畫面，能夠藉由socket將其他頁面的滑鼠座標傳遞，達到讓其他使用者一起同樂的效果感。" }, ["2.webp"], ["3.webp"], ["4.webp"], ["5.gif"], ["6.gif"]]
+  },
+  {
+    "key": "kkbox",
+    "name": "KKBOX | 年度風雲榜 音樂索票測驗 | 網站 ",
+    "cover": "cover.webp",
+    "desc": [
+      "KKBOX 2023年年度風雲榜的活動頁面，採用問答計分的方式進行遊戲，最後在依照分數參與票卷的抽獎活動。"
+    ],
+    "type": "單頁式網站",
+    "date": "2023",
+    "client": "KKBOX",
+    "links": [{ "title": "已下線", "url": "" }],
+    "works": ["OAuth2 身份驗證串接","動態特效製作", "內容切版與功能實作", "內容串接","計分機制實作", "RWD","GSAP"],
+    "tools": ["NUXT","Tailwind css","JavaScript"],
+    "images": [["1.webp"], ["2.webp"], ["3.webp"], ["4-1.webp", "4-2.webp", "4-3.webp"]]
+  }
+]
