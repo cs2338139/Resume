@@ -151,7 +151,7 @@ provide("changeUrlQuery", changeUrlQuery);
           <skillCategory>
             <template #content>
               <skillTable>
-                <template #title>Base</template>
+                <template #title>Basic</template>
                 <template #content>
                   <skillTableItem>React.js</skillTableItem>
                   <skillTableItem>Vue.js (Nuxt.js)</skillTableItem>
