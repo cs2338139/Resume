@@ -4,7 +4,7 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  portfolio: {
+  linkedin: {
     type: String,
     default: "",
   },
@@ -42,7 +42,7 @@ const props = defineProps({
       <div class="flex flex-col sm:items-center">
         <div><slot name="place" /></div>
         <div>
-          <a :href="'mailto:' + email" class="link"> <slot name="mail" /> </a>｜<a class="link" target="_blank" href="https://www.linkedin.com/in/jin-cheng-liang-320103206/">Linkedin</a>｜<slot name="phone" />
+          <a :href="'mailto:' + email" class="link"> <slot name="mail" /> </a>｜<a class="link" target="_blank" :href="linkedin">Linkedin</a>｜<slot name="phone" />
         </div>
 
         <div>
