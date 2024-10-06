@@ -6,10 +6,7 @@ import { useI18n } from "vue-i18n";
 import me from "/public/assets/images/resume/pic.jpeg";
 
 import information from "../components/information.vue";
-import skill from "../components/skill.vue";
-import skillCategory from "../components/skill-category.vue";
-import skillTable from "../components/skill-Table.vue";
-import skillTableItem from "../components/skill-Table-Item.vue";
+import skill from "../components/Skill/skill.vue";
 import introduction from "../components/introduction.vue";
 import timeline from "../components/timeline.vue";
 import timelineItem from "../components/timeline-Item.vue";
@@ -166,30 +163,8 @@ provide("changeUrlQuery", changeUrlQuery);
           </div>
         </template>
       </information>
-
-      <introduction class="mb-6">
-        <template #content>
-          <div class="flex flex-col gap-1.5">
-            <div class="whitespace-pre-wrap" v-for="(d, index) in info?.introduction" :key="index">{{ d }}</div>
-          </div>
-        </template>
-      </introduction>
-
-      <skill class="mb-10">
-        <template #title>{{ field?.skill }}</template>
-        <template #content>
-          <skillCategory>
-            <template #content>
-              <skillTable v-for="(item, index) in info?.skill" :key="index">
-                <template #title>{{ item?.title }}</template>
-                <template #content>
-                  <skillTableItem v-for="(skill, _index) in item.skills" :key="_index">{{ skill }}</skillTableItem>
-                </template>
-              </skillTable>
-            </template>
-          </skillCategory>
-        </template>
-      </skill>
+      <introduction class="mb-6" :data="{ title: field?.introduction, content: info?.introduction }" />
+      <skill class="mb-10" :data="{ title: field?.skill, content: info?.skill }" />
 
       <timeline class="mb-10">
         <template #title>{{ field?.experience }}</template>
@@ -206,7 +181,7 @@ provide("changeUrlQuery", changeUrlQuery);
                 並且將其搭配pm2與Nginx部署至AWS EC2空間。<br />
               </div>
               <div class="h-[1px] w-full bg-black my-2"></div>
-              <ul class="list-disc text-sm pl-5">
+              <ul class="list-disc text-[15px] pl-5">
                 <li @click="changeUrlQuery('socket-draw')" :class="hasLinkItemStyle">Socket功能實作 | 共筆畫版 - <b>功能實現</b> <a href="https://socket-draw.jinchengliang.com/" target="_blank" class="link font-bold">Demo 連結↗</a></li>
                 <li @click="changeUrlQuery('socket-chat')" :class="hasLinkItemStyle">Socket功能實作 | 多房間即時聊天通訊 - <b>功能實現</b> <a href="https://socket-chat.jinchengliang.com/" target="_blank" class="link font-bold">Demo 連結↗</a></li>
                 <li @click="changeUrlQuery('point_cloud_changer')" :class="hasLinkItemStyle">粒子化3D模型頂點補足器 - <b>演算法實現</b></li>
@@ -219,11 +194,13 @@ provide("changeUrlQuery", changeUrlQuery);
             <template #time>2023 / 5～2024 / 8</template>
             <template #content>
               <div class="">
-                版塊設計是台灣知名的網站專案公司，以炫麗的特效與新穎的互動方式聞名於業界。<br />
-                在任職期間獨立完成數個專案的開發，累積了大量開發經驗。<br />
-                除了前端網站開發以外，我還曾參與了Shopify專案的建置 與Socket.io Server建置。<br />
-                在職期間主要工作內容包括：<br />
-                <ul class="list-disc text-gray-800 text-[15px] pl-10">
+                <div>
+                  版塊設計是台灣知名的網站專案公司，以炫麗的特效與新穎的互動方式聞名於業界。<br />
+                  在任職期間獨立完成數個專案的開發，累積了大量開發經驗。<br />
+                  除了前端網站開發以外，我還曾參與了Shopify專案的建置 與Socket.io Server建置。<br />
+                  在職期間主要工作內容包括：
+                </div>
+                <ul class="list-disc text-[15px] pl-10">
                   <li>前端開發： 運用前端框架（Vue.js / React.js）打造高度動態互動的網站，前後經手大小約十個左右專案。其中不乏公司初次嘗試新領域，例如線下展覽互動專案、Shopify電商專案。</li>
                   <li>後端開發： 搭配WordPress CMS系統撰寫PHP的REST API。並且優化公司既有的API加快資料查找速度60%。</li>
                   <li>專案架構： 規劃專案的結構和使用者體驗流程。不斷地優化公司專案的開發模板，提升整體開發使用體驗，刪除用不到的程式碼，並且將資料串接系統整個核心化，大幅提升開發速度。同時建立實用的工作組建提供其他工程師使用。</li>
