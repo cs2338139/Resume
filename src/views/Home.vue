@@ -132,7 +132,7 @@ const baseUrl = computed(() => {
 
 const webUrl = computed(() => {
   if (process.env.NODE_ENV === "development") return "http://localhost:5173";
-  return "https://www.jinchengliang.com";
+  return "https://resume.jinchengliang.com/";
 });
 
 provide("baseUrl", baseUrl);
@@ -147,7 +147,7 @@ provide("field", field);
       <information :data="{ img: me, ...info?.information }" class="mb-10" :email="info?.mail" :linkedin="info?.linkedin" :img="me">
         <template #portfolio>
           <div class="flex gap-2 mt-1">
-            <a :href="`${webUrl}?portfolio=portfolio`" class="border-2 border-black px-10 origin-center sm:w-full rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">{{ field?.portfolio }}</a>
+            <a href="https://resume.jinchengliang.com/?portfolio=portfolio" class="border-2 border-black px-10 origin-center sm:w-full rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">{{ field?.portfolio }}</a>
             <!-- <button @click="changeUrlQuery('portfolio')" class="border-2 border-black px-10 origin-center sm:w-full rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">{{ field?.portfolio }}</button> -->
             <a v-if="info?.information?.github" target="_blank" :href="info?.information?.github" class="border-2 border-black px-10 origin-center sm:w-full rounded-2xl hover:bg-black hover:text-white bg-white text-black transition-all duration-300">GitHub</a>
           </div>

@@ -6,6 +6,11 @@
   @apply leading-6;
 }
 
+body {
+  font-family: 'Noto Sans CJK', sans-serif;
+}
+
+
 html {
   /* font-size: 16px; */
   @apply body-base;
