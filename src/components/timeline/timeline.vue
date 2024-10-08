@@ -1,6 +1,6 @@
 <script setup>
-import { toRefs } from "vue";
-import { onMounted } from "vue";
+import { defineProps, toRefs } from "vue";
+import timelineItem from "./timeline-Item.vue";
 const props = defineProps({
   data: {
     type: Object,
@@ -11,7 +11,6 @@ const props = defineProps({
     },
   },
 });
-
 const { data } = toRefs(props);
 </script>
 
@@ -19,11 +18,12 @@ const { data } = toRefs(props);
   <div class="w-full">
     <div>
       <div class="text-3xl font-bold mb-3">
-        {{ data?.title }}
+        {{ data.title }}
       </div>
-      <div>
-        <div class="flex flex-col gap-1.5">
-          <div class="whitespace-pre-wrap" v-for="(d, index) in data?.content" :key="index">{{ d }}</div>
+      <div class="flex justify-between">
+        <div class="bg-gray-300 w-[1px] ml-10 md:ml-5"></div>
+        <div class="grow flex flex-col">
+          <timelineItem v-for="(item, index) in data?.content" :key="index" :data="item" />
         </div>
       </div>
     </div>

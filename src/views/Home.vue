@@ -2,27 +2,23 @@
 import { inject } from "@vercel/analytics";
 import { ref, reactive, computed, onMounted, provide, watch } from "vue";
 import { useRouter, useRoute } from "vue-router";
+import { useI18n } from "vue-i18n";
 import me from "/public/assets/images/resume/pic.jpeg";
-import sideData from "/public/assets/side-data.json";
-import bsData from "/public/assets/bs-data.json";
-import axis3dData from "/public/assets/axis3d-data.json";
-import pdlData from "/public/assets/pdl-data.json";
-import otherData from "/public/assets/other-data.json";
-import info from "../components/info.vue";
-import skill from "../components/skill.vue";
-import skillCategory from "../components/skill-category.vue";
-import skillTable from "../components/skill-Table.vue";
-import skillTableItem from "../components/skill-Table-Item.vue";
-import introduction from "../components/introduction.vue";
-import timeline from "../components/timeline.vue";
-import timelineItem from "../components/timeline-Item.vue";
-import buttonPortfolio from "../components/buttonPortfolio.vue";
-import popup from "../components/popup.vue";
 
+import information from "../components/information.vue";
+import skill from "../components/skill/skill.vue";
+import introduction from "../components/introduction.vue";
+import timeline from "../components/timeline/timeline.vue";
+import buttonPortfolio from "../components/buttonPortfolio.vue";
+import popup from "../components/popup/popup.vue";
+import localeBtn from "../components/localeBtn.vue";
+
+const { locale, availableLocales, getLocaleMessage } = useI18n();
+const info = ref({});
+const field = ref({});
 const projects = reactive({});
 const currentKey = ref("");
 const popupState = ref(false);
-// const popupData = reactive({ data });
 const router = useRouter();
 const route = useRoute();
 
@@ -32,12 +28,15 @@ function changeUrlQuery(value) {
   if (!value) {
     router.push({
       path: "/",
+      query: null,
+      hash: route.hash,
     });
     return;
   }
   router.push({
     path: "/",
     query: { portfolio: value },
+    hash: route.hash,
   });
 }
 
@@ -56,22 +55,43 @@ function popupSwitch(value, key = null) {
   }
 }
 
+function createData() {
+  const localeData = getLocaleMessage(locale.value);
+
+  info.value = localeData.info;
+  field.value = localeData.field;
+  localeData.portfolio.forEach((x) => {
+    const key = x.key;
+    projects[key] = x;
+  });
+}
+
+function pushToDefaultLang() {
+  const browserLang = navigator.language || navigator.userLanguage;
+  let targetLang = "";
+  if (availableLocales.includes(browserLang)) {
+    targetLang = browserLang;
+  } else {
+    targetLang = "en";
+  }
+
+  router.push({
+    path: "/",
+    hash: `#${targetLang}`,
+    query: route.query,
+  });
+}
+
 onMounted(() => {
   document.body.addEventListener("keyup", (e) => {
     if (popupState.value === false) return;
     if (e.key === "Escape") {
-      // popupSwitch(false);
       router.push({
         path: "/",
+        hash: route.hash,
+        query: null,
       });
     }
-  });
-
-  const data = [...sideData, ...bsData, ...axis3dData, ...pdlData, ...otherData];
-
-  data.forEach((x) => {
-    const key = x.key;
-    projects[key] = x;
   });
 
   watch(
@@ -85,6 +105,24 @@ onMounted(() => {
     },
     { immediate: true }
   );
+
+  watch(
+    () => route.hash,
+    (value) => {
+      if (value) {
+        const lang = value.replace("#", "");
+        if (availableLocales.includes(lang)) {
+          locale.value = lang;
+          createData();
+        } else {
+          pushToDefaultLang();
+        }
+      } else {
+        pushToDefaultLang();
+      }
+    },
+    { immediate: true }
+  );
 });
 
 const baseUrl = computed(() => {
@@ -92,16 +130,24 @@ const baseUrl = computed(() => {
   return "";
 });
 
+<<<<<<< HEAD
 const hasLinkItemStyle = computed(() => {
   return "hover:scale-105 transition duration-300 hover:text-white hover:bg-black cursor-pointer";
+=======
+const webUrl = computed(() => {
+  if (process.env.NODE_ENV === "development") return "http://localhost:5173";
+  return "https://www.jinchengliang.com";
+>>>>>>> en-pdf
 });
 
 provide("baseUrl", baseUrl);
 provide("changeUrlQuery", changeUrlQuery);
+provide("field", field);
 </script>
 
 <template>
   <div class="wrap flex flex-col items-center">
+<<<<<<< HEAD
     <div class="border border-gray-100 shadow-xl wrapInner">
       <info class="mb-10" email="cs2338139@gmail.com" portfolio="https://www.behance.net/JinChengLiang" :img="me">
         <template #name>梁晋誠</template>
@@ -273,33 +319,27 @@ provide("changeUrlQuery", changeUrlQuery);
         </template>
       </timeline>
 
-      <div class="bg-gray-300 my-14 h-[1px] w-full mx-auto" />
-      <timeline class="mb-10">
-        <template #title>學歷</template>
-        <template #content>
-          <timelineItem>
-            <template #position>學士</template>
-            <template #company>南臺科技大學 多媒體與電腦娛樂科學系 / 遊戲工程</template>
-            <template #time>2014 / 9～2018 / 6</template>
-            <template #content>
-              <div class="">
-                在系上期間主修遊戲工程開發，使用Unity搭配C#開發過多個小型遊戲專案，在累積程式開分經驗的同時，也累積了不少 團隊合作的技能。 <br />
-                畢業專題入圍了國內多個多媒體遊戲 獎項：<br />
-                <div class="grid grid-cols-2">
-                  <li>放視大賞</li>
-                  <li>金點新秀</li>
-                  <li>Ａ＋創意季</li>
-                  <li>青春設計節</li>
-                  <li>互動科技與遊戲設計類「金獎」</li>
-                </div>
-              </div>
-            </template>
-          </timelineItem>
+=======
+    <div class="border relative border-gray-100 shadow-xl wrapInner">
+      <!-- <localeBtn class="absolute right-5 top-5 md:fixed" /> -->
+      <information :data="{ img: me, ...info?.information }" class="mb-10" :email="info?.mail" :linkedin="info?.linkedin" :img="me">
+        <template #portfolio>
+          <div class="flex gap-2 mt-1">
+            <a target="_blank" href="https://resume.jinchengliang.com/?portfolio=portfolio" class="border-2 border-black px-10 origin-center sm:w-full shadow-2xl rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">{{ field?.portfolio }}</a>
+            <!-- <button @click="changeUrlQuery('portfolio')" class="border-2 border-black px-10 origin-center sm:w-full shadow-2xl rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">{{ field?.portfolio }}</button> -->
+            <a v-if="info?.information?.github" target="_blank" :href="info?.information?.github" class="border-2 border-black px-10 origin-center sm:w-full shadow-2xl rounded-2xl hover:bg-black hover:text-white bg-white text-black transition-all duration-300">GitHub</a>
+          </div>
         </template>
-      </timeline>
+      </information>
+      <introduction class="mb-6" :data="{ title: field?.introduction, content: info?.introduction }" />
+      <skill class="mb-10" :data="{ title: field?.skill, content: info?.skill }" />
+      <timeline :data="{ title: field?.experience, content: info?.experience }" class="mb-10" />
+>>>>>>> en-pdf
+      <div class="bg-gray-300 my-14 h-[1px] w-full mx-auto" />
+      <timeline class="mb-10" :data="{ title: field?.education, content: info?.education }" />
 
       <div class="bg-gray-300 my-14 h-[1.5px] w-3/4 mx-auto" />
-      <buttonPortfolio @open="changeUrlQuery('portfolio')" class="mb-5 sm:mb-10" link="https://www.behance.net/JinChengLiang"> 作品集</buttonPortfolio>
+      <!-- <buttonPortfolio @open="changeUrlQuery('portfolio')" class="mb-5 sm:mb-10" link="https://www.behance.net/JinChengLiang"> {{ field?.portfolio }}</buttonPortfolio> -->
     </div>
     <popup :_data="projects" :_key="currentKey" v-if="popupState" />
   </div>
