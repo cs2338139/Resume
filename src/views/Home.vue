@@ -143,7 +143,7 @@ provide("field", field);
 <template>
   <div class="wrap flex flex-col items-center">
     <div class="border relative border-gray-100 shadow-xl wrapInner">
-      <localeBtn class="absolute right-5 top-5 md:fixed" />
+      <!-- <localeBtn class="absolute right-5 top-5 md:fixed" /> -->
       <information :data="{ img: me, ...info?.information }" class="mb-10" :email="info?.mail" :linkedin="info?.linkedin" :img="me">
         <template #portfolio>
           <div class="flex gap-2 mt-1">
