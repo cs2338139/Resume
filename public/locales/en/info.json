@@ -37,7 +37,7 @@
       "content": [
         {
           "type": "desc",
-          "content": "In addition to my main job, I work on side projects that I find interesting or want to learn new technologies for, creating project works.\nThis increases my developering development experience while also challenging myself with new technologies I haven't used before.\nCurrently, I'm researching and implementing technologies such as Socket.io.\nThe front-end primarily uses React.js as the main framework, while the backend Socket.io Server is established using HTTPS. I've also considered a comprehensive user flow, creating Socket APIs to drive front-end and back-end transmission through events.\nThese are deployed to AWS EC2 using pm2 and Nginx."
+          "content": "Currently, I'm researching and implementing technologies such as Socket.io.\nThe front-end primarily uses React.js as the main framework, while the backend Socket.io Server is established using HTTPS. I've also considered a comprehensive user flow, creating Socket APIs to drive front-end and back-end transmission through events.\nThese are deployed to AWS EC2 using pm2 and Nginx."
         },
         {
           "type": "line"
