@@ -1,0 +1,178 @@
+{
+  "information": {
+    "name": "LIANG JIN CHENG",
+    "enName": "( Anton )",
+    "title": "Front-end Developer",
+    "skill": "Front-end／React.js／Vue.js／JavaScript",
+    "place": "Taipei，Taiwan",
+    "email": "cs2338139@gmail.com",
+    "phone": "0975-601935",
+    "linkedin": "https://www.linkedin.com/in/jinchenliang",
+    "github": "https://github.com/cs2338139"
+  },
+
+  "introduction": [
+    "A front-end developer with years of software development experience, focusing on interactive design and web development. My programming skills started with C#, primarily developing digital games and interactive human-computer interfaces, before transitioning to web front-end development.",
+    "Proficient in using React.js and Vue.js (Nuxt.js) front-end frameworks to develop CSR and SSR websites, with extensive front-end development experience. I have participated in multiple highly interactive projects and focused on implementing complex JavaScript dynamic effects and functionalities.\nIn addition to front-end development, I also have experience with PHP backend language and can develop REST APIs using the WordPress CMS system. I excel in developing front-end and back-end separated architectures and use Tailwind and Material UI to build responsive websites.\nI also have the ability to deploy applications to cloud platforms such as AWS EC2 using tools like Docker, Nginx, and pm2.",
+    "Led a large-scale interactive exhibition project based on Socket, responsible for overall architecture design and core functionality implementation.\nAdditionally, I have experience in APP and VR/AR development, and have participated in the development of interactive installations for offline exhibitions."
+  ],
+  "skill": [
+    {
+      "title": "Basic",
+      "content": ["React.js", "Vue.js (Nuxt.js)", "TypeScript", "HTML5/CSS/JavaScript", "RWD responsive web design", "Tailwind", "PHP", "C#"]
+    },
+    {
+      "title": "Tool",
+      "content": ["Material UI", "Socket.io", "GSAP/ScrollTrigger", "i18n", "Canvas/WebGL", "three.js", "P5.js", "Swiper.js"]
+    },
+    {
+      "title": "Other",
+      "content": ["Git", "AWS EC2/Nginx/Pm2", "Docker"]
+    }
+  ],
+  "experience": [
+    {
+      "position": "Freelance",
+      "for": "Side Project",
+      "content": [
+        {
+          "type": "desc",
+          "content": "In addition to my main job, I work on side projects that I find interesting or want to learn new technologies for, creating project works.\nThis increases my developering development experience while also challenging myself with new technologies I haven't used before.\nCurrently, I'm researching and implementing technologies such as Socket.io.\nThe front-end primarily uses React.js as the main framework, while the backend Socket.io Server is established using HTTPS. I've also considered a comprehensive user flow, creating Socket APIs to drive front-end and back-end transmission through events.\nThese are deployed to AWS EC2 using pm2 and Nginx."
+        },
+        {
+          "type": "line"
+        },
+        {
+          "type": "list-p",
+          "content": [
+            {
+              "query": "socket-draw",
+              "title": "Socket | Drawing Board",
+              "type": "Feature",
+              "url": {
+                "url": "https://socket-draw.jinchengliang.com/",
+                "text": "Demo Link↗"
+              }
+            },
+            {
+              "query": "socket-chat",
+              "title": "Socket | Multi-room with Chat",
+              "type": "Feature",
+              "url": {
+                "url": "https://socket-chat.jinchengliang.com/",
+                "text": "Demo Link↗"
+              }
+            },
+            {
+              "query": "point_cloud_changer",
+              "title": "Particle-Based Vertex Enhancement Method for 3D Models",
+              "type": "Algorithm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": "Front-end Developer",
+      "for": "Block Studio",
+      "time": "2023/5 - 2024/8",
+      "content": [
+        {
+          "type": "desc",
+          "content": "Block Studio is a well-known website project company in Taiwan, famous for its dazzling effects and innovative interactive methods.\nDuring my tenure, I independently completed the development of several projects, accumulating extensive development experience.\nIn addition to front-end website development, I also participated in the setup of Shopify projects and Socket.io Server construction.\nMy main responsibilities during my tenure included:"
+        },
+        {
+          "type": "list-1",
+          "content": [
+            "Front-end Development: Using front-end frameworks (Vue.js / React.js) to create highly dynamic interactive websites, handling about ten projects of various sizes. This included the company's first attempts in new areas such as offline exhibition interactive projects and Shopify e-commerce projects.",
+            "Back-end Development: Writing PHP REST APIs to complement the WordPress CMS system. Optimized the company's existing APIs, improving data retrieval speed by 60%.",
+            "Project Architecture: Planning project structure and user experience flow. Continuously optimizing the company's project development templates, improving overall development experience, removing unused code, and centralizing the data integration system, significantly improving development speed. Also established practical work components for other developers to use.",
+            "Dynamic Effect Development: Using tools like GSAP, p5.js, WebGL, Matter.js to create dynamic effects. In addition to basic GSAP micro-animations, able to create large-scale visual dynamics based on Canvas/WebGL, and document these elements so other developers can reproduce core effects by simply changing materials and parameters.",
+            "Development Documentation: Established the company's documentation system and standards, speeding up overall development by 30% and significantly reducing front-end and back-end communication issues.",
+            "New Employee Guidance: Led two new developers into company projects and provided programming advice and debugging.",
+            "Project Deployment: Able to deploy projects to cloud spaces using pm2 with Nginx, while also assisting in writing Docker files to deploy projects to AWS EC2 using Docker. Adjusted the company's existing Docker files to resolve routing invalidation issues.",
+            "Shopify Projects: The company's first developer to develop Shopify projects, establishing subsequent development processes and README for this type of project, and transferring this experience to other developers, creating new case sources for the company.",
+            "Socket Services: The company's first responsible developer for offline experience exhibitions, with the exhibition paired with Socket.io for activities. Independently planned the complete program operation process, wrote and set up Socket Server functions, and created APIs for participating developers to use.",
+            "Technology Exploration and Sharing: In addition to daily project development, also played the role of testing new technologies and tooling. Researched tools such as Shopify, WebAR, and Socket.io during tenure, and established development tools and technical documentation suitable for colleagues to use quickly."
+          ]
+        }
+      ]
+    },
+    {
+      "position": "Front-end Developer/Interactive Developer",
+      "for": "Axis 3D Technology, Inc. / Pixelight",
+      "time": "2020/10 - 2023/2",
+      "content": [
+        {
+          "type": "desc",
+          "content": "Worked in the company's project department, with development projects mainly focused on web and interactive design, and became the person in charge of company website-related projects.\nDeveloped several website front-ends and participated in interactive design:"
+        },
+        {
+          "type": "list-1",
+          "content": [
+            "APP application, website development",
+            "Determining the technology required for projects",
+            "Experience process design and program logic writing, architecture planning",
+            "Project technology integration",
+            "Project online deployment, Google Play and APP Store publishing",
+            "New technology research and development and application testing",
+            "On-site project installation and adjustment",
+            "Hardware project research and development testing"
+          ]
+        }
+      ]
+    },
+    {
+      "position": "Interactive Developer",
+      "for": "Play Design Lab",
+      "content": [
+        {
+          "type": "desc",
+          "content": "Used Unity as the main development tool, while also using different development tools such as Arduino and Raspberry Pi as needed.\nParticipated in multiple interactive developments:"
+        },
+        {
+          "type": "line"
+        },
+        {
+          "type": "list-p",
+          "content": [
+            {
+              "title": "2020 National Science and Technology Museum - Towards AIoT Imagery Wall"
+            },
+            {
+              "query": "ai_shoes_maker",
+              "title": "2020 National Science and Technology Museum - AI Shoemaker Interactive Installation"
+            },
+            {
+              "title": "2020 Shengping Theater - 'Seat Without Vacancy: Shengping Theater ╳ Taiwan Old Theater Special Exhibition'"
+            },
+            {
+              "query": "play_flower",
+              "title": "2020 Play Flower Digital VR Experience"
+            },
+            {
+              "title": "2020 Ordinary Tea VR Experience"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "position": "Bachelor",
+      "for": "Southern Taiwan University of Science and Technology, Department of Multimedia and Computer Entertainment Science / Game Engineering Program",
+      "time": "2014/9 - 2018/6",
+      "content": [
+        {
+          "type": "desc",
+          "content": "During my time in the department, I majored in game development, using Unity with C# to develop multiple small game projects. While accumulating programming development experience, I also gained many teamwork skills.\nThe graduation project was shortlisted for several domestic multimedia game awards:"
+        },
+        {
+          "type": "list-2",
+          "content": ["Vision Get Wild", "Golden Pin Design Award", "A+ Creative Festival", "Youth Design Festival", "'Gold Award' in Interactive Technology and Game Design Category"]
+        }
+      ]
+    }
+  ]
+}
