@@ -21,7 +21,7 @@ const { data } = toRefs(props);
         {{ data.title }}
       </div>
       <div class="flex justify-between">
-        <div class="bg-gray-300 w-[1px] ml-10 md:ml-5"></div>
+        <div class="bg-gray-300 w-[1px] ml-5"></div>
         <div class="grow flex flex-col">
           <timelineItem v-for="(item, index) in data?.content" :key="index" :data="item" />
         </div>

@@ -20,7 +20,7 @@ const changeUrlQuery = inject("changeUrlQuery");
 <template>
   <div class="flex flex-col w-full mb-3 -ml-1.5">
     <div class="flex items-center mb-0.5 sm:mb-2">
-      <div class="w-3 h-3 mr-10 bg-gray-300 rounded-full sm:mr-5"></div>
+      <div class="w-3 h-3 shrink-0 mr-5 bg-gray-300 rounded-full"></div>
       <div class="px-2 py-1 text-xl font-bold sm:w-full bg-gray-300 rounded-md sm:text-2xl">
         <div class="inline">
           {{ data?.position }}
@@ -32,7 +32,7 @@ const changeUrlQuery = inject("changeUrlQuery");
       </div>
     </div>
     <div class="flex">
-      <div class="w-3 mr-10 sm:mr-5"></div>
+      <div class="w-3 mr-5"></div>
       <div>
         <div class="hidden text-xl font-bold sm:block">
           {{ data?.for }}

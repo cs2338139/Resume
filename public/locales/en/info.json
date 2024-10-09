@@ -1,6 +1,6 @@
 {
   "information": {
-    "name": "LIANG JIN CHENG",
+    "name": "JIN-CHENG, LIANG ",
     "enName": "( Anton )",
     "title": "Front-end Developer",
     "skill": "Front-end／React.js／Vue.js／JavaScript",
@@ -12,9 +12,10 @@
   },
 
   "introduction": [
-    "A front-end developer with years of software development experience, focusing on interactive design and web development. My programming skills started with C#, primarily developing digital games and interactive human-computer interfaces, before transitioning to web front-end development.",
-    "Proficient in using React.js and Vue.js (Nuxt.js) front-end frameworks to develop CSR and SSR websites, with extensive front-end development experience. I have participated in multiple highly interactive projects and focused on implementing complex JavaScript dynamic effects and functionalities.\nIn addition to front-end development, I also have experience with PHP backend language and can develop REST APIs using the WordPress CMS system. I excel in developing front-end and back-end separated architectures and use Tailwind and Material UI to build responsive websites.\nI also have the ability to deploy applications to cloud platforms such as AWS EC2 using tools like Docker, Nginx, and pm2.",
-    "Led a large-scale interactive exhibition project based on Socket, responsible for overall architecture design and core functionality implementation.\nAdditionally, I have experience in APP and VR/AR development, and have participated in the development of interactive installations for offline exhibitions."
+    "Front-end engineer with extensive experience in interactive design and web development. \nMy programming background began with C# in digital games and human-computer interaction, before transitioning to web development.",
+    "Proficient in React.js and Vue.js (Nuxt.js), with a focus on CSR and SSR projects, and a strong ability to implement complex JavaScript dynamic effects. I also have back-end experience in PHP, particularly in developing REST APIs with WordPress CMS.",
+    "Skilled in front-end and back-end separation, familiar with Tailwind and Material UI for creating responsive, efficient websites. I have successfully deployed projects to cloud platforms like AWS EC2 using Docker, Nginx, and pm2.",
+    "Led large-scale interactive exhibition projects using Socket, managing both architecture and core functionality. Additionally, I have experience in APP and VR/AR development, and have contributed to various interactive installation projects."
   ],
   "skill": [
     {
@@ -23,7 +24,7 @@
     },
     {
       "title": "Tool",
-      "content": ["Material UI", "Socket.io", "GSAP/ScrollTrigger", "i18n", "Canvas/WebGL", "three.js", "P5.js", "Swiper.js"]
+      "content": ["Material UI", "Socket.io", "GSAP/ScrollTrigger", "i18n", "Canvas/WebGL", "three.js", "P5.js"]
     },
     {
       "title": "Other",
@@ -37,7 +38,7 @@
       "content": [
         {
           "type": "desc",
-          "content": "Currently, I'm researching and implementing technologies such as Socket.io.\nThe front-end primarily uses React.js as the main framework, while the backend Socket.io Server is established using HTTPS. I've also considered a comprehensive user flow, creating Socket APIs to drive front-end and back-end transmission through events.\nThese are deployed to AWS EC2 using pm2 and Nginx."
+          "content": "Currently focused on research and implementation of Socket.io technology.\nOn the front-end, I use React.js as the primary framework, while the back-end Socket.io server is built over HTTPS, with a well-designed user flow and event-driven Socket API for seamless front-end and back-end communication.\nThe entire system is deployed to AWS EC2 using pm2 and Nginx."
         },
         {
           "type": "line"
@@ -79,21 +80,20 @@
       "content": [
         {
           "type": "desc",
-          "content": "Block Studio is a well-known website project company in Taiwan, famous for its dazzling effects and innovative interactive methods.\nDuring my tenure, I independently completed the development of several projects, accumulating extensive development experience.\nIn addition to front-end website development, I also participated in the setup of Shopify projects and Socket.io Server construction.\nMy main responsibilities during my tenure included:"
+          "content": "As a front-end engineer, I specialize in developing highly interactive websites and applications, gaining extensive experience throughout my career. I independently led several projects and spearheaded the company’s first Shopify e-commerce and Socket.io server implementation projects.\nMy primary responsibilities included:"
         },
         {
           "type": "list-1",
           "content": [
-            "Front-end Development: Using front-end frameworks (Vue.js / React.js) to create highly dynamic interactive websites, handling about ten projects of various sizes. This included the company's first attempts in new areas such as offline exhibition interactive projects and Shopify e-commerce projects.",
-            "Back-end Development: Writing PHP REST APIs to complement the WordPress CMS system. Optimized the company's existing APIs, improving data retrieval speed by 60%.",
-            "Project Architecture: Planning project structure and user experience flow. Continuously optimizing the company's project development templates, improving overall development experience, removing unused code, and centralizing the data integration system, significantly improving development speed. Also established practical work components for other developers to use.",
-            "Dynamic Effect Development: Using tools like GSAP, p5.js, WebGL, Matter.js to create dynamic effects. In addition to basic GSAP micro-animations, able to create large-scale visual dynamics based on Canvas/WebGL, and document these elements so other developers can reproduce core effects by simply changing materials and parameters.",
-            "Development Documentation: Established the company's documentation system and standards, speeding up overall development by 30% and significantly reducing front-end and back-end communication issues.",
-            "New Employee Guidance: Led two new developers into company projects and provided programming advice and debugging.",
-            "Project Deployment: Able to deploy projects to cloud spaces using pm2 with Nginx, while also assisting in writing Docker files to deploy projects to AWS EC2 using Docker. Adjusted the company's existing Docker files to resolve routing invalidation issues.",
-            "Shopify Projects: The company's first developer to develop Shopify projects, establishing subsequent development processes and README for this type of project, and transferring this experience to other developers, creating new case sources for the company.",
-            "Socket Services: The company's first responsible developer for offline experience exhibitions, with the exhibition paired with Socket.io for activities. Independently planned the complete program operation process, wrote and set up Socket Server functions, and created APIs for participating developers to use.",
-            "Technology Exploration and Sharing: In addition to daily project development, also played the role of testing new technologies and tooling. Researched tools such as Shopify, WebAR, and Socket.io during tenure, and established development tools and technical documentation suitable for colleagues to use quickly."
+            "Frontend Development: Developed dynamic and interactive websites using Vue.js and React.js, completing around ten projects across offline exhibitions and e-commerce.",
+            "Backend Development: Created PHP REST APIs using WordPress CMS, optimizing existing APIs to enhance data retrieval speed by 60%.",
+            "Project Architecture: Designed project structures to streamline development processes, eliminate redundant code, and centralize data integration systems, improving overall project efficiency. Developed reusable components for other engineers.",
+            "Dynamic Effects Development: Utilized GSAP, p5.js, and WebGL to create large-scale visual effects, modularizing them for reuse by other engineers.",
+            "Documentation: Revamped company documentation standards, increasing development speed by 30% and reducing frontend-backend communication issues.",
+            "Mentorship: Guided two new engineers through company projects, providing programming advice and debugging support.",
+            "Project Deployment: Deployed projects to AWS EC2 using pm2 and Nginx. Modified existing Docker files to resolve routing issues.",
+            "Socket.io Services: Led offline exhibition projects, overseeing the design and API development of the Socket.io architecture.",
+            "Technical Research and Sharing: Explored new technologies like Shopify, WebAR, and Socket.io, creating development tools and technical documentation for quick reference by colleagues."
           ]
         }
       ]

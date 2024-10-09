@@ -1,4 +1,5 @@
 <script setup>
+import { useI18n } from "vue-i18n";
 import { toRefs } from "vue";
 const props = defineProps({
   data: {
@@ -20,11 +21,12 @@ const props = defineProps({
 });
 
 const { data } = toRefs(props);
+const { locale } = useI18n();
 </script>
 
 <template>
   <div class="flex justify-between w-full h-48 text-justify sm:flex-col sm:h-auto sm:items-center">
-    <div class="overflow-hidden flex items-center justify-center rounded-md border aspect-square h-full mr-10 sm:w-1/2 sm:mr-0 sm:mb-5">
+    <div v-if="locale === 'zh-TW'" class="overflow-hidden flex items-center justify-center rounded-md border aspect-square h-full mr-10 sm:w-1/2 sm:mr-0 sm:mb-5">
       <img class="object-cover w-full h-full" :src="data.img" />
     </div>
     <div class="grow flex flex-col justify-around sm:items-center">

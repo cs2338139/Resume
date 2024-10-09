@@ -58,7 +58,7 @@ b {
   }
 
   .wrapInner {
-    @apply px-20 py-14;
+    @apply px-10 py-14;
     @apply xl:px-10 xl:py-5 md:px-6 sm:px-3;
   }
 
