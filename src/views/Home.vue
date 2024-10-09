@@ -9,7 +9,6 @@ import information from "../components/information.vue";
 import skill from "../components/skill/skill.vue";
 import introduction from "../components/introduction.vue";
 import timeline from "../components/timeline/timeline.vue";
-import buttonPortfolio from "../components/buttonPortfolio.vue";
 import popup from "../components/popup/popup.vue";
 import localeBtn from "../components/localeBtn.vue";
 
@@ -144,7 +143,7 @@ provide("field", field);
   <div class="wrap flex flex-col items-center">
     <div class="border relative border-gray-100 shadow-xl wrapInner">
       <!-- <localeBtn class="absolute right-5 top-5 md:fixed" /> -->
-      <information :data="{ img: me, ...info?.information }" class="mb-10" :email="info?.mail" :linkedin="info?.linkedin" :img="me">
+      <information :data="{ img: me, ...info?.information }" class="mb-5" :email="info?.mail" :linkedin="info?.linkedin" :img="me">
         <template #portfolio>
           <div class="flex gap-2 mt-1">
             <a href="https://resume.jinchengliang.com/?portfolio=portfolio" class="border-2 border-black px-10 origin-center sm:w-full rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">{{ field?.portfolio }}</a>
@@ -154,12 +153,12 @@ provide("field", field);
         </template>
       </information>
       <introduction class="mb-6" :data="{ title: field?.introduction, content: info?.introduction }" />
-      <skill class="mb-10" :data="{ title: field?.skill, content: info?.skill }" />
+      <skill class="mb-5" :data="{ title: field?.skill, content: info?.skill }" />
       <timeline :data="{ title: field?.experience, content: info?.experience }" class="mb-10" />
-      <div class="bg-gray-300 my-14 h-[1px] w-full mx-auto" />
-      <timeline class="mb-10" :data="{ title: field?.education, content: info?.education }" />
+      <div class="bg-gray-300 my-7 h-[1px] w-full mx-auto" />
+      <timeline class="mb-5" :data="{ title: field?.education, content: info?.education }" />
 
-      <div class="bg-gray-300 my-14 h-[1.5px] w-3/4 mx-auto" />
+      <!-- <div class="bg-gray-300 my-14 h-[1.5px] w-3/4 mx-auto" /> -->
       <!-- <buttonPortfolio @open="changeUrlQuery('portfolio')" class="mb-5 sm:mb-10" link="https://www.behance.net/JinChengLiang"> {{ field?.portfolio }}</buttonPortfolio> -->
     </div>
     <popup :_data="projects" :_key="currentKey" v-if="popupState" />
