@@ -66,8 +66,3 @@ b {
     @apply text-blue-600 hover:underline hover:text-blue-900;
   }
 }
-
-
-@page{
-  margin: 1cm;
-}
