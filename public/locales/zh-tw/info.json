@@ -59,20 +59,12 @@
             {
               "query": "socket-draw",
               "title": "Socket功能實作 | 共筆畫版",
-              "type": "功能實現",
-              "url": {
-                "url": "https://socket-draw.jinchengliang.com/",
-                "text": "Demo 連結↗"
-              }
+              "type": "功能實現"
             },
             {
               "query": "socket-chat",
               "title": "Socket功能實作 | 多房間即時聊天通訊",
-              "type": "功能實現",
-              "url": {
-                "url": "https://socket-chat.jinchengliang.com/",
-                "text": "Demo 連結↗"
-              }
+              "type": "功能實現"
             },
             {
               "query": "point_cloud_changer",

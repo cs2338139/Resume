@@ -49,20 +49,12 @@
             {
               "query": "socket-draw",
               "title": "Socket | Drawing Board",
-              "type": "Feature",
-              "url": {
-                "url": "https://socket-draw.jinchengliang.com/",
-                "text": "Demo Link↗"
-              }
+              "type": "Feature"
             },
             {
               "query": "socket-chat",
               "title": "Socket | Multi-room with Chat",
-              "type": "Feature",
-              "url": {
-                "url": "https://socket-chat.jinchengliang.com/",
-                "text": "Demo Link↗"
-              }
+              "type": "Feature"
             },
             {
               "query": "point_cloud_changer",
