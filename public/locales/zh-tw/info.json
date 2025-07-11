@@ -11,19 +11,19 @@
     "github": "https://github.com/cs2338139"
   },
   "introduction": [
-    "擁有多年軟體開發經驗的前端工程師，專注於互動設計與Web開發。\n學生時期專注於數位遊戲工程領域，程式技能起步於C#，並且以數位遊戲與互動人機界面的開發為主，後來轉向Web前端開發。",
-    "在前端開發方面，我能夠熟練使用 React.js 和 Vue.js（Nuxt.js）等框架，靈活應用於 CSR 和 SSR 項目開發。我參與過多個高度互動的專案，尤其擅長實現複雜的 JavaScript 動態效果和功能。同時，我也具備 PHP 後端開發經驗，能夠使用 WordPress CMS 系統進行 REST API 開發。",
-    "在架構設計上，我擅長前後端分離的開發模式，並熟悉 Tailwind 和 Material UI，能夠打造高效的 RWD 響應式網站。此外，我具備使用 Docker、Nginx 和 pm2 等工具進行應用部署的能力，並曾將多個項目成功部署至 AWS EC2 等雲端平台。",
+    "目前任職於台灣英語學習科技公司 VoiceTube，擔任前端工程師，負責開發英語學習網站與應用。",
+    "擁有多年軟體開發經驗的前端工程師，專注於互動設計與Web開發。\n學生時期專注於數位遊戲工程領域，程式技能起步於C#，並且以Unity開發數位遊戲與互動人機界面的開發為主，後來轉向Web前端開發。",
+    "在前端開發方面，我能夠熟練使用 React.js 和 Vue.js等框架，靈活應用於 CSR 和 SSR 項目開發。我參與過多個高度互動的專案，尤其擅長實現複雜的 JavaScript 動態效果和功能。同時，我也有將Wordpress做為CMS系統整合前端開發的經驗。",
     "我曾主導過基於 Socket 的大型互動展覽專案，負責架構設計與核心功能實現，並且具備 APP 和 VR/AR 開發經驗，參與過多個線下互動裝置開發專案。"
   ],
   "skill": [
     {
       "title": "Basic",
-      "content": ["React.js", "Vue.js (Nuxt.js)", "TypeScript", "HTML5／CSS／javascript", "RWD 響應式網頁規劃", "Tailwind", "PHP", "C#"]
+      "content": ["React.js (Next.js)", "Vue.js (Nuxt.js)", "TypeScript", "HTML5／CSS／javascript", "RWD", "Tailwind"]
     },
     {
       "title": "Tool",
-      "content": ["Material UI", "Socket.io", "GSAP／ScrollTrigger", "i18n", "Canvas／WebGL", "three.js", "P5.js"]
+      "content": ["Material UI", "Ant Design", "Socket.io", "GSAP／ScrollTrigger", "i18n", "Canvas／WebGL", "three.js", "P5.js"]
     },
     {
       "title": "Other",
@@ -31,6 +31,17 @@
     }
   ],
   "experience": [
+    {
+      "position": "前端工程師",
+      "for": "VoiceTube",
+      "time": "2024 / 10～至今",
+      "content": [
+        {
+          "type": "desc",
+          "content": "擔任前端工程師。"
+        }
+      ]
+    },
     {
       "position": "Freelance",
       "for": "Side Project",
