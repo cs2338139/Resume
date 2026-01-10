@@ -33,6 +33,17 @@
   ],
   "experience": [
     {
+      "position": "Front-end Engineer",
+      "for": "VoiceTube",
+      "time": "2024/10 - Present",
+      "content": [
+        {
+          "type": "desc",
+          "content": "Currently working as a front-end engineer, responsible for developing and maintaining an interactive English learning SaaS platform."
+        }
+      ]
+    },
+    {
       "position": "Freelance",
       "for": "Side Project",
       "content": [
