@@ -66,10 +66,11 @@ function createData() {
 }
 
 function pushToDefaultLang() {
-  const browserLang = navigator.language || navigator.userLanguage;
+  const browserLang = (navigator.language || navigator.userLanguage).toLowerCase();
   let targetLang = "";
-  if (availableLocales.includes(browserLang)) {
-    targetLang = browserLang;
+  const found = availableLocales.find((l) => l.toLowerCase() === browserLang);
+  if (found) {
+    targetLang = found;
   } else {
     targetLang = "en";
   }
@@ -110,8 +111,9 @@ onMounted(() => {
     (value) => {
       if (value) {
         const lang = value.replace("#", "");
-        if (availableLocales.includes(lang)) {
-          locale.value = lang;
+        const found = availableLocales.find((l) => l.toLowerCase() === lang.toLowerCase());
+        if (found) {
+          locale.value = found;
           createData();
         } else {
           pushToDefaultLang();
