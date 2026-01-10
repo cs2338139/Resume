@@ -155,6 +155,8 @@ provide("field", field);
       <introduction class="mb-6" :data="{ title: field?.introduction, content: info?.introduction }" />
       <skill class="mb-5" :data="{ title: field?.skill, content: info?.skill }" />
       <timeline :data="{ title: field?.experience, content: info?.experience }" class="mb-10" />
+      <div class="bg-gray-300 my-7 h-[1px] w-full mx-auto" />
+      <timeline class="mb-5" :data="{ title: field?.education, content: info?.education }" />
     </div>
     <popup :_data="projects" :_key="currentKey" v-if="popupState" />
   </div>
