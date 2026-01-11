@@ -1,49 +1,72 @@
 [
   {
     "key": "play_flower",
-    "name": "玩花 | 互動VR遊戲APP",
+    "name": "Play Flower | Interactive VR Game App",
     "cover": "cover.webp",
-    "desc": ["玩花是一款VR互動作品，每個不同的模型都代表著一朵獨一無二的花。", "透過使用者的頭部轉動，連動著場景內3D模型不同層級的旋轉，逐步解開模型的謎題，將它還原成最原本的樣貌。", "", "不同的角度，不同的轉向都會產生不一樣的效果，再搭配模型投影出來光影享受像萬花筒般的視覺體驗。"],
-    "type": "互動AR遊戲APP開發",
+    "desc": [
+      "Play Flower is a VR interactive piece where each 3D model represents a unique flower.",
+      "Head movement drives different layers of rotation for the 3D models in the scene, gradually unlocking the puzzle and restoring the original form.",
+      "",
+      "Different angles and turns create different effects, and the projected light and shadow from the models provide a kaleidoscope-like experience."
+    ],
+    "type": "Interactive AR Game App Development",
     "date": "2020",
     "interactions": ["AR"],
-    "works": ["程式架構規劃", "開發互動功能", "VR遊戲內容開發", "UGUI功能製作", "光影調校", "遊戲物理與環境互動系統"],
-    "tools": ["Unity", "Google CardBoard SDK","C#"],
+    "works": ["Program architecture planning", "Interactive feature development", "VR game content development", "UGUI feature development", "Lighting tuning", "Game physics and environment interaction system"],
+    "tools": ["Unity", "Google CardBoard SDK", "C#"],
     "ytIDs": ["sl6a3NpwtPc"],
     "images": []
   },
   {
     "key": "ai_shoes_maker",
-    "name": "AI鞋匠 | 體感互動裝置",
+    "name": "AI Shoemaker | Motion-sensing Interactive Installation",
     "cover": "cover.webp",
     "desc": [
-      "AI鞋匠是Unity搭配C++與Azure Kinect DK結合出來的作品。",
-      "依靠電腦的運算，解析使用者的服裝配色，替他搭配出最適合的鞋款配色，並且以畫面呈現出即時試穿效果。\n作品利用Azure Kinect DK取得現實鏡頭前的畫面，解析出畫面裡人像的骨架，並且透過C++將數據傳送至Unity來進行視覺呈現。",
-      "畫面運用了大量的粒子效果，充滿了未來與科技感。"
+      "AI Shoemaker combines Unity, C++, and Azure Kinect DK.",
+      "It analyzes a user’s outfit colors to suggest the best shoe palette and shows a real-time try-on preview.\nAzure Kinect DK captures the live scene, extracts the user’s skeleton, and C++ passes the data to Unity for visual display.",
+      "The visuals use heavy particle effects for a futuristic, tech-forward feel."
     ],
-    "type": "體感互動裝置軟體開發",
-    "client": "國立科學工藝博物館",
+    "type": "Motion-sensing Interactive Installation Software",
+    "client": "National Science and Technology Museum",
     "date": "2020",
-    "interactions": ["體感"],
-    "works": ["程式架構規劃", "開發互動功能", "場景建構與layer設定", "UGUI功能製作", "模型Animator建置與狀態機程式", "粒子Particle運動呈現", "Shader撰寫", "光影調校", "視覺工程呈現", "使用者穿著顏色HSL分析系統"],
-    "tools": ["Unity", "Kinect","C#","Shader"],
+    "interactions": ["Motion sensing"],
+    "works": [
+      "Program architecture planning",
+      "Interactive feature development",
+      "Scene construction and layer setup",
+      "UGUI feature development",
+      "Model animator setup and state machine programming",
+      "Particle motion effects",
+      "Shader development",
+      "Lighting tuning",
+      "Visual engineering",
+      "User outfit color HSL analysis system"
+    ],
+    "tools": ["Unity", "Kinect", "C#", "Shader"],
     "ytIDs": ["OOGj7BWKCv4"],
     "images": []
   },
   {
     "key": "point_cloud_changer",
-    "name": "PointCloud Mesh vertice補足系統 | Side Project",
+    "name": "PointCloud Mesh Vertex Augmentation System | Side Project",
     "cover": "cover.webp",
     "desc": [
-      "PointCloud Mesh vertice補足系統是AI鞋匠衍生出來的Side Project。\n面對Mesh變成PointCloud時，頂點不夠的問題，自行撰寫了一支程式來增加頂點數，使得PointCloud不再只捕捉目標Mesh的骨架，而是將頂點平均的分布於Mesh模型上。",
-      "如果只利用Mesh原生的頂點(vertice)來製作PointCloud，由於大多數Mesh原生的vertice為該模型的骨架部分，如果以此來製作PointCloud會顯得很空洞。但是透過該程式的演算法補足，將原本沒有vertice的位置按造triangle大小來平均填補vertice，並且抓取填補後位置texture的顏色，實現PointCloud效果。"
+      "A side project derived from AI Shoemaker to solve sparse vertices when converting meshes to point clouds. I wrote a program to add vertices so the point cloud reflects the full mesh surface instead of only the skeletal vertices.",
+      "Using only native mesh vertices produces a hollow point cloud because most vertices lie on the skeleton. The algorithm fills empty areas by averaging new vertices based on triangle size and sampling texture colors at those positions to achieve a dense point cloud."
     ],
-    "type": "功能實現",
-    "works": ["程式架構規劃", "模型點面掃描", "虛擬頂點創建", "粒子Particle補足公式推導與實作", "粒子Particle運動呈現", "Shader撰寫"],
-    "tools": ["Unity","C#","Shader"],
+    "type": "Feature Implementation",
+    "works": ["Program architecture planning", "Mesh vertex/face scanning", "Virtual vertex creation", "Particle augmentation formula derivation and implementation", "Particle motion presentation", "Shader development"],
+    "tools": ["Unity", "C#", "Shader"],
     "ytIDs": [
-      {"video":"9csGdvBwYQU","desc":"Mesh原生點頂版本:\n利用Mesh原生的頂點(vertice)來製作PointCloud，由於大多數Mesh原生的vertice為該模型的骨架部分，如果以此來製作PointCloud會顯得很空洞。"},
-      {"video":"YHcpsJKGe5A","desc":"補強後點頂版本:\n經過程式的運算，將原本沒有vertice的位置按造triangle大小來平均填補vertice，並且抓取填補後位置texture的顏色，實現PointCloud效果。"}],
+      {
+        "video": "9csGdvBwYQU",
+        "desc": "Native-vertex version:\nUsing only the mesh’s original vertices produces a hollow point cloud because most vertices sit on the skeleton."
+      },
+      {
+        "video": "YHcpsJKGe5A",
+        "desc": "Augmented-vertex version:\nThe algorithm fills missing vertices based on triangle size, samples texture colors, and delivers a denser point cloud."
+      }
+    ],
     "images": []
   }
 ]

@@ -66,10 +66,11 @@ function createData() {
 }
 
 function pushToDefaultLang() {
-  const browserLang = navigator.language || navigator.userLanguage;
+  const browserLang = (navigator.language || navigator.userLanguage).toLowerCase();
   let targetLang = "";
-  if (availableLocales.includes(browserLang)) {
-    targetLang = browserLang;
+  const found = availableLocales.find((l) => l.toLowerCase() === browserLang);
+  if (found) {
+    targetLang = found;
   } else {
     targetLang = "en";
   }
@@ -110,8 +111,9 @@ onMounted(() => {
     (value) => {
       if (value) {
         const lang = value.replace("#", "");
-        if (availableLocales.includes(lang)) {
-          locale.value = lang;
+        const found = availableLocales.find((l) => l.toLowerCase() === lang.toLowerCase());
+        if (found) {
+          locale.value = found;
           createData();
         } else {
           pushToDefaultLang();
@@ -153,6 +155,8 @@ provide("field", field);
       <introduction class="mb-6" :data="{ title: field?.introduction, content: info?.introduction }" />
       <skill class="mb-5" :data="{ title: field?.skill, content: info?.skill }" />
       <timeline :data="{ title: field?.experience, content: info?.experience }" class="mb-10" />
+      <div class="bg-gray-300 my-7 h-[1px] w-full mx-auto" />
+      <timeline class="mb-5" :data="{ title: field?.education, content: info?.education }" />
     </div>
     <popup :_data="projects" :_key="currentKey" v-if="popupState" />
   </div>

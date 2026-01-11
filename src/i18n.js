@@ -30,7 +30,7 @@ const en = new data('EN',en_info,[...en_sideData, ...en_bsData, ...en_axis3dData
 
 
 export const i18n = createI18n({
-    locale: 'zh-tw',
+    locale: 'en',
     fallbackLocale: 'en',
     messages: {
         'zh-TW': zh_tw,

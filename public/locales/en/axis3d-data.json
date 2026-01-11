@@ -1,36 +1,56 @@
 [
   {
     "key": "ws_new",
-    "name": "國立臺灣文學館 | 數位遊戲開發暨藏品3D掃描建模計畫 | 網站",
+    "name": "National Museum of Taiwan Literature | Digital Game Development and Collection 3D Scanning Project | Website",
     "cover": "cover.webp",
     "desc": [
-      "本計畫目的透過將典藏品以3D掃描與進行建模，向公眾徵選遊戲腳本，提供機關藏品作為發想、設計的必要元素，將館內藏品轉譯成不同的故事文本。",
-      "最終透過VR互動、線上遊戲、體感互動遊戲的開發， 加入專業研究詮釋故事，將臺灣文學內容轉化成社會大眾更容易親近的事物，再嘗試與觀眾個人經驗連結，不僅拉近民眾與文學的距離，亦能活化文物。",
-      "本計畫下有五個完成的項目，分別是數位遊戲開發「藏字人・搜妖錄」、「1940」、「生命之鳥」、「夢獸之島」與「3D掃描與建模計畫」。",
-      "此版本為該專案的第二版。除了網頁的設計風格做了大幅的變動以外，也使用了WordPress作為CMS與資料庫，方便業主後續能夠自行新增修改內容。"
+      "This project digitizes museum collections through 3D scanning and modeling, then invites the public to submit game scripts using these artifacts as creative elements, translating the collections into new story texts.",
+      "Through VR experiences, online games, and motion-based interactive games, plus research-driven storytelling, it makes Taiwanese literature approachable and connects with visitors’ personal experiences—narrowing the gap to literature while revitalizing the artifacts.",
+      "Five completed items under this project: digital games “Keeper of Characters: Demon Hunt,” “1940,” “Bird of Life,” “Isles of Monsters,” and the “3D Scanning and Modeling Project.”",
+      "This is the second version, featuring a major visual redesign and a WordPress CMS/database so the client can easily add and edit content."
     ],
-    "type": "網頁開發",
+    "type": "Web Development",
     "date": "2022",
-    "client": "國立臺灣文學館",
-    "links": [{ "title": "網站", "url": "https://nmtl-ws.com/" }],
-    "works": ["網頁架構規劃", "內容切版與功能實作", "頁面路由", "動態效果製作", "SVG動畫製作", "與WordPress資料庫內容串接", "WordPress內容管理與上架", "RWD", "多語言切換", "網頁打包與上架"],
+    "client": "National Museum of Taiwan Literature",
+    "links": [{ "title": "Website", "url": "https://nmtl-ws.com/" }],
+    "works": [
+      "Website architecture planning",
+      "Layout and feature implementation",
+      "Page routing",
+      "Animation effects",
+      "SVG animation",
+      "WordPress data integration",
+      "WordPress content management and deployment",
+      "RWD",
+      "Multilingual switching",
+      "Build and deployment"
+    ],
     "tools": ["Vite", "Nuxt 3", "Vue 3", "GraphQL", "WordPress", "Tailwind", "GSAP", "i18n"],
     "images": [["1.gif"], ["2-1.webp", "2-2.webp"], ["3.webp"], ["4.webp"], ["5-1.webp", "5-2.webp"], ["6.webp"], ["7.webp"]]
   },
   {
     "key": "ws_old",
-    "name": "國立臺灣文學館 | 數位遊戲開發暨藏品3D掃描建模計畫(舊版) | 網站",
+    "name": "National Museum of Taiwan Literature | Digital Game Development and Collection 3D Scanning Project (Old Version) | Website",
     "cover": "cover.webp",
     "desc": [
-      "本計畫目的透過將典藏品以3D掃描與進行建模，向公眾徵選遊戲腳本，提供機關藏品作為發想、設計的必要元素，將館內藏品轉譯成不同的故事文本。",
-      "最終透過VR互動、線上遊戲、體感互動遊戲的開發， 加入專業研究詮釋故事，將臺灣文學內容轉化成社會大眾更容易親近的事物，再嘗試與觀眾個人經驗連結，不僅拉近民眾與文學的距離，亦能活化文物。",
-      "本計畫下有五個完成的項目，分別是數位遊戲開發「藏字人・搜妖錄」、「1940」、「生命之鳥」、「夢獸之島」與「3D掃描與建模計畫」。"
+      "This project digitizes museum collections through 3D scanning and modeling, then invites the public to submit game scripts using these artifacts as creative elements, translating the collections into new story texts.",
+      "Through VR experiences, online games, and motion-based interactive games, plus research-driven storytelling, it makes Taiwanese literature approachable and connects with visitors’ personal experiences—narrowing the gap to literature while revitalizing the artifacts.",
+      "It contains five completed items: digital games “Keeper of Characters: Demon Hunt,” “1940,” “Bird of Life,” “Isles of Monsters,” and the “3D Scanning and Modeling Project.”"
     ],
-    "type": "網頁開發",
+    "type": "Web Development",
     "date": "2021",
-    "client": "國立臺灣文學館",
-    "links": [{ "title": "已下線", "url": "" }],
-    "works": ["網頁架構規劃", "內容切版與功能實作", "頁面路由", "動態效果製作", "SVG動畫製作", "RWD", "多語言切換", "網頁打包與上架"],
+    "client": "National Museum of Taiwan Literature",
+    "links": [{ "title": "Offline", "url": "" }],
+    "works": [
+      "Website architecture planning",
+      "Layout and feature implementation",
+      "Page routing",
+      "Animation effects",
+      "SVG animation",
+      "RWD",
+      "Multilingual switching",
+      "Build and deployment"
+    ],
     "tools": ["Vite", "Nuxt 3", "Vue 3", "Tailwind", "GSAP", "i18n"],
     "images": [
       ["1-1.webp", "1-2.webp", "1-3.webp", "1-4.webp"],
@@ -42,139 +62,190 @@
   },
   {
     "key": "ae_web",
-    "name": "國立臺灣藝術教育館 | 夢境漫遊：繪本藝術展 | 網站",
+    "name": "National Taiwan Arts Education Center | Dreamscape Journey: Picture Book Art Exhibition | Website",
     "cover": "cover.webp",
     "desc": [
-      "「夢境漫遊：繪本藝術展」邀請國內外10本適合親子共同閱讀、共同遊戲的精采繪本，並將繪本故事和圖像立體化，打造出充滿想像力的視覺互動場景，為孩子們造夢，邀請親子一起進入繪本的迷人世界。展覽分為情境展示的一樓「晚安屋」、以及科技互動的二樓「夢境房」。",
-      "此網站為其展覽的活動網站，藉由童趣的畫面與豐富的內容規劃，讓使用者能夠即使不到現場，也能夠充分的了解展覽內容。"
+      "“Dreamscape Journey: Picture Book Art Exhibition” features 10 picture books from Taiwan and abroad suitable for parents and children to read and play together. Stories and illustrations are brought to life in immersive interactive scenes—inviting families into a charming picture-book world. The exhibit has a first-floor “Goodnight House” for scenography and a second-floor “Dream Room” for tech interactions.",
+      "This event site uses playful visuals and rich content planning so visitors can fully understand the exhibition even remotely."
     ],
-    "type": "網頁開發",
+    "type": "Web Development",
     "date": "2022",
-    "client": "國立臺灣藝術教育館",
-    "links": [{ "title": "已下線", "url": "" }],
-    "works": ["網頁架構規劃", "內容切版與功能實作", "頁面路由", "動態效果製作", "相簿", "RWD", "網頁打包與上線"],
+    "client": "National Taiwan Arts Education Center",
+    "links": [{ "title": "Offline", "url": "" }],
+    "works": [
+      "Website architecture planning",
+      "Layout and feature implementation",
+      "Page routing",
+      "Animation effects",
+      "Gallery",
+      "RWD",
+      "Build and launch"
+    ],
     "tools": ["Vite", "Nuxt 3", "Vue 3", "Axios", "Tailwind", "GSAP"],
     "images": [["1.webp"], ["2-1.webp", "2-2.webp"], ["3-1.webp", "3-2.webp"], ["4-1.webp", "4-2.webp", "4-3.webp"]]
   },
   {
     "key": "ws_build",
-    "name": "國立臺灣文學館 | 文學館古蹟導覽下載網站 | 網站",
+    "name": "National Museum of Taiwan Literature | Heritage Guide Download Site | Website",
     "cover": "cover.webp",
-    "desc": ["本網站是文學館的古蹟導覽APP的 下載網站，一進入網站會經過程式判斷當前的裝置來決定呈現的畫面。", "如果是IOS平台進入顯示出App Store的連結，如果是Android則是會顯示出Google Play的連結，如果是Mac電腦或是Windows因為沒有相對應的平台版本，所以會顯示第三種頁面。"],
-    "type": "網頁開發",
+    "desc": [
+      "The download site for the museum’s heritage guide app; on entry, the program detects the device to decide what to show.",
+      "iOS visitors see the App Store link, Android visitors see Google Play, and macOS/Windows users see a third screen since no platform version exists."
+    ],
+    "type": "Web Development",
     "date": "2022",
-    "client": "國立臺灣文學館",
-    "links": [{ "title": "網站連結", "url": "https://nmtl-ws.com/WST_Download/" }],
-    "works": ["網頁架構規劃", "內容切版與功能實作", "當前平台判斷與顯示", "動態效果製作", "RWD", "網頁打包與上線"],
+    "client": "National Museum of Taiwan Literature",
+    "links": [{ "title": "Website link", "url": "https://nmtl-ws.com/WST_Download/" }],
+    "works": [
+      "Website architecture planning",
+      "Layout and feature implementation",
+      "Platform detection and display",
+      "Animation effects",
+      "RWD",
+      "Build and launch"
+    ],
     "tools": ["Vite", "Vue 3", "Tailwind"],
     "images": [["cover.webp"], ["1-1.webp", "1-2.webp"]]
   },
   {
     "key": "christmas_tree",
-    "name": "Three.js 聖誕樹 | Side Project",
+    "name": "Three.js Christmas Tree | Side Project",
     "cover": "cover.gif",
-    "desc": ["朋友的公司需要動態的聖誕節賀卡，因此以聖誕為主題，用Three.js幫他製作了聖誕樹。", "全部製作無使用任何的模型檔案，皆以程式繪製曲線模型。"],
-    "type": "Side Project | 網頁開發動態實作",
+    "desc": [
+      "A friend’s company needed an animated Christmas greeting card, so I built a Three.js Christmas tree for them.",
+      "All geometry is procedurally drawn—no model files were used."
+    ],
+    "type": "Side Project | Web Animation Implementation",
     "date": "2021",
-    "links": [{ "title": "網站連結", "url": "https://cs2338139.github.io/Christmas-Tree/" }],
-    "works": ["網頁架構規劃", "內容切版與功能實作", "當前平台判斷與顯示", "動態效果製作", "RWD", "網頁打包與上線"],
+    "links": [{ "title": "Website link", "url": "https://cs2338139.github.io/Christmas-Tree/" }],
+    "works": [
+      "Website architecture planning",
+      "Layout and feature implementation",
+      "Platform detection and display",
+      "Animation effects",
+      "RWD",
+      "Build and launch"
+    ],
     "tools": ["Three.js"],
     "images": []
   },
   {
     "key": "ws_ar_ele",
-    "name": "國立臺灣文學館 | 摺紙像偶AR | 互動AR遊戲",
+    "name": "National Museum of Taiwan Literature | Origami Puppet AR | Interactive AR Game",
     "cover": "cover.webp",
     "desc": [
-      "這是國立臺灣文學館在2021年時兒童節的互動AR活動。",
-      "運用平板的AR，擷取目標畫紙的塗鴉內容，並且將其變成Material的Texture，然後Mapping到目標模型上面。",
-      "※圖1.為現實原始的畫紙",
-      "※圖2.為掃描畫紙後的平板畫面：經過AR掃描，取得圖像塗鴉的目標後，將其變成Material的Texture，然後Mapping到目標模型上面。"
+      "An interactive AR activity for Children’s Day 2021 at the National Museum of Taiwan Literature.",
+      "Tablet AR captures doodles on a target sheet, converts them into a material texture, and maps them onto the target 3D model.",
+      "※ Image 1: the original real-world drawing",
+      "※ Image 2: tablet view after scanning—AR captures the doodle, turns it into a texture, and maps it onto the model."
     ],
-    "type": "互動AR遊戲開發",
+    "type": "Interactive AR Game Development",
     "date": "2021",
-    "client": "國立臺灣文學館",
-    "interactions": ["AR", "摺紙 塗鴉 手作"],
-    "works": ["程式架構規劃", "開發互動功能", "AR內容開發", "Camera Texture裁切", "Mapping Material", "場景UGUI製作", "程式打包輸出"],
-    "tools": ["Unity", "AR Kit", "Vuforia","C#"],
+    "client": "National Museum of Taiwan Literature",
+    "interactions": ["AR", "Origami / doodling / crafting"],
+    "works": [
+      "Program architecture planning",
+      "Interactive feature development",
+      "AR content development",
+      "Camera texture cropping",
+      "Material mapping",
+      "UGUI scene development",
+      "Build output"
+    ],
+    "tools": ["Unity", "AR Kit", "Vuforia", "C#"],
     "images": [["1.webp"], ["2.webp"]]
   },
   {
     "key": "ws_tailor",
-    "name": "國立臺灣文學館 | 光影裁縫店：冷不防 | 兒童繪本互動劇場",
+    "name": "National Museum of Taiwan Literature | Light & Shadow Tailor Shop: Cold and Unexpected | Interactive Picture Book Theater",
     "cover": "cover.webp",
     "desc": [
-      "位於臺灣文學館地下一樓的文學樂園裡，《光影裁縫店》沉浸式兒童故事劇場讓繪本《冷不防》活起來。在這裏小朋友會化身為小學徒，帶著自己的創作修補故事，透過故事劇場與互動遊戲，例如動作與聲音的捕捉，說故事的老師將會引領他們進入楊雲萍筆下交織出的二戰時期臺灣。在燈光與音樂的輔助下，訴說楊雲萍與女兒楊貞貞之間的父女情懷、與當時被無情戰火轟炸的臺灣街道，讓孩子能以更有趣的方式來了解《冷不防》。",
-      "《光影裁縫店》為一套可以供使用者自行編輯與新增劇本的互動投影系統。透過3台投影機融接畫面，將預先設計好的內容投影到互動牆上。除了投影機外，也提供了可自定義的燈光系統，搭配投影畫面，讓現場的故事講述更加的生動。同時環境也埋藏了互動裝置：雷達感應裝置、聲音捕捉裝置、Kinect體感裝置 與一台光學掃描機，讓現場的閱聽人不再只是觀眾，而是劇場的參與者。",
-      "《冷不防》為《光影裁縫店》的第一套劇本。"
+      "Located in the museum’s basement Literature Paradise, this immersive children’s theater brings the picture book “Cold and Unexpected” to life. Kids become apprentices, fixing the story with their creations. Through performance and interactive games—motion and sound capture—the storyteller leads them into WWII Taiwan as portrayed by Yang Yun-Ping, highlighting the father–daughter bond with Yang Chen-Chen and the wartime streets of Taiwan.",
+      "“Light & Shadow Tailor Shop” is an interactive projection system where users can edit and add scripts. Three blended projectors display predesigned content on an interactive wall. A customizable lighting system syncs with projections to enrich storytelling. The space also embeds interactive devices—radar sensors, microphones, Kinect motion sensing, and an optical scanner—turning the audience into participants.",
+      "“Cold and Unexpected” is the first script in the Light & Shadow Tailor Shop series."
     ],
-    "type": "互動系統開發",
+    "type": "Interactive System Development",
     "date": "2022",
-    "client": "國立臺灣文學館",
-    "interactions": ["體感", "觸碰感應", "聲音捕捉與解析", "繪圖掃描"],
+    "client": "National Museum of Taiwan Literature",
+    "interactions": ["Motion sensing", "Touch sensing", "Audio capture and analysis", "Drawing scan"],
     "works": [
-      "程式架構規劃",
-      "開發互動功能",
-      "Kinect體感內容製作",
-      "雷達互動內容製作與訊號對接",
-      "聲音捕捉與音訊解析",
-      "掃描器圖片裁切、Mapping",
-      "伺服器訊號接收與解析",
-      "劇本讀取與解析",
-      "資源控管",
-      "場景切換系統",
-      "影片播放系統",
-      "圖片播放系統",
-      "動畫播放系統",
-      "音檔播放系統",
-      "事件播放系統",
-      "程式輸出與現場安裝、維護"
+      "Program architecture planning",
+      "Interactive feature development",
+      "Kinect motion content",
+      "Radar interaction content and signal integration",
+      "Audio capture and parsing",
+      "Scanner image cropping and mapping",
+      "Server signal reception and parsing",
+      "Script loading and parsing",
+      "Resource management",
+      "Scene switching system",
+      "Video playback system",
+      "Image playback system",
+      "Animation playback system",
+      "Audio playback system",
+      "Event playback system",
+      "Build output, onsite setup, and maintenance"
     ],
-    "tools": ["Unity","C#", "Kinect", "Radar sensor", "Socket", "Microphone", "光學掃描器"],
+    "tools": ["Unity", "C#", "Kinect", "Radar sensor", "Socket", "Microphone", "Optical scanner"],
     "images": [["1.gif"], ["2.gif"], ["3-1.webp", "3-2.gif"], ["4-1.webp", "4-2.webp"], ["5.gif"]]
   },
   {
     "key": "ws_island",
-    "name": "國立臺灣文學館 | 夢獸之島 | 多平台VR遊戲",
+    "name": "National Museum of Taiwan Literature | Isles of Monsters | Multi-platform VR Game",
     "cover": "cover.webp",
     "desc": [
-      "本計畫以奇幻島嶼為概念，從葉石濤、張深切、龍瑛宗、林海音、姚一葦這五位作家取得靈感， 從臺文館的3D掃描藏品： 葉石濤的「藤椅」、張深切徒步旅行的「名人題字錄」、龍瑛宗的輪椅、林海音精心收藏的象偶、姚一葦渡海的皮箱設計成關卡道具，為第一人稱射擊VR遊戲。",
-      "除了在PC的Steam以外，同時也將其上架到Google Play、App Store與Oculus Lab。"
+      "A fantasy-island concept inspired by five writers—Ye Shitao, Zhang Shenqie, Lung Ying-Tsung, Lin Hai-yin, and Yao Yi-wei—and five scanned artifacts: Ye Shitao’s rattan chair, Zhang Shenqie’s autograph book, Lung Ying-Tsung’s wheelchair, Lin Hai-yin’s elephant figurine, and Yao Yi-wei’s voyage suitcase. These become level props in a first-person VR shooter.",
+      "Released on Steam for PC and also on Google Play, the App Store, and Oculus Lab."
     ],
-    "type": "多平台VR遊戲開發",
+    "type": "Multi-platform VR Game Development",
     "date": "2020-2021",
-    "client": "國立臺灣文學館",
+    "client": "National Museum of Taiwan Literature",
     "links": [
       { "title": "Steam", "url": "https://store.steampowered.com/app/1758360/Isles_of_Monsters/" },
       { "title": "Google Play", "url": "https://play.google.com/store/apps/details?id=com.Axis3d.WSNew_0514" },
       { "title": "App Store", "url": "https://apps.apple.com/tw/app/%25E5%25A4%25A2%25E7%258D%25B8%25E4%25B9%258B%25E5%25B3%25B6/id1543158659" }
     ],
-    "interactions": ["VR", "陀螺儀"],
-    "works": ["整合前期工程師的架構與程式", "開發後期互動功能", "後期程式優化與除錯", "資源控管", "針對各平台進行不同程式功能優化與開發", "程式輸出與各平台上架、維護"],
-    "tools": ["Unity","C#", "HTC Vive", "Oculus Rift"],
+    "interactions": ["VR", "Gyroscope"],
+    "works": [
+      "Integrating early-stage architecture and code",
+      "Developing late-stage interactions",
+      "Late-stage optimization and debugging",
+      "Resource management",
+      "Platform-specific optimizations and features",
+      "Build output and cross-platform publishing/maintenance"
+    ],
+    "tools": ["Unity", "C#", "HTC Vive", "Oculus Rift"],
     "images": [["1.webp"], ["2.webp"]]
   },
   {
     "key": "little_son",
-    "name": "小兒子AR大冒險 | 互動AR遊戲APP",
+    "name": "Little Son AR Adventure | Interactive AR Game App",
     "cover": "cover.webp",
     "desc": [
-      "自《小兒子》系列漫畫挑選出的四個經典設定遊玩畫面：",
-      "第一話「想像蟲」：\n以想像蟲為主軸的篇章，就由想像蟲的起源動畫來開始一切吧！",
-      "第二話「阿甯咕與他的機器人」：\n糟糕了！阿甯咕所製造的機器人將家裡弄得到處都是垃圾，快在駱媽回家之前將家裡打掃乾淨！",
-      "第四話「端端的四次元實驗室」：\n不好了！想像蟲在實驗室裡不見了，要盡快把它找出來以免發生大災難！",
-      "第七話「暴食暴龍」：\n暴食暴龍又暴走了！請幫助駱爸遠離垃圾食物，讓他恢復原狀！",
-      "遊玩方式：\n共有四個關卡，在漫畫中尋找提示中的對應畫面，掃描後就會看到其對應的3D模型。將3D模型放在平坦的檯面上，就可以開始探索AR世界！"
+      "Four classic scenes from the “Little Son” comic series:",
+      "Episode 1 “Imagination Bug”:\nStart with the origin animation of the Imagination Bug!",
+      "Episode 2 “A-Ning and His Robot”:\nOh no! A-Ning’s robot made a mess—clean up before mom gets home!",
+      "Episode 4 “Duan-Duan’s 4D Lab”:\nThe Imagination Bug is missing in the lab—find it fast before disaster strikes!",
+      "Episode 7 “Gluttonous T-Rex”:\nThe T-Rex is on a rampage—help dad avoid junk food to get back to normal!",
+      "How to play:\nFind the hinted panels in the comic and scan them to reveal the corresponding 3D model. Place the model on a flat surface to explore the AR world!"
     ],
-    "type": "互動AR遊戲APP開發",
+    "type": "Interactive AR Game App Development",
     "date": "2020",
     "links": [
       { "title": "Google Play", "url": "https://play.google.com/store/apps/details?id=com.Pixelight.LittleSon&hl=zh_TW&gl=US&pli=1" },
       { "title": "App Store", "url": "https://apps.apple.com/tw/app/%25E5%25B0%258F%25E5%2585%2592%25E5%25AD%2590ar%25E5%25A4%25A7%25E5%2586%2592%25E9%259A%25AA/id1545895839" }
     ],
     "interactions": ["AR"],
-    "works": ["程式架構規劃", "開發互動功能", "AR遊戲內容開發", "UGUI功能製作", "光影調校", "遊戲物理與環境互動系統", "專案輸出與上架"],
-    "tools": ["Unity","C#", "AR Foundation", "AR Core", "AR Kit"],
+    "works": [
+      "Program architecture planning",
+      "Interactive feature development",
+      "AR game content development",
+      "UGUI feature development",
+      "Lighting tuning",
+      "Game physics and environment interaction system",
+      "Build output and publishing"
+    ],
+    "tools": ["Unity", "C#", "AR Foundation", "AR Core", "AR Kit"],
     "images": [
       ["1-1.gif", "1-2.gif", "1-3.gif"],
       ["2-1.gif", "2-3.gif"]

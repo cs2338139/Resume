@@ -33,6 +33,28 @@
   ],
   "experience": [
     {
+      "position": "Front-end Engineer",
+      "for": "VoiceTube",
+      "time": "2024/10 - Present",
+      "content": [
+        {
+          "type": "desc",
+          "content": "Responsible for maintenance and development of multiple company SaaS English-learning products, focusing on high-performance architecture refactoring, Core Web Vitals optimization, and AI service development."
+        },
+        {
+          "type": "list-1",
+          "content": [
+            "Core performance optimization (Core Web Vitals): Led front-end performance improvements, optimizing LCP (Largest Contentful Paint) and CLS (Cumulative Layout Shift) to significantly improve visual stability and page load speed.",
+            "Front-end architecture refactor: Drove overall project architecture improvements and refactoring to streamline development workflows and reduce duplicated code; implemented bundle-size reduction strategies to shorten browser parse time and increase system reliability.",
+            "GenAI platform development and architecture: Built an internal GenAI tool platform that modularizes and centralizes multiple AI capabilities, providing teams with a consistent, reusable AI service interface and greatly lowering the barrier to introducing AI across product lines.",
+            "Product feature development and maintenance: Developed new features (e.g., energy points, Section Recap, payment integrations) for VoiceTube, Hero, and Campus to improve the learning experience and increase user retention; also maintained and optimized the vClass platform to ensure product stability under high traffic.",
+            "Internal service implementation: Completed full-stack integration of the company’s short-link service and linked it with the app’s Dynamic Links (replacing Firebase short links), making internal tools more unified.",
+            "Cross-team collaboration: Worked closely with product, design, back-end, and QA teams to conduct technical assessments and break down requirements, ensuring feature development balanced technical feasibility with business value."
+          ]
+        }
+      ]
+    },
+    {
       "position": "Freelance",
       "for": "Side Project",
       "content": [
