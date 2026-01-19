@@ -8,13 +8,13 @@ import zh_tw_axis3dData from "/public/locales/zh-tw/axis3d-data.json";
 import zh_tw_pdlData from "/public/locales/zh-tw/pdl-data.json";
 import zh_tw_otherData from "/public/locales/zh-tw/other-data.json";
 
-import en_us_field from "/public/locales/en-US/field.json";
-import en_us_info from "/public/locales/en-US/info.json";
-import en_us_sideData from "/public/locales/en-US/side-data.json";
-import en_us_bsData from "/public/locales/en-US/bs-data.json";
-import en_us_axis3dData from "/public/locales/en-US/axis3d-data.json";
-import en_us_pdlData from "/public/locales/en-US/pdl-data.json";
-import en_us_otherData from "/public/locales/en-US/other-data.json";
+import en_us_field from "/public/locales/en-us/field.json";
+import en_us_info from "/public/locales/en-us/info.json";
+import en_us_sideData from "/public/locales/en-us/side-data.json";
+import en_us_bsData from "/public/locales/en-us/bs-data.json";
+import en_us_axis3dData from "/public/locales/en-us/axis3d-data.json";
+import en_us_pdlData from "/public/locales/en-us/pdl-data.json";
+import en_us_otherData from "/public/locales/en-us/other-data.json";
 
 class data {
     constructor(name,info,portfolio,field) {
