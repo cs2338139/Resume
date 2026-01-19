@@ -2,5 +2,12 @@
   "portfolio": "作品集",
   "skill": "技能",
   "experience": "工作經歷",
-  "education": "學歷"
+  "education": "學歷",
+  "popup_type": "類型：",
+  "popup_date": "日期：",
+  "popup_client": "客戶：",
+  "popup_links": "連結：",
+  "popup_work_items": "工作項目：",
+  "popup_tools": "使用工具：",
+  "popup_interactions": "互動方式："
 }

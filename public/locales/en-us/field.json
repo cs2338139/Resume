@@ -2,5 +2,12 @@
   "portfolio": "Portfolio",
   "skill": "Skill",
   "experience": "Experience",
-  "education": "Education"
+  "education": "Education",
+  "popup_type": "Type:",
+  "popup_date": "Date:",
+  "popup_client": "Client:",
+  "popup_links": "Links:",
+  "popup_work_items": "Work Items:",
+  "popup_tools": "Tools:",
+  "popup_interactions": "Interactions:"
 }
