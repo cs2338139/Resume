@@ -30,19 +30,19 @@ onMounted(() => {
       </div>
       <div class="text-xl font-light md:text-lg">
         <popupSingleInfo v-if="data?.type">
-          <template #title>類型：</template>
+          <template #title>{{ $t("field.popup_type") }}</template>
           {{ data?.type }}
         </popupSingleInfo>
         <popupSingleInfo v-if="data?.date">
-          <template #title>日期：</template>
+          <template #title>{{ $t("field.popup_date") }}</template>
           {{ data?.date }}
         </popupSingleInfo>
         <popupSingleInfo v-if="data?.client">
-          <template #title>客戶：</template>
+          <template #title>{{ $t("field.popup_client") }}</template>
           {{ data?.client }}
         </popupSingleInfo>
         <popupSingleInfo v-if="data?.links && data?.links.length != 0">
-          <template #title>連結：</template>
+          <template #title>{{ $t("field.popup_links") }}</template>
           <template v-for="(_link, index) in data?.links" :key="index">
             <a v-if="_link?.url" class="text-blue-500" :href="_link?.url" target="_blank">{{ _link?.title }}</a>
             <span v-else class="italic font-medium text-gray-500">{{ _link?.title }}</span>
@@ -52,19 +52,19 @@ onMounted(() => {
       </div>
       <div class="flex justify-between w-full md:flex-col gap-5" v-if="(data?.works && data?.works.length != 0) || (data?.tools && data?.tools.length != 0)">
         <popupSingleTable v-if="data?.works && data?.works.length != 0">
-          <template #title>工作項目：</template>
+          <template #title>{{ $t("field.popup_work_items") }}</template>
           <template #content>
             <popupSingleTableItem v-for="(work, index) in data?.works" :key="index">{{ work }}</popupSingleTableItem>
           </template>
         </popupSingleTable>
         <popupSingleTable v-if="data?.tools && data?.tools.length != 0">
-          <template #title>使用工具：</template>
+          <template #title>{{ $t("field.popup_tools") }}</template>
           <template #content>
             <popupSingleTableItem v-for="(tool, index) in data?.tools" :key="index">{{ tool }}</popupSingleTableItem>
           </template>
         </popupSingleTable>
         <popupSingleTable v-if="data?.interactions && data?.interactions.length != 0">
-          <template #title>互動方式：</template>
+          <template #title>{{ $t("field.popup_interactions") }}</template>
           <template #content>
             <popupSingleTableItem v-for="(tool, index) in data?.interactions" :key="index">{{ tool }}</popupSingleTableItem>
           </template>
