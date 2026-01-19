@@ -41,7 +41,7 @@
     "desc": ["此網站是應朋友的邀約而製作的，網站內容為他設計的網站。\n網站風格為不規則性排列，有大量的穿插進場元素，網站是以React制作而成。"],
     "type": "網站",
     "date": "2024",
-    "links": [],
+    "links": [{ "title": "網站", "url": "https://vibe-400.vercel.app/" }],
     "works": ["動態特效製作", "內容切版與功能實作", "SVG動畫製作", "RWD"],
     "tools": ["React.js", "Tailwind css", "JavaScript", "GSAP"],
     "ytIDs": ["E1aDCs-cIhg"],
