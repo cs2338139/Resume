@@ -112,13 +112,17 @@ onMounted(() => {
       if (value) {
         const lang = value.replace("#", "");
         const found = availableLocales.find((l) => l.toLowerCase() === lang.toLowerCase());
+        console.log(lang,found);
         if (found) {
           locale.value = found;
+          console.log(locale.value);
           createData();
         } else {
+          console.log("pushToDefaultLang");
           pushToDefaultLang();
         }
       } else {
+        console.log("else pushToDefaultLang");
         pushToDefaultLang();
       }
     },
@@ -129,11 +133,6 @@ onMounted(() => {
 const baseUrl = computed(() => {
   if (process.env.NODE_ENV === "development") return "/public";
   return "";
-});
-
-const webUrl = computed(() => {
-  if (process.env.NODE_ENV === "development") return "http://localhost:5173";
-  return "https://resume.jinchengliang.com/";
 });
 
 provide("baseUrl", baseUrl);
