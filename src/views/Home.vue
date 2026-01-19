@@ -72,7 +72,7 @@ function pushToDefaultLang() {
   if (found) {
     targetLang = found;
   } else {
-    targetLang = "en";
+    targetLang = "en-US";
   }
 
   router.push({
@@ -112,7 +112,7 @@ onMounted(() => {
       if (value) {
         const lang = value.replace("#", "");
         const found = availableLocales.find((l) => l.toLowerCase() === lang.toLowerCase());
-        console.log(lang,found);
+        console.log(lang,found,availableLocales);
         if (found) {
           locale.value = found;
           console.log(locale.value);
@@ -146,7 +146,7 @@ provide("field", field);
       <information :data="{ img: me, ...info?.information }" class="mb-5" :email="info?.mail" :linkedin="info?.linkedin" :img="me">
         <template #portfolio>
           <div class="flex gap-2 mt-1">
-            <a href="?portfolio=portfolio" class="border-2 border-black px-10 origin-center sm:w-full rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">{{ field?.portfolio }}</a>
+            <a :href="`?portfolio=portfolio#${locale}`" class="border-2 border-black px-10 origin-center sm:w-full rounded-2xl bg-black text-white hover:bg-white hover:text-black transition-all duration-300">{{ field?.portfolio }}</a>
             <a v-if="info?.information?.github" target="_blank" :href="info?.information?.github" class="border-2 border-black px-10 origin-center sm:w-full rounded-2xl hover:bg-black hover:text-white bg-white text-black transition-all duration-300">GitHub</a>
           </div>
         </template>
