@@ -8,13 +8,13 @@ import zh_tw_axis3dData from "/public/locales/zh-tw/axis3d-data.json";
 import zh_tw_pdlData from "/public/locales/zh-tw/pdl-data.json";
 import zh_tw_otherData from "/public/locales/zh-tw/other-data.json";
 
-import en_field from "/public/locales/en/field.json";
-import en_info from "/public/locales/en/info.json";
-import en_sideData from "/public/locales/en/side-data.json";
-import en_bsData from "/public/locales/en/bs-data.json";
-import en_axis3dData from "/public/locales/en/axis3d-data.json";
-import en_pdlData from "/public/locales/en/pdl-data.json";
-import en_otherData from "/public/locales/en/other-data.json";
+import en_us_field from "/public/locales/en-US/field.json";
+import en_us_info from "/public/locales/en-US/info.json";
+import en_us_sideData from "/public/locales/en-US/side-data.json";
+import en_us_bsData from "/public/locales/en-US/bs-data.json";
+import en_us_axis3dData from "/public/locales/en-US/axis3d-data.json";
+import en_us_pdlData from "/public/locales/en-US/pdl-data.json";
+import en_us_otherData from "/public/locales/en-US/other-data.json";
 
 class data {
     constructor(name,info,portfolio,field) {
@@ -26,14 +26,14 @@ class data {
 }
 
 const zh_tw = new data('中文',zh_tw_info,[...zh_tw_sideData, ...zh_tw_bsData, ...zh_tw_axis3dData, ...zh_tw_pdlData, ...zh_tw_otherData],zh_tw_field);
-const en = new data('EN',en_info,[...en_sideData, ...en_bsData, ...en_axis3dData, ...en_pdlData, ...en_otherData],en_field);
+const en_US = new data('English',en_us_info,[...en_us_sideData, ...en_us_bsData, ...en_us_axis3dData, ...en_us_pdlData, ...en_us_otherData],en_us_field);
 
 
 export const i18n = createI18n({
-    locale: 'en',
-    fallbackLocale: 'en',
+    locale: 'en-US',
+    fallbackLocale: 'en-US',
     messages: {
         'zh-TW': zh_tw,
-        'en': en,
+        'en-US': en_US,
     }
   });
