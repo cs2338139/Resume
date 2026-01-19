@@ -41,7 +41,7 @@
     "desc": ["Built at a friend’s request to showcase their design work.\nThe layout uses irregular arrangements with many staggered entrance animations, and the site is built with React."],
     "type": "Website",
     "date": "2024",
-    "links": [],
+    "links": [{ "title": "Website", "url": "https://vibe-400.vercel.app/" }],
     "works": ["Motion effects", "Layout and feature implementation", "SVG animation", "RWD"],
     "tools": ["React.js", "Tailwind css", "JavaScript", "GSAP"],
     "ytIDs": ["E1aDCs-cIhg"],
