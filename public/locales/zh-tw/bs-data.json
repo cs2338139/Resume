@@ -101,7 +101,7 @@
     "type": "Shopify | 網站 | 主題開發",
     "date": "2023",
     "client": "NCI STUDIOS",
-    "links": [{ "title": "網站（主視覺已改版）", "url": "https://pse.is/6g6ap8" }],
+    "links": [{ "title": "網站", "url": "https://pse.is/6g6ap8" }],
     "works": ["Canvas動態製作","動態特效製作", "Matter.js物理碰撞功能", "內容切版與功能實作", "Liquid模板元件製作", "Shopify內容串接", "SVG動畫製作", "RWD"],
     "tools": ["Liquid", "Shopify Cli","web component", "HTML", "JavaScript", "CSS", "Matter.js","GSAP"],
     "ytIDs": ["-W-jdWMU-cc"],

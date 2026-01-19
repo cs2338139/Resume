@@ -101,7 +101,7 @@
     "type": "Shopify | Website | Theme Development",
     "date": "2023",
     "client": "NCI STUDIOS",
-    "links": [{ "title": "Website (main visual updated)", "url": "https://pse.is/6g6ap8" }],
+    "links": [{ "title": "Website", "url": "https://pse.is/6g6ap8" }],
     "works": ["Canvas animation", "Motion effects", "Matter.js collision feature", "Layout and feature implementation", "Liquid template component development", "Shopify content integration", "SVG animation", "RWD"],
     "tools": ["Liquid", "Shopify Cli", "web component", "HTML", "JavaScript", "CSS", "Matter.js", "GSAP"],
     "ytIDs": ["-W-jdWMU-cc"],
