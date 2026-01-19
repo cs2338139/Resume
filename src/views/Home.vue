@@ -112,17 +112,13 @@ onMounted(() => {
       if (value) {
         const lang = value.replace("#", "");
         const found = availableLocales.find((l) => l.toLowerCase() === lang.toLowerCase());
-        console.log(lang,found,availableLocales);
         if (found) {
           locale.value = found;
-          console.log(locale.value);
           createData();
         } else {
-          console.log("pushToDefaultLang");
           pushToDefaultLang();
         }
       } else {
-        console.log("else pushToDefaultLang");
         pushToDefaultLang();
       }
     },
